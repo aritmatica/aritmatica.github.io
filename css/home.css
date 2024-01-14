@@ -1,134 +1,20 @@
-@import "global.css";
-
-nav {
-    width: 100%;
-    height: 48px;
-    background-color: var(--primary-color);
-
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 1vw;
+header {
+    margin: 156px 0px 0px 128px;
 }
 
-/* website title */
-nav > a {
-    color: var(--text-color);
-    font-size: 24px;
-    font-family: Arial, Helvetica, sans-serif;
-    cursor: pointer;
-    text-decoration: none;
+header > h1 {
+    font-size: 152px;
 }
 
-/* nav items */
-nav ul {
-    display: flex;
-    gap: 0px;
-    list-style: none;
+header > h1 > sup {
+    font-size: 72px;
 }
 
-nav ul li {
-    height: 36px;
-    width: auto;
-    border-radius: 6px;
+header > span {
+    font-size: 36px;
 }
 
-nav ul li a {
-    display: block;
-    width: auto;
-    text-align: center;
-    color: var(--text-color);
-    text-decoration: none;
-    font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif;
-    transition: background-color 250ms;
-    line-height: 36px;
-
-    padding: 0 16px 0 16px;
-}
-
-nav ul li .icons {
-    font-size: 18px;
-    margin-right: -6px;
-    transform: translateY(6px);
-}
-
-/* nav button */
-nav ul .button {
-    background-color: var(--accent-color);
-    border-radius: 128px;
-}
-
-/* nav dropdowns */
-nav ul .nav-dropdown:hover {
-    background-color: var(--select-color)
-} 
-
-nav ul .nav-dropdown ul {
-    background-color: var(--transparent-color);
-    position: absolute;
-    display: none;
-    flex-direction: column;
-    gap: 0px;
-    backdrop-filter: blur(8px);
-    border-radius: 6px;
-    z-index: 2;
-}
-
-nav ul .nav-dropdown .spacer {
-    height: 4px;
-    width: 100%;
-}
-
-nav ul .nav-dropdown:hover ul {
-    display: flex;
-}
-
-nav ul .nav-dropdown ul li {
-    padding-top: 2px;
-    padding-bottom: 12px;
-}
-
-nav ul .nav-dropdown ul li a {
-    padding-top: 6px;
-    padding-bottom: 6px;
-    line-height: normal;
-    text-align: left;
-}
-
-nav ul .nav-dropdown ul li:hover {
-    background-color: var(--select-color);
-}
-
-/* nav bar dropdown icon */
-nav ul .nav-dropdown > a .icons {
-    transform: translateY(-2px);
-    rotate: -180deg;
-    transition: transform 250ms, rotate 250ms;
-}
-
-nav ul .nav-dropdown:hover > a .icons {
-    transform: translateY(5px);
-    rotate: 0deg;
-}
-
-/* nav dropdowns icon */
-nav ul .nav-dropdown ul li a .icons {
-    font-size: 24px;
-    margin-right: 8px;
-    transform: translateY(6px);
-}
-
-/* nav dropdown specifics */
-nav ul .nav-dropdown ul .genmath a .icons {
-    color: #2d9964;
-}
-
-nav ul .nav-dropdown ul .precalc a .icons {
-    color: #d87620;
-}
-
-body {
-    color: white;
-    background-color: var(--background-color);
+p {
+    margin: 128px 0px 128px 128px;
+    padding-right: 128px;
 }
