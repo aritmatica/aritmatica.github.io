@@ -1,0 +1,14 @@
+:root {
+	--primary-color: #141515;
+	--background-color: #0e0f0f;
+	--transparent-color: rgba(29, 29, 33, 0.4);
+	--select-color: #1d1d21;
+	--text-color: #FFFFFF;
+	--accent-color: #e36970;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+}

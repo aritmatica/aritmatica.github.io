@@ -1,0 +1,119 @@
+@import "global.css";
+
+nav {
+    width: 100vw;
+    height: 48px;
+    background-color: var(--primary-color);
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1vw;
+}
+
+/* website title */
+nav > a {
+    color: var(--text-color);
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+/* nav items */
+nav ul {
+    display: flex;
+    gap: 0px;
+    list-style: none;
+}
+
+nav ul li {
+    height: 36px;
+    width: auto;
+    border-radius: 6px;
+}
+
+nav ul li a {
+    display: block;
+    width: auto;
+    text-align: center;
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: background-color 250ms;
+    line-height: 36px;
+
+    padding: 0 16px 0 16px;
+}
+
+nav ul li .icons {
+    font-size: 18px;
+    margin-right: -6px;
+    transform: translateY(4px);
+}
+
+/* nav button */
+nav ul .button {
+    background-color: var(--accent-color);
+}
+
+/* nav dropdowns */
+nav ul .nav-dropdown:hover {
+    background-color: var(--select-color)
+} 
+
+nav ul .nav-dropdown ul {
+    background-color: var(--transparent-color);
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    gap: 0px;
+    backdrop-filter: blur(8px);
+    border-radius: 6px;
+}
+
+nav ul .nav-dropdown .spacer {
+    height: 4px;
+    width: 100%;
+}
+
+nav ul .nav-dropdown:hover ul {
+    display: flex;
+}
+
+nav ul .nav-dropdown ul li {
+    padding-top: 2px;
+    padding-bottom: 12px;
+}
+
+nav ul .nav-dropdown ul li a {
+    padding-top: 6px;
+    padding-bottom: 6px;
+    line-height: normal;
+}
+
+nav ul .nav-dropdown ul li:hover {
+    background-color: var(--select-color);
+}
+
+/* nav bar dropdown icon */
+nav ul .nav-dropdown a .icons {
+    transform: translateY(-4px);
+    rotate: -180deg;
+    transition: transform 250ms, rotate 250ms;
+}
+
+/* nav dropdowns icon */
+nav ul .nav-dropdown ul li a .icons {
+    font-size: 22px;
+    margin-right: 2px;
+}
+
+nav ul .nav-dropdown:hover a .icons {
+    transform: translateY(4px);
+    rotate: 0deg;
+}
+
+body {
+    background-color: var(--background-color);
+}
