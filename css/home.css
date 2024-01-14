@@ -49,7 +49,7 @@ nav ul li a {
 nav ul li .icons {
     font-size: 18px;
     margin-right: -6px;
-    transform: translateY(4px);
+    transform: translateY(6px);
 }
 
 /* nav button */
@@ -90,6 +90,7 @@ nav ul .nav-dropdown ul li a {
     padding-top: 6px;
     padding-bottom: 6px;
     line-height: normal;
+    text-align: left;
 }
 
 nav ul .nav-dropdown ul li:hover {
@@ -97,21 +98,31 @@ nav ul .nav-dropdown ul li:hover {
 }
 
 /* nav bar dropdown icon */
-nav ul .nav-dropdown a .icons {
-    transform: translateY(-4px);
+nav ul .nav-dropdown > a .icons {
+    transform: translateY(-2px);
     rotate: -180deg;
     transition: transform 250ms, rotate 250ms;
 }
 
-/* nav dropdowns icon */
-nav ul .nav-dropdown ul li a .icons {
-    font-size: 22px;
-    margin-right: 2px;
+nav ul .nav-dropdown:hover > a .icons {
+    transform: translateY(5px);
+    rotate: 0deg;
 }
 
-nav ul .nav-dropdown:hover a .icons {
-    transform: translateY(4px);
-    rotate: 0deg;
+/* nav dropdowns icon */
+nav ul .nav-dropdown ul li a .icons {
+    font-size: 24px;
+    margin-right: 8px;
+    transform: translateY(6px);
+}
+
+/* nav dropdown specifics */
+nav ul .nav-dropdown ul .genmath a .icons {
+    color: #2d9964;
+}
+
+nav ul .nav-dropdown ul .precalc a .icons {
+    color: #d87620;
 }
 
 body {
