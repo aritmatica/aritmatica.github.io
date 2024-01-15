@@ -30,10 +30,9 @@ async function injectHTML(filePath,elem) {
 }
 
 function injectTag(tag) {    
-    document.querySelectorAll(`${tag}[include]`)
-            .forEach((elem) => {
-                injectHTML(elem.getAttribute("include"),elem);
+    document.querySelectorAll(`${tag}[include]`).forEach((elem) => {
+        injectHTML(elem.getAttribute("include"),elem);
     })
 }
 
-injectTag("nav")
+export {injectTag}

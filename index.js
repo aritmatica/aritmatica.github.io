@@ -1,10 +1,18 @@
-import './js/scrollreveal.js';
+import {injectTag} from "./js/modular.js";
 
-const header = document.getElementsByTagName("header")[0]
-const header_title = header.getElementsByTagName("h1")[0]
-const header_title_sup = header_title.getElementsByTagName("sup")[0]
-const header_tagline = header.getElementsByTagName("span")[0]
+gsap.registerPlugin(ScrollTrigger)
 
-ScrollReveal().reveal(header_title, {delay: 250, distance: '50px'})
-ScrollReveal().reveal(header_title_sup, {delay: 500, distance: '50px'})
-ScrollReveal().reveal(header_tagline, {delay: 750, distance: '50px'})
+function bodyLoaded () {
+    const header = document.querySelector("header")
+    const header_title = header.querySelector("h1")
+    const header_title_sup = header_title.querySelector("sup")
+    const header_tagline = header.querySelector("span")
+    
+    ScrollReveal().reveal(header_title, {delay: 250, distance: '50px'})
+    ScrollReveal().reveal(header_title_sup, {delay: 500, distance: '50px'})
+    ScrollReveal().reveal(header_tagline, {delay: 750, distance: '50px'})
+    
+    injectTag("nav")
+}
+
+document.body.onload = bodyLoaded
