@@ -110,6 +110,8 @@ nav ul .nav-dropdown ul {
 
     transform: translateY(12px);
     transition: transform 250ms, opacity 250ms;
+
+    pointer-events: none;
 }
 
 nav ul .nav-dropdown .spacer {
@@ -118,6 +120,7 @@ nav ul .nav-dropdown .spacer {
 }
 
 nav ul .nav-dropdown:hover ul {
+    pointer-events: all;
     transform: translateY(0);
     opacity: 1;
 }
