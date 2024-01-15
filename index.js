@@ -19,6 +19,9 @@ function contentLoaded () {
     ScrollReveal().reveal(header_title_sup, {delay: 500, distance: '50px'})
     ScrollReveal().reveal(header_tagline, {delay: 750, distance: '50px'})
     ScrollReveal().reveal(header_glow, {delay: 1250})
+
+    const genmath_section = document.getElementById("genmath")
+    const genmath_line = genmath_section.getElementsByClassName("line")[0]
 }
 
 document.addEventListener("DOMContentLoaded", contentLoaded)

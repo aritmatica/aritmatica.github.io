@@ -11,11 +11,9 @@ for (let i = 0; i < buttons.length; i++) {
     })
 
     function mouseEnter(e) {
-        const mouseX = e.clientX
-        const mouseY = e.clientY
         gsap.set(elem, {
             css: {
-                clipPath: "margin-box"  
+                clipPath: "border-box"  
             }
         })
         gsap.to(flair, {
@@ -28,8 +26,8 @@ for (let i = 0; i < buttons.length; i++) {
 
     let firstEnter = true
     function mouseUpdate(e) {
-        const mouseX = e.clientX
-        const mouseY = e.clientY
+        const mouseX = e.pageX
+        const mouseY = e.pageY
 
         let dur = 0.3
 

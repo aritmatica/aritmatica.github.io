@@ -20,33 +20,19 @@ main {
 .line {
     width: 3px;
     border-radius: 3px;
+    transform-origin: top;
 }
 
-/* fancy buttons */
-.fancy-button {
-    clip-path: none;
+aside .icons {
+    font-size: 36px;
+    margin-top: 0;
+    cursor: default;
 }
 
-.fancy-button .flair {
-    position: absolute;
-    background-color: white;
-    width: 500px;
-    height: 500px;
-    pointer-events: none;
-    top: -250px;
-    left: -250px;
-    border-radius: 100%;
-    will-change: transform;
-    z-index: -1;
-}
-
-.fancy-button .label {
-    z-index: 0;
-    transition: color 0.2s;
-}
-
-.fancy-button:hover .label {
-    color: black;
+main > h2 {
+    font-size: 32px;
+    line-height: 42px;
+    font-family: PPMori-SemiBold, Arial, sans-serif;
 }
 
 /* header */
@@ -95,24 +81,77 @@ header aside .line {
     margin-top: 12px;
 }
 
-#modules main > a {
+#modules main a {
     line-height: 42px;
     font-family: PPMori-SemiBold, Arial, sans-serif;
-    stroke: white;
     
     border-style: solid;
     border-radius: 24px;
     padding: 12px 18px 12px 18px;
-    cursor: pointer;
+    margin-right: 12px;
 }
 
-#modules aside .icons {
-    font-size: 36px;
-    margin-top: 0;
+#modules main a:nth-of-type(1) {
+    border-color: var(--accent-color);
+}
+
+#modules main a:nth-of-type(1) .flair {
+    background-color: var(--accent-color);
+}
+
+#modules main a:nth-of-type(1) .label {
+    color: var(--accent-color);
+}
+
+#modules main a:nth-of-type(1):hover .label {
+    color: var(--text-color);
 }
 
 #modules aside .icons .glow {
     width: 0;
     height: 0;
     box-shadow: 18px 18px 36px 18px var(--accent-color);
+}
+
+#modules aside .line {
+    background-color: linear-gradient(var(--accent-color), #3fb950 80%, #3fb950);
+    background-image: linear-gradient(var(--accent-color), #3fb950 80%, #3fb950);
+    height: 256px;
+    margin-top: 12px;
+}
+
+/* genmath */
+#genmath {
+    margin-top: 12px;
+}
+
+#genmath aside .icons .glow {
+    width: 0;
+    height: 0;
+    box-shadow: 18px 18px 36px 18px #3fb950;
+}
+
+#genmath aside .line {
+    background-color: linear-gradient(#3fb950, #3fb950 40%, #c9510c);
+    background-image: linear-gradient(#3fb950, #3fb950 40%, #c9510c);
+    height: 1024px;
+    margin-top: 12px;
+}
+
+/* precalc */
+#precalc {
+    margin-top: 12px;
+}
+
+#precalc aside .icons .glow {
+    width: 0;
+    height: 0;
+    box-shadow: 18px 18px 36px 18px #c9510c;
+}
+
+#precalc aside .line {
+    background-color: linear-gradient(#c9510c, #c9510c 40%, #c9510c);
+    background-image: linear-gradient(#c9510c, #c9510c 40%, #c9510c);
+    height: 512px;
+    margin-top: 12px;
 }

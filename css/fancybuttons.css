@@ -1,0 +1,27 @@
+.fancy-button {
+    clip-path: none;
+    cursor: pointer;
+}
+
+.fancy-button .flair {
+    position: absolute;
+    background-color: white;
+    width: 500px;
+    height: 500px;
+    pointer-events: none;
+    top: -250px;
+    left: -250px;
+    border-radius: 100%;
+    will-change: transform;
+    z-index: -1;
+    transform: -50% -50%;
+}
+
+.fancy-button .label {
+    z-index: 0;
+    transition: color 0.2s;
+}
+
+.fancy-button:hover .label {
+    color: black;
+}
