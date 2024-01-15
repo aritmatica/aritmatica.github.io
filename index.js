@@ -13,17 +13,6 @@ function contentLoaded () {
     ScrollReveal().reveal(header_tagline, {delay: 750, distance: '50px'})
     
     injectTag("nav")
-
-    barba.init({
-        transitions: [{
-            debug: true,
-            name: 'transition 1',
-            enter(data) {
-            },
-            leave(data) {
-            },
-        }]
-    });
 }
 
 document.addEventListener("DOMContentLoaded", contentLoaded)
