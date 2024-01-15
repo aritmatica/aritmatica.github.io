@@ -163,10 +163,10 @@ nav ul .nav-dropdown ul li a .icons {
 }
 
 /* nav dropdown specifics */
-nav ul .nav-dropdown ul #genmath a .icons {
-    color: #2d9964;
+nav ul .nav-dropdown ul #nav-genmath a .icons {
+    color: #3fb950;
 }
 
-nav ul .nav-dropdown ul #precalc a .icons {
-    color: #d87620;
+nav ul .nav-dropdown ul #nav-precalc a .icons {
+    color: #c9510c;
 }
