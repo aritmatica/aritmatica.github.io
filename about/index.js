@@ -1,9 +1,8 @@
 import {injectTag} from "../js/modular.js";
 
-gsap.registerPlugin(ScrollTrigger)
-
-function bodyLoaded () {    
+function contentLoaded () {    
     injectTag("nav")
+    console.log("farted")
 }
 
-document.body.onload = bodyLoaded
+document.addEventListener("DOMContentLoaded", contentLoaded)

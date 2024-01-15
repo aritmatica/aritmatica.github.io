@@ -2,7 +2,7 @@ import {injectTag} from "./js/modular.js";
 
 gsap.registerPlugin(ScrollTrigger)
 
-function bodyLoaded () {
+function contentLoaded () {
     const header = document.querySelector("header")
     const header_title = header.querySelector("h1")
     const header_title_sup = header_title.querySelector("sup")
@@ -13,6 +13,17 @@ function bodyLoaded () {
     ScrollReveal().reveal(header_tagline, {delay: 750, distance: '50px'})
     
     injectTag("nav")
+
+    barba.init({
+        transitions: [{
+            debug: true,
+            name: 'transition 1',
+            enter(data) {
+            },
+            leave(data) {
+            },
+        }]
+    });
 }
 
-document.body.onload = bodyLoaded
+document.addEventListener("DOMContentLoaded", contentLoaded)
