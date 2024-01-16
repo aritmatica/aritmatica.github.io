@@ -8,13 +8,10 @@
     background-color: white;
     width: 500px;
     height: 500px;
-    pointer-events: none;
-    top: -250px;
-    left: -250px;
+    pointer-events: none; 
     border-radius: 100%;
     will-change: transform;
     z-index: -1;
-    transform: -50% -50%;
 }
 
 .fancy-button .label {

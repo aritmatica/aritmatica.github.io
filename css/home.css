@@ -29,7 +29,13 @@ aside .icons {
     cursor: default;
 }
 
-main > h2 {
+main > h2, main > h2 span {
+    font-size: 64px;
+    font-family: PPMori-SemiBold, Arial, sans-serif;
+    margin-top: 24px;
+}
+
+main > h3, main > h3 span {
     font-size: 32px;
     line-height: 42px;
     font-family: PPMori-SemiBold, Arial, sans-serif;
@@ -123,6 +129,54 @@ header aside .line {
 /* genmath */
 #genmath {
     margin-top: 12px;
+}
+
+#genmath main h2 .highlight {
+    color: #3fb950;
+}
+
+#genmath main .card {
+    background-color: var(--secondary-color);
+    padding: 72px 72px 72px 72px;
+    margin-top: 48px;
+    margin-left: -20%;
+    width: 100%;
+    border-radius: 16px;
+
+    display: flex;
+}
+
+#genmath main .card .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#genmath main .card .left .fancy-button {
+    line-height: 24px;
+    font-family: PPMori-SemiBold, Arial, sans-serif;
+    
+    border-style: solid;
+    border-radius: 24px;
+    padding: 12px 18px 12px 18px;
+    width: fit-content;
+}
+
+#genmath main .card .title {
+    color: gray;
+    font-size: 24px;
+    line-height: 1.25;
+}
+
+#genmath main .card .title span {
+    color: white;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+#genmath main .card .right {
+    width: 90%;
+    height: 368px;
 }
 
 #genmath aside .icons .glow {

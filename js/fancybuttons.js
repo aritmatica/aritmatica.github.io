@@ -13,7 +13,7 @@ for (let i = 0; i < buttons.length; i++) {
     function mouseEnter(e) {
         gsap.set(elem, {
             css: {
-                clipPath: "border-box"  
+                clipPath: "border-box",
             }
         })
         gsap.to(flair, {
@@ -39,8 +39,9 @@ for (let i = 0; i < buttons.length; i++) {
         gsap.to(flair, {
             duration: dur,
             overwrite: "auto",
-            x: mouseX,
-            y: mouseY,
+            top: mouseY - 250,
+            left: mouseX - 250,
+            
             ease: "none",
         })
     }
