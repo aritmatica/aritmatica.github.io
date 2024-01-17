@@ -28,8 +28,8 @@ for (let i = 0; i < buttons.length; i++) {
     function mouseUpdate(e) {
         const rect = elem.getBoundingClientRect()
 
-        const mouseX = e.clientX - rect.x
-        const mouseY = e.clientY - rect.y
+        const mouseX = e.clientX - rect.x - (rect.width / 2)
+        const mouseY = e.clientY - rect.y - (rect.height / 2)
 
         let dur = 0.3
 

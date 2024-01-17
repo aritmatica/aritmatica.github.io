@@ -1,4 +1,5 @@
 .fancy-button {
+    position: relative;
     clip-path: none;
     cursor: pointer;
 
