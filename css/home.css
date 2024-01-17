@@ -108,6 +108,51 @@ header aside .line {
     height: 256px;
 }
 
+/* section cards */
+section main .card {
+    background-color: var(--secondary-color);
+    padding: 72px 72px 72px 72px;
+    margin-top: 48px;
+    margin-left: -20%;
+    width: 100%;
+    border-radius: 16px;
+
+    display: flex;
+}
+
+section main .card .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+section main .card .left .fancy-button {
+    line-height: 24px;
+    font-family: PPMori-SemiBold, Arial, sans-serif;
+    
+    border-style: solid;
+    border-radius: 24px;
+    padding: 12px 18px 12px 18px;
+    width: fit-content;
+}
+
+section main .card .title {
+    color: gray;
+    font-size: 24px;
+    line-height: 1.25;
+}
+
+section main .card .title span {
+    color: white;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+section main .card .right {
+    width: 90%;
+    height: 368px;
+}
+
 /* modules */
 #modules {
     margin-top: 12px;
@@ -166,50 +211,6 @@ header aside .line {
 
 #genmath main h2 .highlight {
     color: #3fb950;
-}
-
-section main .card {
-    background-color: var(--secondary-color);
-    padding: 72px 72px 72px 72px;
-    margin-top: 48px;
-    margin-left: -20%;
-    width: 100%;
-    border-radius: 16px;
-
-    display: flex;
-}
-
-section main .card .left {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-section main .card .left .fancy-button {
-    line-height: 24px;
-    font-family: PPMori-SemiBold, Arial, sans-serif;
-    
-    border-style: solid;
-    border-radius: 24px;
-    padding: 12px 18px 12px 18px;
-    width: fit-content;
-}
-
-section main .card .title {
-    color: gray;
-    font-size: 24px;
-    line-height: 1.25;
-}
-
-section main .card .title span {
-    color: white;
-    font-size: inherit;
-    line-height: inherit;
-}
-
-section main .card .right {
-    width: 90%;
-    height: 368px;
 }
 
 #genmath aside .icons .glow {
