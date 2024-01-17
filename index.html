@@ -20,6 +20,7 @@
 </head>
 
 <body>
+    <div id="loading"></div>
     <nav include="/components/nav.html"></nav>
 
     <header>
@@ -43,14 +44,16 @@
             <div class="line"></div>
         </aside>
         <main>
-            <a class="fancy-button">
-                <span class="label">Start Learning</span>
-                <span class="flair"></span>
-            </a>
-            <a class="fancy-button">
-                <span class="label">Modules</span>
-                <span class="flair"></span>
-            </a>
+            <div class="buttons">
+                <a class="fancy-button">
+                    <span class="flair"></span>
+                    <span class="label">Start Learning</span>
+                </a>
+                <a class="fancy-button">
+                    <span class="flair"></span>
+                    <span class="label">Modules</span>
+                </a>
+            </div>
         </main>
     </section>
 
@@ -75,8 +78,8 @@
                     </span>
 
                     <a class="fancy-button">
-                        <span class="label">Read More</span>
                         <span class="flair"></span>
+                        <span class="label">Read More</span>
                     </a>
                 </div>
                 <div class="right">

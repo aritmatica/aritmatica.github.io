@@ -26,8 +26,10 @@ for (let i = 0; i < buttons.length; i++) {
 
     let firstEnter = true
     function mouseUpdate(e) {
-        const mouseX = e.pageX
-        const mouseY = e.pageY
+        const rect = elem.getBoundingClientRect()
+
+        const mouseX = e.clientX - rect.x
+        const mouseY = e.clientY - rect.y
 
         let dur = 0.3
 
@@ -39,8 +41,8 @@ for (let i = 0; i < buttons.length; i++) {
         gsap.to(flair, {
             duration: dur,
             overwrite: "auto",
-            top: mouseY - 250,
-            left: mouseX - 250,
+            x: mouseX,
+            y: mouseY,
             
             ease: "none",
         })

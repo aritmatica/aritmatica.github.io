@@ -5,6 +5,8 @@ gsap.registerPlugin(ScrollTrigger)
 function contentLoaded () {
     injectTag("nav")
 
+    const nav = document.querySelector("nav")
+
     const header = document.querySelector("header")
 
     const header_main = header.querySelector("main")
@@ -15,14 +17,20 @@ function contentLoaded () {
     
     header_glow.style.opacity = 1
 
-    ScrollReveal().reveal(header_title, {delay: 250, distance: '50px'})
-    ScrollReveal().reveal(header_title_sup, {delay: 500, distance: '50px'})
-    ScrollReveal().reveal(header_tagline, {delay: 750, distance: '50px'})
-    ScrollReveal().reveal(header_glow, {delay: 1250})
-    ScrollReveal().reveal(document.getElementsByClassName("card"), {delay: 250, distance: '50px'})
-
     const genmath_section = document.getElementById("genmath")
     const genmath_line = genmath_section.getElementsByClassName("line")[0]
+
+    setTimeout(() => {
+        const loading = document.getElementById("loading")
+        loading.setAttribute("data-loaded", "true")
+        document.body.setAttribute("data-loaded", "true")
+
+        ScrollReveal().reveal(header_title, {delay: 250, distance: '50px'})
+        ScrollReveal().reveal(header_title_sup, {delay: 500, distance: '50px'})
+        ScrollReveal().reveal(header_tagline, {delay: 750, distance: '50px'})
+        ScrollReveal().reveal(header_glow, {delay: 1250})
+        ScrollReveal().reveal(document.getElementsByClassName("card"), {delay: 250, distance: '50px'})
+    }, 250)
 }
 
 document.addEventListener("DOMContentLoaded", contentLoaded)

@@ -1,13 +1,17 @@
 .fancy-button {
     clip-path: none;
     cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .fancy-button .flair {
     position: absolute;
     background-color: white;
+    aspect-ratio: 1;
     width: 500px;
-    height: 500px;
     pointer-events: none; 
     border-radius: 100%;
     will-change: transform;
