@@ -1,4 +1,4 @@
-import {injectTag} from "../js/modular.js";
+import {injectTag} from "./modular.js";
 
 function contentLoaded () {    
     injectTag("nav")

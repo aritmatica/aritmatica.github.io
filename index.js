@@ -1,12 +1,6 @@
-import {injectTag} from "./js/modular.js";
-
 gsap.registerPlugin(ScrollTrigger)
 
 function contentLoaded () {
-    injectTag("nav")
-
-    const nav = document.querySelector("nav")
-
     const header = document.querySelector("header")
 
     const header_main = header.querySelector("main")
