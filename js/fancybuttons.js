@@ -11,11 +11,6 @@ for (let i = 0; i < buttons.length; i++) {
     })
 
     function mouseEnter(e) {
-        gsap.set(elem, {
-            css: {
-                clipPath: "border-box",
-            }
-        })
         gsap.to(flair, {
             duration: 0.3,
             overwrite: "auto",
