@@ -168,7 +168,7 @@ header aside .line {
     color: #3fb950;
 }
 
-#genmath main .card {
+section main .card {
     background-color: var(--secondary-color);
     padding: 72px 72px 72px 72px;
     margin-top: 48px;
@@ -179,13 +179,13 @@ header aside .line {
     display: flex;
 }
 
-#genmath main .card .left {
+section main .card .left {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-#genmath main .card .left .fancy-button {
+section main .card .left .fancy-button {
     line-height: 24px;
     font-family: PPMori-SemiBold, Arial, sans-serif;
     
@@ -195,19 +195,19 @@ header aside .line {
     width: fit-content;
 }
 
-#genmath main .card .title {
+section main .card .title {
     color: gray;
     font-size: 24px;
     line-height: 1.25;
 }
 
-#genmath main .card .title span {
+section main .card .title span {
     color: white;
     font-size: inherit;
     line-height: inherit;
 }
 
-#genmath main .card .right {
+section main .card .right {
     width: 90%;
     height: 368px;
 }
@@ -228,6 +228,11 @@ header aside .line {
 /* precalc */
 #precalc {
     margin-top: 12px;
+    margin-bottom: 256px;
+}
+
+#precalc main h2 .highlight {
+    color: #c9510c;
 }
 
 #precalc aside .icons .glow {
