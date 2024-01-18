@@ -329,3 +329,39 @@ section main .card .right {
     box-shadow: 18px 18px 36px 18px var(--accent-color);
     margin-top: 12px;
 }
+
+footer {
+    width: 70%;
+    height: 128px;
+    margin: 128px auto 128px auto;
+
+    display: flex;
+    justify-content: space-around;
+
+    color: gray;
+}
+
+footer ul {
+    list-style: none;
+
+    display: flex;
+    flex-direction: column;
+}
+
+footer ul span {
+    font-size: 18px;
+    margin-bottom: 6px;
+}
+
+footer ul li {
+    font-size: 12px;
+    line-height: 16px;
+}
+
+footer div:nth-of-type(1) {
+    font-size: 16px;
+}
+
+footer div:nth-of-type(1) span {
+    font-size: 36px;
+}
