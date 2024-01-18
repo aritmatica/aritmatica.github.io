@@ -229,7 +229,6 @@ section main .card .right {
 /* precalc */
 #precalc {
     margin-top: 12px;
-    margin-bottom: 256px;
 }
 
 #precalc main h2 .highlight {
@@ -243,8 +242,90 @@ section main .card .right {
 }
 
 #precalc aside .line {
-    background-color: linear-gradient(#c9510c, #c9510c 40%, #c9510c);
-    background-image: linear-gradient(#c9510c, #c9510c 40%, #c9510c);
-    height: 512px;
+    background-color: linear-gradient(#c9510c, #c9510c 40%, #7c72ff);
+    background-image: linear-gradient(#c9510c, #c9510c 40%, #7c72ff);
+    height: 1024px;
+    margin-top: 12px;
+}
+
+/* exercises */
+#exercises {
+    margin-top: 12px;
+}
+
+#exercises main h2 .highlight {
+    color: #7c72ff;
+}
+
+#exercises aside .icons .glow {
+    width: 0;
+    height: 0;
+    box-shadow: 18px 18px 36px 18px #7c72ff;
+}
+
+#exercises aside .line {
+    background-color: linear-gradient(#7c72ff, #7c72ff 90%, var(--accent-color));
+    background-image: linear-gradient(#7c72ff, #7c72ff 90%, var(--accent-color));
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    height: 1024px;
+    margin-top: 12px;
+}
+
+/* join */
+#join {
+    margin-bottom: 512px;
+}
+
+#join main h2 .highlight {
+    color: var(--accent-color);
+}
+
+#join main .buttons {
+    display: flex;
+    flex-direction: row;
+    margin-top: 42px;
+}
+
+#join main .buttons a {
+    font-family: PPMori-SemiBold, Arial, sans-serif;
+    
+    border-style: solid;
+    border-radius: 24px;
+    padding: 12px 18px 12px 18px;
+    margin-right: 12px;
+
+    width: min-content;
+    text-wrap: nowrap;
+}
+
+#join main .buttons a:nth-child(1) {
+    border-color: var(--accent-color);
+}
+
+#join main .buttons a:nth-child(1) .flair {
+    background-color: var(--accent-color);
+}
+
+#join main .buttons a:nth-child(1) .label {
+    color: var(--accent-color);
+}
+
+#join main .buttons a:nth-child(1):hover .label {
+    color: var(--text-color);
+}
+
+#join aside .line {
+    background-color: var(--accent-color);
+    background-image: var(--accent-color);
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    height: 168px;
+}
+
+#join aside .icons .glow {
+    width: 0;
+    height: 0;
+    box-shadow: 18px 18px 36px 18px var(--accent-color);
     margin-top: 12px;
 }
