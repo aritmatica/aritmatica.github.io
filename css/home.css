@@ -284,7 +284,7 @@ section main .card .right {
 #join main .buttons {
     display: flex;
     flex-direction: row;
-    margin-top: 42px;
+    margin-top: 48px;
 }
 
 #join main .buttons a {
@@ -320,7 +320,7 @@ section main .card .right {
     background-image: var(--accent-color);
     border-top-left-radius: 0;
     border-top-right-radius: 0;
-    height: 168px;
+    height: 100%;
 }
 
 #join aside .icons .glow {
