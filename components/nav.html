@@ -1,5 +1,25 @@
 <a href="/">Aritmatica<sup>11</sup></a>
-<ul>
+<span>
+    <input id="nav-menu" type="checkbox">
+    <label for="nav-menu"><span class="icons">menu</span> Menu</label>
+    <script>
+        const nav = document.querySelector("nav")
+        const menu = document.getElementById("nav-menu")
+        const navLinks = document.getElementById("nav-links")
+
+        function onCheck() {
+            if (menu.checked) {
+                navLinks.classList.add("active")
+            } else {
+                navLinks.classList.remove("active")
+            }
+        }
+
+        menu.addEventListener("click", onCheck)
+        onCheck()
+    </script>
+</span>
+<ul id="nav-links" class="active">
     <li id="nav-pricing"><a href="#">Pricing</a></li>
     <li id="nav-about"><a href="/about/">About</a></li>
     <li id="nav-modules" class="nav-dropdown">
@@ -17,7 +37,7 @@
         </ul>
     </li>
 </ul>
-<ul>
+<ul id="nav-join">
     <li id="nav-login"><a href="#">Log in</a></li>
     <li id="nav-signup" class="button"><a href="#">Sign up</a></li>
 </ul>

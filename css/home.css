@@ -20,6 +20,7 @@ body {
 
 body[data-loaded="true"] {
     overflow: initial;
+    width: 100%;
 }
 
 /* home */
