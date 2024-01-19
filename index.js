@@ -12,24 +12,34 @@ function contentLoaded () {
     const header_title_sup = header_title.querySelector("sup")
     const header_tagline = header_main.querySelector("span")
     const header_glow = header_main.getElementsByClassName("glow")[0]
-    
+
     header_glow.style.opacity = 1
 
-    document.body.querySelectorAll("section").forEach((section) => {
+    const exercises_section = document.getElementById("exercises")
+    const exercises_line = exercises_section.getElementsByClassName("line")[0]
+
+    const join_section = document.getElementById("join")
+    const join_line = join_section.getElementsByClassName("line")[0]
+
+    const sections = document.body.querySelectorAll("section")
+    for (let i = 0; i < sections.length; i++) {
+        const section = sections[i];
         const section_line = section.getElementsByClassName("line")[0]
         const section_card = section.getElementsByClassName("card")[0]
         if (section_line && section_card) {
             gsap.set(section_line, {scaleY: 0})
             gsap.to(section_line, {
                 scrollTrigger: {
-                    trigger: section_card,
+                    trigger: section_line,
+                    start: "bottom center",
+                    end: "+=256px",
                     toggleActions: "restart none none none",
                     scrub: 1,
                 },
                 scaleY: 1,
             })
         }
-    })
+    }
 
     setTimeout(() => {
         const loading = document.getElementById("loading")
