@@ -1,6 +1,10 @@
+import {injectAll} from "./js/modular.js";
+
 gsap.registerPlugin(ScrollTrigger)
 
 function contentLoaded () {
+    injectAll()
+
     const header = document.querySelector("header")
 
     const header_main = header.querySelector("main")

@@ -35,4 +35,10 @@ function injectTag(tag) {
     })
 }
 
-export {injectTag}
+function injectAll() {
+    document.body.querySelectorAll("*[include]").forEach((elem) => {
+        injectHTML(elem.getAttribute("include"),elem);
+    })
+}
+
+export {injectTag, injectAll}
