@@ -1,0 +1,66 @@
+<span class="title">
+    <a href="/">Aritmatica<sup>11</sup></a>
+</span>
+
+<span class="menu">
+    <input id="nav-menu" type="checkbox">
+    <label for="nav-menu"><span class="icons">menu</span> Menu</label>
+    <script>
+        const nav = document.querySelector("nav")
+        const menuInput = document.getElementById("nav-menu")
+        
+        const navAnimation = [
+            nav.querySelector("ul[class=links]"),
+            nav.querySelector("div[class=divider]"),
+            nav.querySelector("ul[class=join]")
+        ]
+
+        gsap.set(navAnimation, {
+                    x: "-100%",
+                })
+
+        function onCheck() {
+            if (menuInput.checked) {
+                nav.classList.add("menu-active")
+                gsap.to(navAnimation, {
+                    x: 0,
+                })
+            } else {
+                nav.classList.remove("menu-active")
+                gsap.to(navAnimation, {
+                    x: "-100%",
+                })
+            }
+        }
+
+        menuInput.addEventListener("click", onCheck)
+        onCheck()
+    </script>
+</span>
+
+<ul class="links">
+    <li id="nav-pricing"><a href="#">Pricing</a></li>
+    <li id="nav-about"><a href="/about/">About</a></li>
+    <li id="nav-modules" class="dropdown">
+        <a href="#">Modules<span class="icons">expand_more</span></a>
+        <ul>
+            <li id="nav-genmath" style="--smaller-text: GENMATH"><a href="#">
+                    <span class="icons">function</span>
+                    General Mathematics
+                </a></li>
+            <li id="nav-precalc" style="--smaller-text: PRECALC"><a href="#">
+                    <span class="icons">calculate</span>
+                    Precalculus
+                </a></li>
+        </ul>
+    </li>
+</ul>
+
+<div class="divider">
+    <div class="line"></div>
+</div>
+
+<ul class="join">
+    <li id="nav-login"><a href="#">Log in</a></li>
+    <li id="nav-signup"><a href="#">Sign up</a></li>
+</ul>

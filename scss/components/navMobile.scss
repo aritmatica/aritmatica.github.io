@@ -1,0 +1,129 @@
+@import "../global";
+
+body {
+    padding-top: 4em;
+}
+
+nav {
+    background-color: $primary-color;
+    color: $text-color;
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 4em;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    ul {
+        list-style: none;
+        li {width: 100%;}
+    }
+
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    .title {
+        height: 100%;
+        width: 50%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .menu {
+        height: 100%;
+        width: 40%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        input {
+            position: absolute;
+            opacity: 0;
+        }
+
+        label {
+            padding: 0.5rem 1rem 0.5rem 1rem;
+            border: solid $text-color;
+            border-radius: 2rem;
+            text-wrap: nowrap;
+
+            transition: border-color 250ms, color 250ms;
+        }
+    }
+
+    .links {
+        background-color: $primary-color;
+        width: 100%;
+        padding: 1rem 0 0 7.5%;
+
+        font-size: 1.25rem;
+        text-wrap: nowrap;
+
+        li {padding: 0.5rem 0 0.5rem 0;}
+
+        ul {
+            padding-left: 1rem;
+
+            display: flex;
+            flex-direction: column;
+            font-size: 1.1rem;
+        }
+    }
+
+    .divider {
+        background-color: $primary-color;
+        height: 1px;
+        width: 100%;
+        .line {
+            background-color: gray;
+            height: 100%;
+            width: 85%;
+            margin: 0 auto 0 auto;
+        }
+    }
+
+    .join {
+        background-color: $primary-color;
+        width: 100%;
+        padding: 1.5rem 7.5% 2rem 7.5%;
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+
+        text-align: center;
+
+        li {
+            min-width: 8rem;
+            width: 40%;
+            padding: 0.5rem 0 0.5rem 0;
+            border: solid $text-color;
+            border-radius: 2rem;
+            a {
+                text-wrap: nowrap;
+            }
+        }
+    }
+
+    &[class="menu-active"] {
+        .menu label {
+            color: $accent-color;
+            border: solid $accent-color;
+        }
+    }
+}
