@@ -1,2 +1,2 @@
-import { injectAll } from "../js/modular.js";
+import {injectAll} from "./modular.js";
 document.addEventListener("DOMContentLoaded", injectAll)
