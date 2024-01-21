@@ -1,18 +1,6 @@
 @import "../global";
 
-body {
-    padding-top: 4em;
-}
-
 nav {
-    background-color: $primary-color;
-    color: $text-color;
-
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 4em;
-
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -36,9 +24,6 @@ nav {
         display: flex;
         align-items: center;
         justify-content: center;
-
-        font-size: 1.5rem;
-        text-align: center;
     }
 
     .menu {
