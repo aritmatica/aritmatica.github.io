@@ -405,5 +405,87 @@ header main span {
   width: 90%;
   height: 368px;
 }
+#exercises aside .line {
+  height: 80rem;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+#exercises aside .icons:last-child .glow {
+  width: 0;
+  height: 0;
+  box-shadow: 18px 18px 36px 18px #e36970;
+}
+#exercises main {
+  height: 64rem;
+}
+
+#join {
+  margin-top: -18rem;
+  margin-bottom: 24rem;
+}
+#join aside .icons {
+  height: 2rem;
+  font-size: 2.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+#join aside .icons .glow {
+  width: 0;
+  height: 0;
+  box-shadow: 18px 18px 36px 18px #e36970;
+}
+#join main {
+  margin-left: 1rem;
+}
+#join main h2, #join main h2 span {
+  font-size: min(12vw, 4rem);
+  font-family: "PPMori-SemiBold", Arial, sans-serif;
+  margin-top: 1.125rem;
+}
+#join main h2 .highlight, #join main h2 span .highlight {
+  color: #e36970;
+}
+#join main h3, #join main h3 span {
+  margin-top: 1rem;
+  font-size: min(6vw, 2rem);
+  font-family: "PPMori-SemiBold", Arial, sans-serif;
+}
+#join main .buttons {
+  margin-top: 0.5rem;
+  display: flex;
+  flex-direction: row;
+}
+#join main .buttons a {
+  width: min-content;
+  border: solid #FFFFFF;
+  border-radius: 1.5rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  margin-right: 0.75rem;
+  font-size: 1.5rem;
+  text-wrap: nowrap;
+  text-align: center;
+}
+#join main .buttons #join-aritmatica {
+  border-color: #e36970;
+  color: #e36970;
+}
+#join main .buttons #join-aritmatica .flair {
+  background-color: #e36970;
+}
+#join main .buttons #join-aritmatica:hover {
+  color: #FFFFFF;
+}
+@media screen and (max-width: 768px) {
+  #join main .buttons {
+    margin-left: 1rem;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  #join main .buttons a {
+    width: 90%;
+    padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+    font-size: min(5vw, 1.5rem);
+  }
+}
 
 /*# sourceMappingURL=home.css.map */

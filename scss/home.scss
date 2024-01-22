@@ -247,5 +247,97 @@ header {
 }
 
 #exercises {
-    @include section($exercises-color, $accent-color)
+    @include section($exercises-color, $accent-color);
+    aside {
+        .line {
+            height: 80rem;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+        .icons:last-child {
+            .glow {
+                width: 0;
+                height: 0;
+                box-shadow: 18px 18px 36px 18px $accent-color;
+            }
+        }
+    }
+    main {
+        height: 64rem;
+    }
+}
+
+#join {
+    margin-top: -18rem;
+    margin-bottom: 24rem;
+
+    aside {
+        .icons {
+            height: 2rem;
+            font-size: 2.5rem;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+
+            .glow {
+                width: 0;
+                height: 0;
+                box-shadow: 18px 18px 36px 18px $accent-color;
+            }
+        }
+    }
+
+    main {
+        margin-left: 1rem;
+        h2, h2 span {
+            font-size: min(12vw, 4rem);
+            font-family: $Mori-SemiBold;
+            margin-top: 1.125rem;
+            .highlight {
+                color: $accent-color;
+            }
+        }
+        
+        h3, h3 span {
+            margin-top: 1rem;
+            font-size: min(6vw, 2rem);
+            font-family: $Mori-SemiBold;
+        }
+
+        .buttons {
+            margin-top: 0.5rem;
+
+            display: flex;
+            flex-direction: row;
+
+            a {
+                width: min-content;
+                border: solid $text-color;
+                border-radius: 1.5rem;
+                padding: 0.5rem 1rem 0.5rem 1rem;
+                margin-right: 0.75rem;
+            
+                font-size: 1.5rem;
+                text-wrap: nowrap;
+                text-align: center;
+            }
+
+            #join-aritmatica {
+                @include fancyButton($accent-color, $text-color, $accent-color)
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .buttons {
+                margin-left: 1rem;
+                flex-direction: column;
+                gap: 0.5rem;
+                a {
+                    width: 90%;
+                    padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+
+                    font-size: min(5vw, 1.5rem);
+                }
+            }
+        }
+    }
 }
