@@ -1,4 +1,9 @@
 @import "global";
+@import "fancyButtons";
+
+@mixin four-sided-padding($padding) {
+    padding: $padding $padding $padding $padding
+}
 
 body {
     color: $text-color;
@@ -6,7 +11,7 @@ body {
 }
 
 #home-container {
-    padding: 15vw 1rem 0 1rem;
+    padding: 12vw 1rem 0 1rem;
 }
 
 @mixin line-color($from-color, $to-color, $percentage) {
@@ -55,10 +60,11 @@ header {
         }
         .line {
             @include line-color(transparent, $accent-color, 30%);
-            height: 16rem;
+            height: 100%;
         }
     }
     main {
+        padding-bottom: 2rem;
         h1 {
             text-wrap: nowrap;
             font-size: min(16vw, 12rem);
@@ -84,4 +90,162 @@ header {
             font-size: min(5vw, 2rem);
         }
     }
+}
+
+#intro {
+    aside {
+        .icons {
+            height: 2rem;
+            font-size: 2.5rem;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+
+            .glow {
+                width: 0;
+                height: 0;
+                box-shadow: 18px 18px 36px 18px $accent-color;
+            }
+        }
+        .line {
+            @include line-color($accent-color, $genmath-color, 80%);
+            height: 16rem;
+        }
+    }
+
+    main {
+        .buttons {
+            margin-top: 0.5rem;
+
+            display: flex;
+            flex-direction: row;
+
+            a {
+                width: min-content;
+                border: solid $text-color;
+                border-radius: 1.5rem;
+                padding: 0.5rem 1rem 0.5rem 1rem;
+                margin-right: 0.75rem;
+            
+                font-size: 1.5rem;
+                text-wrap: nowrap;
+                text-align: center;
+            }
+
+            #intro-start {
+                @include fancyButton($accent-color, $text-color, $accent-color)
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .buttons {
+                margin-left: 1rem;
+                flex-direction: column;
+                gap: 0.5rem;
+                a {
+                    width: 90%;
+                    padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+
+                    font-size: min(5vw, 1.5rem);
+                }
+            }
+        }
+    }
+}
+
+@mixin section ($section-color, $next-section-color) {
+    aside {
+        .icons {
+            height: 2rem;
+            font-size: 2.5rem;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+
+            .glow {
+                width: 0;
+                height: 0;
+                box-shadow: 18px 18px 36px 18px $section-color;
+            }
+        }
+        .line {
+            @include line-color($section-color, $next-section-color, 100%);
+            height: 64rem;
+        }
+    }
+    
+    main {
+        margin-left: 1rem;
+        h2, h2 span {
+            font-size: min(12vw, 4rem);
+            font-family: $Mori-SemiBold;
+            margin-top: 1.125rem;
+            .highlight {
+                color: $section-color;
+            }
+        }
+        
+        h3, h3 span {
+            margin-top: 1rem;
+            font-size: min(6vw, 2rem);
+            font-family: $Mori-SemiBold;
+        }
+
+        .card {
+            background-color: $secondary-color;
+
+            width: min(95vw, 76rem);
+            height: 32rem;
+            @include four-sided-padding(min(8%, 4.5rem));
+            margin: 3.5rem auto 0 auto;
+            border-radius: 16px;
+
+            position: absolute;
+            left: 0; right: 0;
+        
+            display: flex;
+
+            .title {
+                color: gray;
+                font-size: 24px;
+                line-height: 1.25;
+                span {
+                    color: white;
+                    font-size: inherit;
+                    line-height: inherit;
+                }
+            }
+
+            .left {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                .fancy-button {
+                    font-size: 1.5rem;
+                    font-family: $Mori-SemiBold;
+                    
+                    border: solid $text-color;
+                    border-radius: 24px;
+                    padding: 0.75rem 1.5rem 0.75rem 1.5rem;
+                    width: fit-content;
+                }
+            }
+
+            .right {
+                width: 90%;
+                height: 368px;
+            }
+        }
+    }
+}
+
+#genmath {
+    @include section($genmath-color, $precalc-color)
+}
+
+#precalc {
+    @include section($precalc-color, $exercises-color)
+}
+
+#exercises {
+    @include section($exercises-color, $accent-color)
 }

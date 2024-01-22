@@ -41,13 +41,39 @@
   box-sizing: border-box;
 }
 
+.fancy-button {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fancy-button .flair {
+  position: absolute;
+  background-color: white;
+  aspect-ratio: 1;
+  width: 200%;
+  pointer-events: none;
+  border-radius: 100%;
+  will-change: transform;
+  z-index: 0;
+}
+.fancy-button .label {
+  z-index: 0;
+  transition: color 0.2s;
+}
+.fancy-button:hover {
+  color: black;
+}
+
 body {
   color: #FFFFFF;
   background-color: #0e0f0f;
 }
 
 #home-container {
-  padding: 15vw 1rem 0 1rem;
+  padding: 12vw 1rem 0 1rem;
 }
 
 header, section {
@@ -83,7 +109,10 @@ header aside .icons {
 header aside .line {
   background-color: linear-gradient(transparent, #e36970 30%);
   background-image: linear-gradient(transparent, #e36970 30%);
-  height: 16rem;
+  height: 100%;
+}
+header main {
+  padding-bottom: 2rem;
 }
 header main h1 {
   text-wrap: nowrap;
@@ -105,6 +134,276 @@ header main h1 sup .glow {
 header main span {
   color: gray;
   font-size: min(5vw, 2rem);
+}
+
+#intro aside .icons {
+  height: 2rem;
+  font-size: 2.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+#intro aside .icons .glow {
+  width: 0;
+  height: 0;
+  box-shadow: 18px 18px 36px 18px #e36970;
+}
+#intro aside .line {
+  background-color: linear-gradient(#e36970, #3fb950 80%);
+  background-image: linear-gradient(#e36970, #3fb950 80%);
+  height: 16rem;
+}
+#intro main .buttons {
+  margin-top: 0.5rem;
+  display: flex;
+  flex-direction: row;
+}
+#intro main .buttons a {
+  width: min-content;
+  border: solid #FFFFFF;
+  border-radius: 1.5rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  margin-right: 0.75rem;
+  font-size: 1.5rem;
+  text-wrap: nowrap;
+  text-align: center;
+}
+#intro main .buttons #intro-start {
+  border-color: #e36970;
+  color: #e36970;
+}
+#intro main .buttons #intro-start .flair {
+  background-color: #e36970;
+}
+#intro main .buttons #intro-start:hover {
+  color: #FFFFFF;
+}
+@media screen and (max-width: 768px) {
+  #intro main .buttons {
+    margin-left: 1rem;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  #intro main .buttons a {
+    width: 90%;
+    padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+    font-size: min(5vw, 1.5rem);
+  }
+}
+
+#genmath aside .icons {
+  height: 2rem;
+  font-size: 2.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+#genmath aside .icons .glow {
+  width: 0;
+  height: 0;
+  box-shadow: 18px 18px 36px 18px #3fb950;
+}
+#genmath aside .line {
+  background-color: linear-gradient(#3fb950, #c9510c 100%);
+  background-image: linear-gradient(#3fb950, #c9510c 100%);
+  height: 64rem;
+}
+#genmath main {
+  margin-left: 1rem;
+}
+#genmath main h2, #genmath main h2 span {
+  font-size: min(12vw, 4rem);
+  font-family: "PPMori-SemiBold", Arial, sans-serif;
+  margin-top: 1.125rem;
+}
+#genmath main h2 .highlight, #genmath main h2 span .highlight {
+  color: #3fb950;
+}
+#genmath main h3, #genmath main h3 span {
+  margin-top: 1rem;
+  font-size: min(6vw, 2rem);
+  font-family: "PPMori-SemiBold", Arial, sans-serif;
+}
+#genmath main .card {
+  background-color: #191a1f;
+  width: min(95vw, 76rem);
+  height: 32rem;
+  padding: min(8%, 4.5rem) min(8%, 4.5rem) min(8%, 4.5rem) min(8%, 4.5rem);
+  margin: 3.5rem auto 0 auto;
+  border-radius: 16px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  display: flex;
+}
+#genmath main .card .title {
+  color: gray;
+  font-size: 24px;
+  line-height: 1.25;
+}
+#genmath main .card .title span {
+  color: white;
+  font-size: inherit;
+  line-height: inherit;
+}
+#genmath main .card .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#genmath main .card .left .fancy-button {
+  font-size: 1.5rem;
+  font-family: "PPMori-SemiBold", Arial, sans-serif;
+  border: solid #FFFFFF;
+  border-radius: 24px;
+  padding: 0.75rem 1.5rem 0.75rem 1.5rem;
+  width: fit-content;
+}
+#genmath main .card .right {
+  width: 90%;
+  height: 368px;
+}
+
+#precalc aside .icons {
+  height: 2rem;
+  font-size: 2.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+#precalc aside .icons .glow {
+  width: 0;
+  height: 0;
+  box-shadow: 18px 18px 36px 18px #c9510c;
+}
+#precalc aside .line {
+  background-color: linear-gradient(#c9510c, #7c72ff 100%);
+  background-image: linear-gradient(#c9510c, #7c72ff 100%);
+  height: 64rem;
+}
+#precalc main {
+  margin-left: 1rem;
+}
+#precalc main h2, #precalc main h2 span {
+  font-size: min(12vw, 4rem);
+  font-family: "PPMori-SemiBold", Arial, sans-serif;
+  margin-top: 1.125rem;
+}
+#precalc main h2 .highlight, #precalc main h2 span .highlight {
+  color: #c9510c;
+}
+#precalc main h3, #precalc main h3 span {
+  margin-top: 1rem;
+  font-size: min(6vw, 2rem);
+  font-family: "PPMori-SemiBold", Arial, sans-serif;
+}
+#precalc main .card {
+  background-color: #191a1f;
+  width: min(95vw, 76rem);
+  height: 32rem;
+  padding: min(8%, 4.5rem) min(8%, 4.5rem) min(8%, 4.5rem) min(8%, 4.5rem);
+  margin: 3.5rem auto 0 auto;
+  border-radius: 16px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  display: flex;
+}
+#precalc main .card .title {
+  color: gray;
+  font-size: 24px;
+  line-height: 1.25;
+}
+#precalc main .card .title span {
+  color: white;
+  font-size: inherit;
+  line-height: inherit;
+}
+#precalc main .card .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#precalc main .card .left .fancy-button {
+  font-size: 1.5rem;
+  font-family: "PPMori-SemiBold", Arial, sans-serif;
+  border: solid #FFFFFF;
+  border-radius: 24px;
+  padding: 0.75rem 1.5rem 0.75rem 1.5rem;
+  width: fit-content;
+}
+#precalc main .card .right {
+  width: 90%;
+  height: 368px;
+}
+
+#exercises aside .icons {
+  height: 2rem;
+  font-size: 2.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+#exercises aside .icons .glow {
+  width: 0;
+  height: 0;
+  box-shadow: 18px 18px 36px 18px #7c72ff;
+}
+#exercises aside .line {
+  background-color: linear-gradient(#7c72ff, #e36970 100%);
+  background-image: linear-gradient(#7c72ff, #e36970 100%);
+  height: 64rem;
+}
+#exercises main {
+  margin-left: 1rem;
+}
+#exercises main h2, #exercises main h2 span {
+  font-size: min(12vw, 4rem);
+  font-family: "PPMori-SemiBold", Arial, sans-serif;
+  margin-top: 1.125rem;
+}
+#exercises main h2 .highlight, #exercises main h2 span .highlight {
+  color: #7c72ff;
+}
+#exercises main h3, #exercises main h3 span {
+  margin-top: 1rem;
+  font-size: min(6vw, 2rem);
+  font-family: "PPMori-SemiBold", Arial, sans-serif;
+}
+#exercises main .card {
+  background-color: #191a1f;
+  width: min(95vw, 76rem);
+  height: 32rem;
+  padding: min(8%, 4.5rem) min(8%, 4.5rem) min(8%, 4.5rem) min(8%, 4.5rem);
+  margin: 3.5rem auto 0 auto;
+  border-radius: 16px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  display: flex;
+}
+#exercises main .card .title {
+  color: gray;
+  font-size: 24px;
+  line-height: 1.25;
+}
+#exercises main .card .title span {
+  color: white;
+  font-size: inherit;
+  line-height: inherit;
+}
+#exercises main .card .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#exercises main .card .left .fancy-button {
+  font-size: 1.5rem;
+  font-family: "PPMori-SemiBold", Arial, sans-serif;
+  border: solid #FFFFFF;
+  border-radius: 24px;
+  padding: 0.75rem 1.5rem 0.75rem 1.5rem;
+  width: fit-content;
+}
+#exercises main .card .right {
+  width: 90%;
+  height: 368px;
 }
 
 /*# sourceMappingURL=home.css.map */

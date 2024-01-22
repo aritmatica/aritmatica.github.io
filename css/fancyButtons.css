@@ -1,0 +1,27 @@
+.fancy-button {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fancy-button .flair {
+  position: absolute;
+  background-color: white;
+  aspect-ratio: 1;
+  width: 200%;
+  pointer-events: none;
+  border-radius: 100%;
+  will-change: transform;
+  z-index: 0;
+}
+.fancy-button .label {
+  z-index: 0;
+  transition: color 0.2s;
+}
+.fancy-button:hover {
+  color: black;
+}
+
+/*# sourceMappingURL=fancyButtons.css.map */
