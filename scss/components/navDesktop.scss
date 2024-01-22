@@ -43,7 +43,7 @@ nav {
         .dropdown {
             transition: background-color 250ms;
 
-            > .icons {
+            > a .icons {
                 font-size: inherit;
                 rotate: -180deg;
                 transition: rotate 250ms, transform 250ms;
@@ -94,11 +94,10 @@ nav {
 
             &:hover {
                 background-color: $select-color;
-                > .icons {
+                > a .icons {
                     rotate: 0deg;
-                    transform: translateY(3px);
+                    transform: translateY(1px);
                 }
-
                 ul {
                     opacity: 1;
                     transform: translateY(0);

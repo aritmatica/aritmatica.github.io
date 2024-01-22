@@ -77,7 +77,7 @@ nav .links {
 nav .links .dropdown {
   transition: background-color 250ms;
 }
-nav .links .dropdown > .icons {
+nav .links .dropdown > a .icons {
   font-size: inherit;
   rotate: -180deg;
   transition: rotate 250ms, transform 250ms;
@@ -119,9 +119,9 @@ nav .links .dropdown ul li:hover {
 nav .links .dropdown:hover {
   background-color: #1d1d21;
 }
-nav .links .dropdown:hover > .icons {
+nav .links .dropdown:hover > a .icons {
   rotate: 0deg;
-  transform: translateY(3px);
+  transform: translateY(1px);
 }
 nav .links .dropdown:hover ul {
   opacity: 1;
