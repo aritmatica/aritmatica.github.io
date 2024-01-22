@@ -20,6 +20,19 @@ nav {
         text-align: center;
         sup {font-size: 0.75em;}
     }
+
+    // specifics
+    #nav-genmath .icons {
+        color: $genmath-color
+    }
+    #nav-precalc .icons {
+        color: $precalc-color
+    }
+    #nav-signup {
+        background-color: $accent-color;
+        border: solid $accent-color;
+        border-radius: 2rem;
+    }
 }
 
 @media screen and (min-width: 768px) {

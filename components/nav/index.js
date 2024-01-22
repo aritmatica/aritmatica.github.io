@@ -9,7 +9,7 @@ const navMenu = [
 ]
 
 function isMobileDevice() {
-    return window.innerWidth <= BREAK_POINT
+    return document.body.clientWidth <= BREAK_POINT
 }
 
 function animateMenu(state, skip) {

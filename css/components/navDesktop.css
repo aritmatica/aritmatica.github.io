@@ -116,12 +116,6 @@ nav .links .dropdown ul li .icons {
 nav .links .dropdown ul li:hover {
   background-color: #1d1d21;
 }
-nav .links .dropdown ul #nav-genmath .icons {
-  color: #3fb950;
-}
-nav .links .dropdown ul #nav-precalc .icons {
-  color: #c9510c;
-}
 nav .links .dropdown:hover {
   background-color: #1d1d21;
 }
@@ -136,6 +130,18 @@ nav .links .dropdown:hover ul {
 }
 nav .divider {
   display: none;
+}
+nav #nav-signup {
+  background-color: #b7484f;
+  border: transparent !important;
+}
+nav #nav-signup a {
+  background-color: #e36970;
+  border-radius: inherit;
+  transition: transform 250ms;
+}
+nav #nav-signup:hover a {
+  transform: translateY(-0.3rem);
 }
 
 /*# sourceMappingURL=navDesktop.css.map */

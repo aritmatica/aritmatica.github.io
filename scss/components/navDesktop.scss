@@ -90,14 +90,6 @@ nav {
                         background-color: $select-color;
                     }
                 }
-
-                // specifics
-                #nav-genmath .icons {
-                    color: $genmath-color
-                }
-                #nav-precalc .icons {
-                    color: $precalc-color
-                }
             }
 
             &:hover {
@@ -118,5 +110,20 @@ nav {
 
     .divider {
         display: none;
+    }
+
+    #nav-signup {
+        background-color: desaturate(darken($accent-color, 15), 25);
+        border: transparent !important;
+
+        a {
+            background-color: $accent-color;
+            border-radius: inherit;
+            transition: transform 250ms;
+        }
+
+        &:hover a {
+            transform: translateY(-0.3rem);
+        }
     }
 }

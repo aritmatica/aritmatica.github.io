@@ -4,3 +4,84 @@ body {
     color: $text-color;
     background-color: $background-color;
 }
+
+#home-container {
+    padding: 15vw 1rem 0 1rem;
+}
+
+@mixin line-color($from-color, $to-color, $percentage) {
+    background-color: linear-gradient($from-color, $to-color $percentage);
+    background-image: linear-gradient($from-color, $to-color $percentage);
+}
+
+header, section {
+    max-width: 72rem;
+    margin: 0 auto 0 auto;
+
+    display: flex;
+    gap: 1vw;
+
+    aside {
+        //background-color: $exercises-color;
+        width: 5%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .icons {
+            font-size: 2.25rem;
+            margin-top: 0;
+            cursor: default;
+        }
+        .line {
+            width: 3px;
+            border-radius: 3px;
+            transform-origin: top;
+        }
+    }
+
+    main {
+        //background-color: $accent-color;
+        width: 95%;
+    }
+}
+
+header {
+    aside {
+        .icons {
+            color: gray;
+            font-size: 0.75rem;
+        }
+        .line {
+            @include line-color(transparent, $accent-color, 30%);
+            height: 16rem;
+        }
+    }
+    main {
+        h1 {
+            text-wrap: nowrap;
+            font-size: min(16vw, 12rem);
+            sup {
+                font-size: 0.5em;
+                .glow {
+                    position: absolute;
+                    background-color: transparent;
+                    width: 0;
+                    border-radius: 100%;
+        
+                    display: inline-block;
+        
+                    opacity: 1;
+                    z-index: -1;
+                    box-shadow: 0 0 1.2em 0.7em $accent-color
+                }
+            }
+        }
+
+        span {
+            color: gray;
+            font-size: min(5vw, 2rem);
+        }
+    }
+}

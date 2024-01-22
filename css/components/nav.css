@@ -62,6 +62,17 @@ nav .title {
 nav .title sup {
   font-size: 0.75em;
 }
+nav #nav-genmath .icons {
+  color: #3fb950;
+}
+nav #nav-precalc .icons {
+  color: #c9510c;
+}
+nav #nav-signup {
+  background-color: #e36970;
+  border: solid #e36970;
+  border-radius: 2rem;
+}
 
 @media screen and (min-width: 768px) {
   @font-face {
@@ -180,12 +191,6 @@ nav .title sup {
   nav .links .dropdown ul li:hover {
     background-color: #1d1d21;
   }
-  nav .links .dropdown ul #nav-genmath .icons {
-    color: #3fb950;
-  }
-  nav .links .dropdown ul #nav-precalc .icons {
-    color: #c9510c;
-  }
   nav .links .dropdown:hover {
     background-color: #1d1d21;
   }
@@ -200,6 +205,18 @@ nav .title sup {
   }
   nav .divider {
     display: none;
+  }
+  nav #nav-signup {
+    background-color: #b7484f;
+    border: transparent !important;
+  }
+  nav #nav-signup a {
+    background-color: #e36970;
+    border-radius: inherit;
+    transition: transform 250ms;
+  }
+  nav #nav-signup:hover a {
+    transform: translateY(-0.3rem);
   }
 }
 @media screen and (max-width: 768px) {
