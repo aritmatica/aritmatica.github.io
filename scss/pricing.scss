@@ -1,0 +1,90 @@
+@import "global";
+@import "fancyButtons";
+
+body {
+    background-color: $background-color;
+    color: $text-color;
+}
+
+#pricing {
+    width: 70%;
+    margin: 6rem auto 0rem auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .title {
+        font-size: 2.75rem;
+        font-family: $Mori-SemiBold;
+        text-align: center;
+
+        h1 {
+            background: linear-gradient(90deg, $accent-color, $exercises-color 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        span {
+            font-size: 0.5em;
+        }
+    }
+
+    .plans {
+        width: 90%;
+        margin-top: 2rem;
+
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: repeat(3, 1fr);
+
+        @mixin plan ($plan-bg-color, $plan-accent-color, $plan-title-color, $plan-shadow-color) {
+            background-color: $plan-bg-color;
+            border-radius: 16px;
+
+            padding: 1.5rem 1rem 1.5rem 1rem;
+
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+
+            text-align: center;
+
+            box-shadow: 0 0 1rem 1px $plan-shadow-color;
+
+            .title {
+                color: $plan-title-color;
+            }
+            .description {
+                color: gray;
+            }
+            .price {
+                font-size: 3.5rem;
+                sup {
+                    position: absolute;
+                    margin-left: -0.75em;
+                    font-size: 0.4em;
+                    color: gray;
+                }
+            }
+            .period {
+                font-size: 0.75rem;
+                line-height: 2;
+                color: gray;    
+            }
+        }
+
+        #plan-trial {
+            @include plan($primary-color, $accent-color, $text-color, #333);
+        }
+
+        #plan-standard {
+            @include plan($primary-color, $accent-color, $accent-color, $accent-color);
+        }
+
+        #plan-premium {
+            @include plan($primary-color, $accent-color, $exercises-color, $exercises-color);
+        }
+    }
+}
