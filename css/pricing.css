@@ -94,11 +94,22 @@ body {
   font-size: 0.5em;
 }
 #pricing .plans {
-  width: 90%;
+  width: 100%;
   margin-top: 2rem;
   display: grid;
-  gap: 2rem;
+  gap: 2em;
   grid-template-columns: repeat(3, 1fr);
+}
+@media screen and (max-width: 1024px) {
+  #pricing .plans {
+    grid-template-columns: 1fr;
+  }
+  #pricing .plans div {
+    font-size: 1rem !important;
+  }
+  #pricing .plans div .fancy-button {
+    width: 100% !important;
+  }
 }
 #pricing .plans #plan-trial {
   background-color: #141515;
@@ -106,18 +117,22 @@ body {
   padding: 1.5rem 1rem 1.5rem 1rem;
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 1rem;
+  font-size: min(1rem, 1.25vw);
   text-align: center;
   box-shadow: 0 0 1rem 1px #333;
 }
 #pricing .plans #plan-trial .title {
+  font-size: 2.75em;
   color: #FFFFFF;
 }
 #pricing .plans #plan-trial .description {
+  font-size: 1em;
   color: gray;
 }
 #pricing .plans #plan-trial .price {
-  font-size: 3.5rem;
+  font-size: 3.5em;
 }
 #pricing .plans #plan-trial .price sup {
   position: absolute;
@@ -130,24 +145,46 @@ body {
   line-height: 2;
   color: gray;
 }
+#pricing .plans #plan-trial .fancy-button {
+  font-size: 1em;
+  font-family: "PPMori-SemiBold", Arial, sans-serif;
+  text-wrap: nowrap;
+  border: solid #FFFFFF;
+  border-radius: 1em;
+  padding: 0.5em 1em 0.5em 1em;
+  width: 75%;
+  height: fit-content;
+  border-color: #FFFFFF;
+  color: #FFFFFF;
+}
+#pricing .plans #plan-trial .fancy-button .flair {
+  background-color: #FFFFFF;
+}
+#pricing .plans #plan-trial .fancy-button:hover {
+  color: #000;
+}
 #pricing .plans #plan-standard {
   background-color: #141515;
   border-radius: 16px;
   padding: 1.5rem 1rem 1.5rem 1rem;
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 1rem;
+  font-size: min(1rem, 1.25vw);
   text-align: center;
   box-shadow: 0 0 1rem 1px #e36970;
 }
 #pricing .plans #plan-standard .title {
+  font-size: 2.75em;
   color: #e36970;
 }
 #pricing .plans #plan-standard .description {
+  font-size: 1em;
   color: gray;
 }
 #pricing .plans #plan-standard .price {
-  font-size: 3.5rem;
+  font-size: 3.5em;
 }
 #pricing .plans #plan-standard .price sup {
   position: absolute;
@@ -160,24 +197,46 @@ body {
   line-height: 2;
   color: gray;
 }
+#pricing .plans #plan-standard .fancy-button {
+  font-size: 1em;
+  font-family: "PPMori-SemiBold", Arial, sans-serif;
+  text-wrap: nowrap;
+  border: solid #FFFFFF;
+  border-radius: 1em;
+  padding: 0.5em 1em 0.5em 1em;
+  width: 75%;
+  height: fit-content;
+  border-color: #e36970;
+  color: #e36970;
+}
+#pricing .plans #plan-standard .fancy-button .flair {
+  background-color: #e36970;
+}
+#pricing .plans #plan-standard .fancy-button:hover {
+  color: #FFFFFF;
+}
 #pricing .plans #plan-premium {
   background-color: #141515;
   border-radius: 16px;
   padding: 1.5rem 1rem 1.5rem 1rem;
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 1rem;
+  font-size: min(1rem, 1.25vw);
   text-align: center;
   box-shadow: 0 0 1rem 1px #7c72ff;
 }
 #pricing .plans #plan-premium .title {
+  font-size: 2.75em;
   color: #7c72ff;
 }
 #pricing .plans #plan-premium .description {
+  font-size: 1em;
   color: gray;
 }
 #pricing .plans #plan-premium .price {
-  font-size: 3.5rem;
+  font-size: 3.5em;
 }
 #pricing .plans #plan-premium .price sup {
   position: absolute;
@@ -189,6 +248,24 @@ body {
   font-size: 0.75rem;
   line-height: 2;
   color: gray;
+}
+#pricing .plans #plan-premium .fancy-button {
+  font-size: 1em;
+  font-family: "PPMori-SemiBold", Arial, sans-serif;
+  text-wrap: nowrap;
+  border: solid #FFFFFF;
+  border-radius: 1em;
+  padding: 0.5em 1em 0.5em 1em;
+  width: 75%;
+  height: fit-content;
+  border-color: #7c72ff;
+  color: #7c72ff;
+}
+#pricing .plans #plan-premium .fancy-button .flair {
+  background-color: #7c72ff;
+}
+#pricing .plans #plan-premium .fancy-button:hover {
+  color: #FFFFFF;
 }
 
 /*# sourceMappingURL=pricing.css.map */

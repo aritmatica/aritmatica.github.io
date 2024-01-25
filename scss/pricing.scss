@@ -32,14 +32,24 @@ body {
     }
 
     .plans {
-        width: 90%;
+        width: 100%;
         margin-top: 2rem;
 
         display: grid;
-        gap: 2rem;
+        gap: 2em;
         grid-template-columns: repeat(3, 1fr);
 
-        @mixin plan ($plan-bg-color, $plan-accent-color, $plan-title-color, $plan-shadow-color) {
+        @media screen and (max-width: 1024px) {
+            grid-template-columns: 1fr;
+            div {
+                font-size: 1rem !important;
+                .fancy-button {
+                    width: 100% !important;
+                }
+            }
+        }
+
+        @mixin plan ($plan-bg-color, $plan-accent-color, $plan-title-color, $plan-shadow-color, $plan-button-hover-color) {
             background-color: $plan-bg-color;
             border-radius: 16px;
 
@@ -47,20 +57,25 @@ body {
 
             display: flex;
             flex-direction: column;
+            align-items: center;
             gap: 1rem;
+
+            font-size: min(1rem, 1.25vw);
 
             text-align: center;
 
             box-shadow: 0 0 1rem 1px $plan-shadow-color;
 
             .title {
+                font-size: 2.75em;
                 color: $plan-title-color;
             }
             .description {
+                font-size: 1em;
                 color: gray;
             }
             .price {
-                font-size: 3.5rem;
+                font-size: 3.5em;
                 sup {
                     position: absolute;
                     margin-left: -0.75em;
@@ -73,18 +88,30 @@ body {
                 line-height: 2;
                 color: gray;    
             }
+            .fancy-button {
+                font-size: 1em;
+                font-family: $Mori-SemiBold;
+                text-wrap: nowrap;
+                
+                border: solid $text-color;
+                border-radius: 1em;
+                padding: 0.5em 1em 0.5em 1em;
+                width: 75%;
+                height: fit-content;
+                @include fancyButton($plan-title-color, $plan-button-hover-color, $plan-accent-color);
+            }
         }
 
         #plan-trial {
-            @include plan($primary-color, $accent-color, $text-color, #333);
+            @include plan($primary-color, $text-color, $text-color, #333, #000);
         }
 
         #plan-standard {
-            @include plan($primary-color, $accent-color, $accent-color, $accent-color);
+            @include plan($primary-color, $accent-color, $accent-color, $accent-color, $text-color);
         }
 
         #plan-premium {
-            @include plan($primary-color, $accent-color, $exercises-color, $exercises-color);
+            @include plan($primary-color, $exercises-color, $exercises-color, $exercises-color, $text-color);
         }
     }
 }
