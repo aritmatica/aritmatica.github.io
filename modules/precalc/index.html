@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>General Mathematics</title>
+    <title>Pre-Calculus</title>
 
-    <link rel="stylesheet" href="/css/components/modules/genmath.css"></link>
+    <link rel="stylesheet" href="/css/components/modules/precalc.css"></link>
 
     <link rel="stylesheet" href="/css/components/nav.css">
     <link rel="stylesheet" href="/css/components/footer.css">
@@ -14,6 +14,7 @@
     <script src="/js/gsap.js"></script>
     <script src="/js/gsap/scrollTrigger.js"></script>
     <script src="/js/scrollreveal.js"></script>
+    <script src="/js/modular_auto.js" type="module"></script>
     <script src="/js/fancyButtons.js"></script>
 
     <!--katex-->
@@ -21,7 +22,7 @@
     <script defer src="/js/katex.js"></script>
     <script defer src="/js/katex/autoRender.js"></script>
 
-    <script src="../coursePage.js" type="module"></script>
+    <script src="../coursePage.js"></script>
 </head>
 
 <body>
@@ -29,7 +30,7 @@
 
     <div class="main-container">
         <aside id="modules-nav" class="sidebar">
-            <ul include="/components/modules/genmath/modules.html"></ul>
+            <ul include="/components/modules/precalc/modules.html"></ul>
             <div class="open-button">
                 <input id="open-modules-nav" type="checkbox">
                 <label for="open-modules-nav">
@@ -38,7 +39,7 @@
                 </label>
             </div>
         </aside>
-        <main include="/components/modules/genmath/main.html"></main>
+        <main include="/components/modules/precalc/main.html"></main>
         <aside class="toc"></aside>
     </div>
 

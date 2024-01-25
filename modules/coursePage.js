@@ -1,3 +1,5 @@
+import {injectAll} from "../js/modular.js";
+
 function animateModulesNav() {
     const BREAK_POINT = 1024
 
@@ -26,15 +28,13 @@ function animateModulesNav() {
 
     window.addEventListener("resize", () => {
         if (isDesktopDevice()) {
-            console.log("farted")
             open_modules_nav.checked = false
             modules_nav.style = ""
         }
     })
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-    animateModulesNav()
+function renderKateX() {
     renderMathInElement(document.body, {
         delimiters: [
             { left: "$$", right: "$$", display: true },
@@ -42,4 +42,9 @@ document.addEventListener("DOMContentLoaded", () => {
             { left: "\\[", right: "\\]", display: true }
         ]
     })
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+    animateModulesNav()
+    injectAll().then(renderKateX)
 })

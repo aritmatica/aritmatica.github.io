@@ -1,4 +1,4 @@
-async function injectHTML(filePath,elem) {
+async function injectHTML(filePath, elem) {
     try {
         const response = await fetch(filePath);
         if (!response.ok) {
@@ -36,8 +36,16 @@ function injectTag(tag) {
 }
 
 function injectAll() {
-    document.body.querySelectorAll("*[include]").forEach((elem) => {
-        injectHTML(elem.getAttribute("include"),elem);
+    return new Promise((resolve) => {
+        const elements = document.body.querySelectorAll("*[include]")
+        var promises = []
+
+        for (let i = 0; i < elements.length; i++) {
+            const elem = elements[i];
+            promises[i] = injectHTML(elem.getAttribute("include"),elem)
+        }
+        
+        Promise.all(promises).then(resolve)
     })
 }
 
