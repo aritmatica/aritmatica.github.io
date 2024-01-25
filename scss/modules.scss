@@ -15,7 +15,7 @@ body {
     align-items: center;
 
     > .title {
-        font-size: 4rem;
+        font-size: min(4rem, 14vw);
         font-family: $Mori-SemiBold;
         text-align: center;
 
@@ -33,7 +33,6 @@ body {
     }
 
     .courses {
-        width: 100%;
         margin-top: 2rem;
 
         display: grid;
