@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" href="/css/home.css"></link>
 
+    <link rel="stylesheet" href="/css/katex.css">
     <link rel="stylesheet" href="/css/components/nav.css">
     <link rel="stylesheet" href="/css/components/footer.css">
 
@@ -16,6 +17,10 @@
     <script src="/js/scrollreveal.js"></script>
     <script src="/js/modular_auto.js" type="module"></script>
     <script src="/js/fancyButtons.js"></script>
+
+    <!--katex-->
+    <script defer src="/js/katex.js"></script>
+    <script defer src="/js/katex/autoRender.js"></script>
 
     <script src="index.js" type="module"></script>
 </head>
@@ -75,19 +80,20 @@
                     <span class="highlight">Master Logarithms</span>
                 </h2>
                 <div class="card">
-                    <div class="left">
-                        <span class="title">
+                    <div class="card-text">
+                        <span class="card-title">
                             <span>Logarithms</span> are the inverse of exponentiation
                             and just like exponents, they have a set of given laws.
                         </span>
-    
+                    </div>
+                    <div id="genmath-log"></div>
+                    <div class="card-media">
+                    </div>
+                    <div class="button-container">
                         <a class="fancy-button">
                             <span class="flair"></span>
                             <span class="label">Read More</span>
                         </a>
-                    </div>
-                    <div class="right">
-    
                     </div>
                 </div>
             </main>
@@ -107,18 +113,19 @@
                     <span class="highlight">Never Run Around In Circles</span>
                 </h2>
                 <div class="card">
-                    <div class="left">
-                        <span class="title">
+                    <div class="card-text">
+                        <span class="card-title">
                             A <span>circle</span> is all points in a plane that are a fixed distance from a given point in the plane.
                         </span>
-    
+                    </div>
+                    <div class="card-media">
+                        <div id="precalc-circle"></div>
+                    </div>
+                    <div class="button-container">
                         <a class="fancy-button">
                             <span class="flair"></span>
                             <span class="label">Read More</span>
                         </a>
-                    </div>
-                    <div class="right">
-    
                     </div>
                 </div>
             </main>
@@ -142,18 +149,19 @@
                     <span class="highlight">Test Your Knowledge</span>
                 </h2>
                 <div class="card">
-                    <div class="left">
-                        <span class="title">
+                    <div class="card-text">
+                        <span class="card-title">
                             <span>Exercises</span> help you pinpoint what you know and what you don't.
                         </span>
-    
+                    </div>
+                    <div class="card-media">
+
+                    </div>
+                    <div class="button-container">
                         <a class="fancy-button">
                             <span class="flair"></span>
                             <span class="label">See Exercises</span>
                         </a>
-                    </div>
-                    <div class="right">
-    
                     </div>
                 </div>
             </main>
@@ -172,7 +180,7 @@
                     <a id="join-aritmatica" class="fancy-button">
                         <span class="flair"></span>
                         <span class="label">Join Aritmatica</span>
-                    </>
+                    </a>
                     <a class="fancy-button">
                         <span class="flair"></span>
                         <span class="label">Log In</span>

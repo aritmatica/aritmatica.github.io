@@ -1,4 +1,4 @@
-@import "global";
+    @import "global";
 @import "fancyButtons";
 
 @mixin four-sided-padding($padding) {
@@ -201,49 +201,102 @@ header {
             position: absolute;
             left: 0; right: 0;
         
-            display: flex;
+            overflow: hidden;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
 
-            .title {
-                color: gray;
-                font-size: 24px;
-                line-height: 1.25;
-                span {
-                    color: white;
-                    font-size: inherit;
-                    line-height: inherit;
+            .card-text {
+                .card-title {
+                    color: gray;
+                    font-size: 1.5rem;
+                    line-height: 1.25;
+                    span {
+                        color: white;
+                        font-size: inherit;
+                        line-height: inherit;
+                    }
                 }
             }
 
-            .left {
+            .card-media {
+                //background-color: darken($secondary-color, 2);
+                border-radius: 24px;
+
+                grid-row: span 2;
+                font-size: 1.5rem;
+                position: relative;
+                height: 20rem;
+
                 display: flex;
                 flex-direction: column;
-                justify-content: space-between;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .button-container {
+                display: flex;
+                align-items: end;
+
+                font-size: 1.5rem;
 
                 .fancy-button {
-                    font-size: 1.5rem;
+                    font-size: 1em;
                     font-family: $Mori-SemiBold;
+                    text-wrap: nowrap;
                     
                     border: solid $text-color;
-                    border-radius: 24px;
-                    padding: 0.75rem 1.5rem 0.75rem 1.5rem;
+                    border-radius: 1em;
+                    padding: 0.5em 1em 0.5em 1em;
                     width: fit-content;
+                    height: fit-content
                 }
             }
 
-            .right {
-                width: 90%;
-                height: 368px;
+            @media screen and (max-width: 1024px) {
+                height: fit-content;
+                grid-template-columns: 1fr;
+
+                .button-container {
+                    justify-content: center;
+                }
             }
         }
     }
 }
 
 #genmath {
-    @include section($genmath-color, $precalc-color)
+    @include section($genmath-color, $precalc-color);
+    #genmath-log {
+        background-color: $genmath-color;
+        -webkit-mask: url(/assets/svg/logarithm.svg) no-repeat center / cover;
+        mask: url(/assets/svg/logarithm.svg) no-repeat center / cover;
+        opacity: 0.01;
+
+        position: absolute;
+
+        width: 125%;
+        height: 100%;
+        transform: scale(-1,1);
+    }
 }
 
 #precalc {
-    @include section($precalc-color, $exercises-color)
+    @include section($precalc-color, $exercises-color);
+
+    .card-media {
+        #precalc-circle {
+            background-color: $precalc-color;
+            -webkit-mask: url(/assets/svg/circle.svg) no-repeat center / cover;
+            mask: url(/assets/svg/circle.svg) no-repeat center / cover;
+            opacity: 0.01;
+
+            position: absolute;
+            top: 0;
+            aspect-ratio: 1;
+            height: 48rem;
+        }
+    }
 }
 
 #exercises {

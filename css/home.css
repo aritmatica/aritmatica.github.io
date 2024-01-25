@@ -202,8 +202,8 @@ header main span {
   box-shadow: 18px 18px 36px 18px #3fb950;
 }
 #genmath aside .line {
-  background-color: linear-gradient(#3fb950, #c9510c 100%);
-  background-image: linear-gradient(#3fb950, #c9510c 100%);
+  background-color: linear-gradient(#3fb950, #ff6200 100%);
+  background-image: linear-gradient(#3fb950, #ff6200 100%);
   height: 64rem;
 }
 #genmath main {
@@ -232,34 +232,65 @@ header main span {
   position: absolute;
   left: 0;
   right: 0;
-  display: flex;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
 }
-#genmath main .card .title {
+#genmath main .card .card-text .card-title {
   color: gray;
-  font-size: 24px;
+  font-size: 1.5rem;
   line-height: 1.25;
 }
-#genmath main .card .title span {
+#genmath main .card .card-text .card-title span {
   color: white;
   font-size: inherit;
   line-height: inherit;
 }
-#genmath main .card .left {
+#genmath main .card .card-media {
+  border-radius: 24px;
+  grid-row: span 2;
+  font-size: 1.5rem;
+  position: relative;
+  height: 20rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
 }
-#genmath main .card .left .fancy-button {
+#genmath main .card .button-container {
+  display: flex;
+  align-items: end;
   font-size: 1.5rem;
-  font-family: "PPMori-SemiBold", Arial, sans-serif;
-  border: solid #FFFFFF;
-  border-radius: 24px;
-  padding: 0.75rem 1.5rem 0.75rem 1.5rem;
-  width: fit-content;
 }
-#genmath main .card .right {
-  width: 90%;
-  height: 368px;
+#genmath main .card .button-container .fancy-button {
+  font-size: 1em;
+  font-family: "PPMori-SemiBold", Arial, sans-serif;
+  text-wrap: nowrap;
+  border: solid #FFFFFF;
+  border-radius: 1em;
+  padding: 0.5em 1em 0.5em 1em;
+  width: fit-content;
+  height: fit-content;
+}
+@media screen and (max-width: 1024px) {
+  #genmath main .card {
+    height: fit-content;
+    grid-template-columns: 1fr;
+  }
+  #genmath main .card .button-container {
+    justify-content: center;
+  }
+}
+#genmath #genmath-log {
+  background-color: #3fb950;
+  -webkit-mask: url(/assets/svg/logarithm.svg) no-repeat center/cover;
+  mask: url(/assets/svg/logarithm.svg) no-repeat center/cover;
+  opacity: 0.01;
+  position: absolute;
+  width: 125%;
+  height: 100%;
+  transform: scale(-1, 1);
 }
 
 #precalc aside .icons {
@@ -271,11 +302,11 @@ header main span {
 #precalc aside .icons .glow {
   width: 0;
   height: 0;
-  box-shadow: 18px 18px 36px 18px #c9510c;
+  box-shadow: 18px 18px 36px 18px #ff6200;
 }
 #precalc aside .line {
-  background-color: linear-gradient(#c9510c, #7c72ff 100%);
-  background-image: linear-gradient(#c9510c, #7c72ff 100%);
+  background-color: linear-gradient(#ff6200, #7c72ff 100%);
+  background-image: linear-gradient(#ff6200, #7c72ff 100%);
   height: 64rem;
 }
 #precalc main {
@@ -287,7 +318,7 @@ header main span {
   margin-top: 1.125rem;
 }
 #precalc main h2 .highlight, #precalc main h2 span .highlight {
-  color: #c9510c;
+  color: #ff6200;
 }
 #precalc main h3, #precalc main h3 span {
   margin-top: 1rem;
@@ -304,34 +335,65 @@ header main span {
   position: absolute;
   left: 0;
   right: 0;
-  display: flex;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
 }
-#precalc main .card .title {
+#precalc main .card .card-text .card-title {
   color: gray;
-  font-size: 24px;
+  font-size: 1.5rem;
   line-height: 1.25;
 }
-#precalc main .card .title span {
+#precalc main .card .card-text .card-title span {
   color: white;
   font-size: inherit;
   line-height: inherit;
 }
-#precalc main .card .left {
+#precalc main .card .card-media {
+  border-radius: 24px;
+  grid-row: span 2;
+  font-size: 1.5rem;
+  position: relative;
+  height: 20rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
 }
-#precalc main .card .left .fancy-button {
+#precalc main .card .button-container {
+  display: flex;
+  align-items: end;
   font-size: 1.5rem;
-  font-family: "PPMori-SemiBold", Arial, sans-serif;
-  border: solid #FFFFFF;
-  border-radius: 24px;
-  padding: 0.75rem 1.5rem 0.75rem 1.5rem;
-  width: fit-content;
 }
-#precalc main .card .right {
-  width: 90%;
-  height: 368px;
+#precalc main .card .button-container .fancy-button {
+  font-size: 1em;
+  font-family: "PPMori-SemiBold", Arial, sans-serif;
+  text-wrap: nowrap;
+  border: solid #FFFFFF;
+  border-radius: 1em;
+  padding: 0.5em 1em 0.5em 1em;
+  width: fit-content;
+  height: fit-content;
+}
+@media screen and (max-width: 1024px) {
+  #precalc main .card {
+    height: fit-content;
+    grid-template-columns: 1fr;
+  }
+  #precalc main .card .button-container {
+    justify-content: center;
+  }
+}
+#precalc .card-media #precalc-circle {
+  background-color: #ff6200;
+  -webkit-mask: url(/assets/svg/circle.svg) no-repeat center/cover;
+  mask: url(/assets/svg/circle.svg) no-repeat center/cover;
+  opacity: 0.01;
+  position: absolute;
+  top: 0;
+  aspect-ratio: 1;
+  height: 48rem;
 }
 
 #exercises aside .icons {
@@ -376,34 +438,55 @@ header main span {
   position: absolute;
   left: 0;
   right: 0;
-  display: flex;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
 }
-#exercises main .card .title {
+#exercises main .card .card-text .card-title {
   color: gray;
-  font-size: 24px;
+  font-size: 1.5rem;
   line-height: 1.25;
 }
-#exercises main .card .title span {
+#exercises main .card .card-text .card-title span {
   color: white;
   font-size: inherit;
   line-height: inherit;
 }
-#exercises main .card .left {
+#exercises main .card .card-media {
+  border-radius: 24px;
+  grid-row: span 2;
+  font-size: 1.5rem;
+  position: relative;
+  height: 20rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
 }
-#exercises main .card .left .fancy-button {
+#exercises main .card .button-container {
+  display: flex;
+  align-items: end;
   font-size: 1.5rem;
-  font-family: "PPMori-SemiBold", Arial, sans-serif;
-  border: solid #FFFFFF;
-  border-radius: 24px;
-  padding: 0.75rem 1.5rem 0.75rem 1.5rem;
-  width: fit-content;
 }
-#exercises main .card .right {
-  width: 90%;
-  height: 368px;
+#exercises main .card .button-container .fancy-button {
+  font-size: 1em;
+  font-family: "PPMori-SemiBold", Arial, sans-serif;
+  text-wrap: nowrap;
+  border: solid #FFFFFF;
+  border-radius: 1em;
+  padding: 0.5em 1em 0.5em 1em;
+  width: fit-content;
+  height: fit-content;
+}
+@media screen and (max-width: 1024px) {
+  #exercises main .card {
+    height: fit-content;
+    grid-template-columns: 1fr;
+  }
+  #exercises main .card .button-container {
+    justify-content: center;
+  }
 }
 #exercises aside .line {
   height: 80rem;
