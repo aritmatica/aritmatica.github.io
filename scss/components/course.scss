@@ -1,0 +1,230 @@
+@import "../global";
+@import "../fancyButtons";
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5em;
+}
+
+body {
+    background-color: $background-color;
+    color: $text-color;
+}
+
+@mixin course($course-accent-color) {
+    .main-container {
+        max-width: 1440px;
+        margin: 0 auto 0 auto;
+    
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(0, 2.5fr) minmax(0, 15rem);
+        //gap: 2rem;
+    
+        a {
+            color: unset;
+            text-decoration: none;
+            &[href]:hover {
+                text-decoration: underline;
+            }
+        }
+    
+        .sidebar {
+            $offset: 4rem;
+            max-height: calc(100vh - $offset);
+            padding-top: 2rem;
+            padding-right: 2rem;
+            
+            position: sticky;
+            top: $offset;
+            z-index: 1;
+    
+            transform: 0;
+    
+            strong {
+                color: $course-accent-color;
+                font-size: 1.25em;
+            }
+    
+            ul {
+                list-style: none;
+    
+                .active {
+                    background-color: $select-color;
+                }
+    
+                li {
+                    summary {
+                        margin-bottom: 1rem;
+                    }
+                    padding: 1rem 0.25rem 1rem 1rem;
+    
+                    // dropdown
+                    details {
+                        summary {
+                            margin-bottom: 1rem;
+                        }
+                        ul {
+                            padding-left: 1rem;
+                        }
+                    }
+                }
+            }
+    
+            .open-button {
+                position: absolute;
+                left: 20%;
+    
+                background-color: $background-color;
+                width: fit-content;
+                height: 3rem;
+                margin-top: -1px;
+    
+                border-left: solid $course-accent-color;
+                border-bottom: solid $course-accent-color;
+                border-right: solid $course-accent-color;
+    
+                display: none;
+                flex-direction: column;
+                justify-content: center;
+    
+                input {
+                    position: absolute;
+                    opacity: 0;
+                    width: 100%;
+                    height: 100%;
+                    
+                    &:checked + label {
+                        color: $course-accent-color;
+                        .icons {
+                            transform: translateY(2px);
+                            rotate: 180deg;
+                        }
+                    }
+                }
+    
+                label {
+                    color: $text-color;
+                    padding: 0 1rem 0 0.75rem;
+                    .icons {
+                        rotate: 0deg;
+                        transition: background-color 250ms rotate 250ms;
+                    }
+                }
+            }
+        }
+    
+        main {
+            background-color: darken($primary-color, 1);
+    
+            height: 1000rem;
+            padding: 3em 3em 3em 3em;
+    
+            line-height: 1.5;
+    
+            iframe {
+                width: 100%;
+            }
+    
+            article {
+                display: block;
+        
+                h1 {
+                    font-size: 2.5em;
+                    margin-bottom: 1rem;
+                }
+        
+                .module-description {
+                    margin-bottom: 3rem;
+                }
+    
+                section {
+                    margin-top: 1rem;
+                    margin-bottom: 2rem;
+    
+                    a {
+                        color: $course-accent-color;
+                        font-family: $Mori-SemiBold;
+                    };
+    
+                    h2 {
+                        font-size: 2em;
+                    }
+    
+                    h3 {
+                        margin-bottom: 0.5rem;
+                    }
+    
+                    .solving {
+                        div {
+                            display: flex;
+                            flex-direction: column;
+                            padding-left: 1rem;
+                        }
+                        .indent {
+                            padding-left: 1rem;
+                            margin-bottom: 1rem;
+                        }
+                    }
+    
+                    .callout {
+                        background-color: $dark-transparent-color;
+    
+                        padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+                        border-radius: 1rem;
+    
+                        h3 {
+                            font-size: 1.25rem;
+                            font-family: $Mori-SemiBold;
+                        }
+                    }
+                }
+            }
+        }
+    
+        .toc {
+            //background-color: $exercises-color;
+    
+            $offset: 4rem;
+            max-height: calc(100vh - $offset);
+    
+            position: sticky;
+            top: $offset;
+        }
+    
+        @media screen and (max-width: 1440px) {
+            grid-template-columns: minmax(0, 1fr) minmax(0, 2.5fr);
+            .toc {
+                display: none;
+            }
+        }
+    
+        @media screen and (max-width: 1024px) {
+            grid-template-columns: 1fr;
+            .sidebar {
+                background-color: $background-color;
+    
+                width: 100%;
+                border-bottom: solid $course-accent-color;
+                margin-top: 2px;
+    
+                position: fixed;
+                transform: translateY(-100%);
+    
+                .open-button {
+                    display: flex;
+                }
+            }
+            main {
+                padding-top: 6em;
+            }
+        }
+    
+        @media screen and (max-width: 768px) {
+            .sidebar {
+                .open-button {
+                    left: 1rem;
+                }
+            }
+        }
+    }
+}

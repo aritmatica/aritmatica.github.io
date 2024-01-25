@@ -1,0 +1,5 @@
+@import "../../global";
+@import "../../fancyButtons";
+@import "../course";
+
+@include course($genmath-color)
