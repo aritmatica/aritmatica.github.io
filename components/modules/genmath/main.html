@@ -1,0 +1,94 @@
+<article>
+    <h1>Law of Logarithms</h1>
+    <p class="module-description">
+        Logarithms are the inverse of exponentiation and just like exponents, they have a set of given laws. 
+        Laws of logarithms are rules that can be applied to simplify and solve complicated logarithmic equations.
+    </p>
+
+    <section id="video-tutorial">
+        <h2><a href="#video-tutorial">Video Tutorial</a></h2>
+        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/bowrJ31ojOg?si=oFE_BCDfzyKYUiPf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </section>
+
+    <section id="product-law">
+        <h2><a href="#product-law">Product Law</a></h2>
+        <p>
+            The product rule for logarithms can be used to simplify a logarithm of a product by rewriting it as a sum of individual logarithms.
+            <span class="formula">
+                $$\log_{b}{uv}=\log_{b}{u}+\log_{b}{v}$$
+            </span>
+
+            <div class="solving">
+                <h3>Illustrative Example 1</h3>
+                <div>
+                    <span>Expand:</span>
+                    <span class="indent">$\log_{10}{64}$</span>
+
+                    <span>Expand $64$ into factors that we can later simplify:</span>
+                    <span class="indent">$\log_{10}{(16\cdot 4)=\log_{10}{16}+\log_{10}{4}}$</span>
+
+                    <span>Turn $16$ and $4$ into exponential form</span>
+                    <span class="indent">$log_{10}{(4^2)}+\log_{10}{(2^2)}$</span>
+
+                    <span>Use the <a href="#power-law">Power Law of Logarithms</a> to expand:</span>
+                    <span class="indent">$2log_{10}{(4)}+2\log_{10}{(2)}$</span>
+                </div>
+                <h3>Illustrative Example 2</h3>
+                <div>
+                    <span>Expand:</span>
+                    <span class="indent">$\log_{6}{24}$</span>
+
+                    <span>Expand $24$ into factors that we can later simplify:</span>
+                    <span class="indent">$\log_{6}{(6\cdot 4)=\log_{6}{6}+\log_{6}{4}}$</span>
+
+                    <span>Recall <a>Property 2 of Logarithms</a>:</span>
+                    <span class="indent">$1+\log_{6}{(4)}$</span>
+                </div>
+            </div>
+
+            <div class="callout">
+                <h3> Recall: Property 2 of Logarithms</h3>
+                When the base and the argument of the logarithm are equal. The result will be $1$.
+                $$log_{b}{b}=1$$
+            </div>
+        </p>
+    </section>
+
+    <section id="quotient-law">
+        <h2><a href="#quotient-law">Quotient Law</a></h2>
+        <p>
+            The quotient rule for logarithms says that the logarithm of a quotient is equal to a difference of logarithms. 
+            Just as with the product rule, we can use the inverse property to derive the quotient rule.
+            <span class="formula">
+                $$\log_{b}{\frac{u}{v}}=\log_{b}{u}-\log_{b}{b}$$
+            </span>
+
+            <div class="solving">
+                <h3>Illustrative Example 1</h3>
+                <div>
+                    <span>Expand:</span>
+                    <span class="indent">$ \log_{2}{(\frac{32}{8})} $</span>
+
+                    <span>Expand the logarithm:</span>
+                    <span class="indent">$ \log_{2}{(\frac{32}{8})}=\log_{2}{32}+\log_{2}{8} $</span>
+
+                    <span>Simplify:</span>
+                    <span class="indent">$ \log_{2}{(2^5)}+\log_{2}{(2^3)} $</span>
+
+                    <span>We can now extract their exponent as per <a>Property 3 of Logarithms</a>:</span>
+                    <span class="indent">$ = 5-3 \newline = 2 $</span>
+                </div>
+            </div>
+        </p>
+    </section>
+
+    <section id="power-law">
+        <h2><a href="#power-law">Power Law</a></h2>
+        <p>
+            The power rule for logarithms can be used to simplify the logarithm of a power by rewriting it as the product of the exponent times the logarithm of the base.
+            <span class="formula">
+                $$\log_{b}{u^n}=n\log_{b}{u}$$
+            </span>
+        </p>
+    </section>
+</article>
