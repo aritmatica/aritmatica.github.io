@@ -3,6 +3,7 @@ function genmathLog() {
     gsap.to(genmath_log, {
         scrollTrigger: {
             trigger: genmath_log,
+            start: "top bottom",
             scrub: 1,
         },
         opacity: 0.8,
@@ -14,6 +15,7 @@ function precalcCirle() {
     gsap.to(precalc_circle, {
         scrollTrigger: {
             trigger: precalc_circle,
+            start: "top bottom",
             scrub: 1,
         },
         opacity: 0.8,
