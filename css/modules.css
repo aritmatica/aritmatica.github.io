@@ -1,0 +1,196 @@
+@font-face {
+  font-family: "PPMori-Regular";
+  src: url("/assets/fonts/PPMori-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "PPMori-SemiBold";
+  src: url("/assets/fonts/PPMori-SemiBold.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Material Symbols Outlined";
+  font-style: normal;
+  font-weight: 100 700;
+  src: url(/assets/gstatic/kJEhBvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oFsI.woff2) format("woff2");
+}
+.icons {
+  font-family: "Material Symbols Outlined";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1.25em;
+  line-height: 0.79;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  font-feature-settings: "liga";
+  -webkit-font-feature-settings: "liga";
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "PPMori-Regular", Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+.fancy-button {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fancy-button .flair {
+  position: absolute;
+  background-color: white;
+  aspect-ratio: 1;
+  width: 200%;
+  pointer-events: none;
+  border-radius: 100%;
+  will-change: transform;
+  z-index: 0;
+}
+.fancy-button .label {
+  z-index: 0;
+  transition: color 0.2s;
+}
+.fancy-button:hover {
+  color: black;
+}
+
+body {
+  background-color: #0e0f0f;
+  color: #FFFFFF;
+}
+
+#modules {
+  width: 50%;
+  margin: 6rem auto 0rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#modules > .title {
+  font-size: 4rem;
+  font-family: "PPMori-SemiBold", Arial, sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+#modules > .title h1 {
+  color: #e36970;
+}
+#modules > .title span {
+  color: gray;
+  font-size: 0.3em;
+}
+#modules .courses {
+  width: 100%;
+  margin-top: 2rem;
+  display: grid;
+  gap: 2em;
+  grid-template-columns: repeat(2, 1fr);
+}
+@media screen and (max-width: 1024px) {
+  #modules .courses {
+    grid-template-columns: 1fr;
+  }
+  #modules .courses div {
+    font-size: 1rem !important;
+  }
+  #modules .courses div .fancy-button {
+    width: 100% !important;
+  }
+}
+#modules .courses #modules-genmath {
+  background-color: #191a1f;
+  border-radius: 16px;
+  padding: 1.5rem 1rem 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  font-size: min(1rem, 1.25vw);
+  text-align: center;
+  box-shadow: 0 0 1rem 1px #3fb950;
+}
+#modules .courses #modules-genmath .course-code {
+  font-size: 1em;
+  color: gray;
+}
+#modules .courses #modules-genmath .title {
+  font-size: 2.75em;
+  color: #3fb950;
+  margin-top: auto;
+}
+#modules .courses #modules-genmath .fancy-button {
+  font-size: 1em;
+  font-family: "PPMori-SemiBold", Arial, sans-serif;
+  text-wrap: nowrap;
+  margin-top: auto;
+  border: solid #FFFFFF;
+  border-radius: 1em;
+  padding: 0.5em 1em 0.5em 1em;
+  width: 75%;
+  height: fit-content;
+  border-color: #3fb950;
+  color: #3fb950;
+}
+#modules .courses #modules-genmath .fancy-button .flair {
+  background-color: #3fb950;
+}
+#modules .courses #modules-genmath .fancy-button:hover {
+  color: #FFFFFF;
+}
+#modules .courses #modules-precalc {
+  background-color: #191a1f;
+  border-radius: 16px;
+  padding: 1.5rem 1rem 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  font-size: min(1rem, 1.25vw);
+  text-align: center;
+  box-shadow: 0 0 1rem 1px #ff6200;
+}
+#modules .courses #modules-precalc .course-code {
+  font-size: 1em;
+  color: gray;
+}
+#modules .courses #modules-precalc .title {
+  font-size: 2.75em;
+  color: #ff6200;
+  margin-top: auto;
+}
+#modules .courses #modules-precalc .fancy-button {
+  font-size: 1em;
+  font-family: "PPMori-SemiBold", Arial, sans-serif;
+  text-wrap: nowrap;
+  margin-top: auto;
+  border: solid #FFFFFF;
+  border-radius: 1em;
+  padding: 0.5em 1em 0.5em 1em;
+  width: 75%;
+  height: fit-content;
+  border-color: #ff6200;
+  color: #ff6200;
+}
+#modules .courses #modules-precalc .fancy-button .flair {
+  background-color: #ff6200;
+}
+#modules .courses #modules-precalc .fancy-button:hover {
+  color: #FFFFFF;
+}
+
+/*# sourceMappingURL=modules.css.map */

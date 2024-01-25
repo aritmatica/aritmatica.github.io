@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing</title>
+
+    <link rel="stylesheet" href="/css/modules.css"></link>
+
+    <link rel="stylesheet" href="/css/components/nav.css">
+    <link rel="stylesheet" href="/css/components/footer.css">
+
+    <script src="/js/gsap.js"></script>
+    <script src="/js/gsap/scrollTrigger.js"></script>
+    <script src="/js/scrollreveal.js"></script>
+    <script src="/js/modular_auto.js" type="module"></script>
+    <script src="/js/fancyButtons.js"></script>
+</head>
+
+<body>
+    <nav include="/components/nav"></nav>
+
+    <section id="modules">
+        <div class="title">
+            <h1>Modules</h1>
+            <span>Choose a math course</span>
+        </div>
+        <div class="courses">
+            <div id="modules-genmath">
+                <span class="course-code">GENMATH 001</span>
+                <h2 class="title">General Mathematics</h2>
+                <a class="fancy-button" href="/modules/genmath">
+                    <span class="flair"></span>
+                    <span class="label">Open Modules</span>
+                </a>
+            </div>
+            <div id="modules-precalc">
+                <span class="course-code">CALC 001</span>
+                <h2 class="title">Pre-Calculus</h2>
+                <a class="fancy-button" href="/modules/precalc">
+                    <span class="flair"></span>
+                    <span class="label">Open Modules</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer include="/components/footer.html"></footer>
+</body>
+
+</html>

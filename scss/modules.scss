@@ -1,0 +1,102 @@
+@import "global";
+@import "fancyButtons";
+
+body {
+    background-color: $background-color;
+    color: $text-color;
+}
+
+#modules {
+    width: 50%;
+    margin: 6rem auto 0rem auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    > .title {
+        font-size: 4rem;
+        font-family: $Mori-SemiBold;
+        text-align: center;
+
+        display: flex;
+        flex-direction: column;
+
+        h1 {
+            color: $accent-color;
+        }
+
+        span {
+            color: gray;
+            font-size: 0.3em;
+        }
+    }
+
+    .courses {
+        width: 100%;
+        margin-top: 2rem;
+
+        display: grid;
+        gap: 2em;
+        grid-template-columns: repeat(2, 1fr);
+
+        @media screen and (max-width: 1024px) {
+            grid-template-columns: 1fr;
+            div {
+                font-size: 1rem !important;
+                .fancy-button {
+                    width: 100% !important;
+                }
+            }
+        }
+
+        @mixin module ($module-accent-color) {
+            background-color: $secondary-color;
+            border-radius: 16px;
+
+            padding: 1.5rem 1rem 1.5rem 1rem;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+
+            font-size: min(1rem, 1.25vw);
+
+            text-align: center;
+
+            box-shadow: 0 0 1rem 1px $module-accent-color;
+
+            .course-code {
+                font-size: 1em;
+                color: gray;
+            }
+            .title {
+                font-size: 2.75em;
+                color: $module-accent-color;
+                margin-top: auto;
+            }
+
+            .fancy-button {
+                font-size: 1em;
+                font-family: $Mori-SemiBold;
+                text-wrap: nowrap;
+                
+                margin-top: auto;
+                border: solid $text-color;
+                border-radius: 1em;
+                padding: 0.5em 1em 0.5em 1em;
+                width: 75%;
+                height: fit-content;
+                @include fancyButton($module-accent-color, $text-color, $module-accent-color);
+            }
+        }
+
+        #modules-genmath {
+            @include module($genmath-color);
+        }
+        #modules-precalc {
+            @include module($precalc-color)
+        }
+    }
+}
