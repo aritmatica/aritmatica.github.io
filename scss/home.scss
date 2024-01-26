@@ -318,6 +318,18 @@ header {
     main {
         height: 64rem;
     }
+    #exercises-shape {
+        background-color: $exercises-color;
+        -webkit-mask: url(/assets/svg/shape2.svg) no-repeat center / cover;
+        mask: url(/assets/svg/shape2.svg) no-repeat center / cover;
+        opacity: 0.01;
+
+        position: absolute;
+
+        width: 125%;
+        height: 100%;
+        transform: scale(-1,1);
+    }
 }
 
 #join {

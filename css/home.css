@@ -507,6 +507,16 @@ header main span {
 #exercises main {
   height: 64rem;
 }
+#exercises #exercises-shape {
+  background-color: #7c72ff;
+  -webkit-mask: url(/assets/svg/shape2.svg) no-repeat center/cover;
+  mask: url(/assets/svg/shape2.svg) no-repeat center/cover;
+  opacity: 0.01;
+  position: absolute;
+  width: 125%;
+  height: 100%;
+  transform: scale(-1, 1);
+}
 
 #join {
   margin-top: -18rem;

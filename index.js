@@ -29,7 +29,20 @@ function precalcCirle() {
     })
 }
 
+function exercisesShape() {
+    const exercises_shape = document.getElementById("exercises-shape")
+    gsap.to(exercises_shape, {
+        scrollTrigger: {
+            trigger: exercises_shape,
+            start: "top bottom",
+            scrub: 1,
+        },
+        opacity: 0.8,
+    })
+}
+
 document.addEventListener("DOMContentLoaded", () => {
     genmathLog()
     precalcCirle()
+    exercisesShape()
 })
