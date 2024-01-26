@@ -357,8 +357,8 @@ header {
         position: absolute;
 
         width: 125%;
-        height: 175%;
-        transform: scale(-1,1);
+        height: 200%;
+        transform: scale(-1,1) translateY(-10%);
     }
 }
 
