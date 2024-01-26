@@ -64,7 +64,10 @@ function scrollAnimations() {
         const section_line = section.getElementsByClassName("line")[0]
         const section_card = section.getElementsByClassName("card")[0]
         if (section_line && section_card) {
-            gsap.set(section_line, {scaleY: 0})
+            gsap.set(section_line, {
+                backgroundSize: "100% 500%",
+                scaleY: 0,
+            })
             gsap.to(section_line, {
                 scrollTrigger: {
                     trigger: section_line,
@@ -73,6 +76,7 @@ function scrollAnimations() {
                     toggleActions: "restart none none none",
                     scrub: 1,
                 },
+                backgroundSize: "100% 100%",
                 scaleY: 1,
             })
         }
