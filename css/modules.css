@@ -93,7 +93,9 @@ body {
   flex-direction: column;
 }
 #modules > .title h1 {
-  color: #e36970;
+  color: transparent;
+  background-image: linear-gradient(90deg, #ff96f9, #e5b0e2, #00bae2);
+  background-clip: text;
 }
 #modules > .title span {
   color: gray;
@@ -118,6 +120,7 @@ body {
 }
 #modules .courses #modules-genmath {
   background-color: #191a1f;
+  border: solid #256d2f;
   border-radius: 16px;
   padding: 1.5rem 1rem 1.5rem 1rem;
   display: flex;
@@ -126,7 +129,6 @@ body {
   gap: 1rem;
   font-size: min(1rem, 1.25vw);
   text-align: center;
-  box-shadow: 0 0 1rem 1px #3fb950;
 }
 #modules .courses #modules-genmath .course-code {
   font-size: 1em;
@@ -158,6 +160,7 @@ body {
 }
 #modules .courses #modules-precalc {
   background-color: #191a1f;
+  border: solid #993b00;
   border-radius: 16px;
   padding: 1.5rem 1rem 1.5rem 1rem;
   display: flex;
@@ -166,7 +169,6 @@ body {
   gap: 1rem;
   font-size: min(1rem, 1.25vw);
   text-align: center;
-  box-shadow: 0 0 1rem 1px #ff6200;
 }
 #modules .courses #modules-precalc .course-code {
   font-size: 1em;
