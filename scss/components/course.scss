@@ -14,6 +14,14 @@ body {
 }
 
 @mixin course($course-accent-color) {
+    footer {
+        background-color: $primary-color;
+        * {
+            color: $course-accent-color;
+            border-color: $course-accent-color !important;
+        }
+    }
+
     .main-container {
         max-width: 1440px;
         margin: 0 auto 0 auto;
@@ -118,8 +126,7 @@ body {
         main {
             background-color: darken($primary-color, 1);
             z-index: 0;
-    
-            height: 1000rem;
+
             padding: 3em 3em 3em 3em;
     
             line-height: 1.5;

@@ -1,18 +1,23 @@
 footer {
-    width: 70%;
+    --footer-accent: white;
+    width: 100%;
     height: fit-content;
-    margin: 8rem auto 8rem auto;
+    
+    padding: 8rem 24rem 8rem 24rem;
 
     display: flex;
     flex-wrap: wrap;
     row-gap: 2rem;
     justify-content: space-between;
 
-    color: gray;
+    color: var(--footer-accent);
 
     ul {
         list-style: none;
-    
+
+        border-left: solid var(--footer-accent);
+        padding-left: 1rem;
+
         display: flex;
         flex-direction: column;
         span {
