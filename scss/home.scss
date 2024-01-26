@@ -324,14 +324,13 @@ header {
             justify-content: center;
 
             #join-circle-shape {
-                background-color: desaturate($accent-color, 10);
                 -webkit-mask: url(/assets/svg/circle.svg) no-repeat center / cover;
                 mask: url(/assets/svg/circle.svg) no-repeat center / cover;
                 opacity: 0;
     
                 position: absolute;
                 aspect-ratio: 1;
-                height: 48rem;
+                height: min(48rem, 150vw);
                 
                 z-index: -1;
             }
