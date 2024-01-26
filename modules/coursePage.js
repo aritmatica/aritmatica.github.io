@@ -1,37 +1,50 @@
-import {injectAll} from "../js/modular.js";
+import { injectAll } from "../js/modular.js";
 
 function animateModulesNav() {
     const BREAK_POINT = 1024
 
-    const open_modules_nav = document.getElementById("open-modules-nav")
-    const modules_nav = document.getElementById("modules-nav")
+    const navOpen = document.getElementById("open-modules-nav")
+    const modulesNav = document.getElementById("modules-nav")
 
-    function isDesktopDevice() {
-        return document.body.clientWidth > BREAK_POINT
+    function isMobileDevice() {
+        return document.body.clientWidth <= BREAK_POINT
     }
 
-    function updateModulesNav() {
-        if (isDesktopDevice() === false) {
-            if (open_modules_nav.checked === true) {
-                gsap.to(modules_nav, {
-                    translateY: 0,
-                })
-            } else {
-                gsap.to(modules_nav, {
-                    translateY: "-100%",
-                })
-            }
+    function animateMenu(state, skip) {
+        var set = (skip === true) ? gsap.set : gsap.to
+        if (state) {
+            set(modulesNav, {
+                translateY: -16,
+            })
+        } else {
+            set(modulesNav, {
+                translateY: "-100%",
+            })
         }
     }
 
-    open_modules_nav.addEventListener("click", updateModulesNav)
+    if (isMobileDevice()) {
+        animateMenu(false, true)
+    }
+
+    function onMenuCheck(skip) {
+        if (navOpen.checked === true) {
+            if (isMobileDevice()) { animateMenu(true, skip) }
+        } else {
+            if (isMobileDevice()) { animateMenu(false, skip) }
+        }
+    }
 
     window.addEventListener("resize", () => {
-        if (isDesktopDevice()) {
-            open_modules_nav.checked = false
-            modules_nav.style = ""
+        if (isMobileDevice() === false) {
+            animateMenu(true, true)
+        } else {
+            onMenuCheck(true)
         }
     })
+
+    navOpen.addEventListener("click", onMenuCheck)
+    onMenuCheck()
 }
 
 function renderKateX() {
