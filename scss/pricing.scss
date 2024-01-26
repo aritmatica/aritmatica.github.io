@@ -42,7 +42,7 @@ body {
         @media screen and (max-width: 1024px) {
             grid-template-columns: 1fr;
             div {
-                font-size: 1rem !important;
+                font-size: 2rem !important;
                 .fancy-button {
                     width: 100% !important;
                 }
@@ -60,7 +60,7 @@ body {
             align-items: center;
             gap: 1rem;
 
-            font-size: min(1rem, 1.25vw);
+            font-size: min(2rem, 1.25vw);
 
             text-align: center;
 
@@ -89,7 +89,7 @@ body {
                 color: gray;    
             }
             .fancy-button {
-                font-size: 1em;
+                font-size: 0.75em;
                 font-family: $Mori-SemiBold;
                 text-wrap: nowrap;
                 
