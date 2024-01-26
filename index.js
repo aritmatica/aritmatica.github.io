@@ -6,7 +6,7 @@ function genmathLog() {
             start: "top bottom",
             scrub: 1,
         },
-        opacity: 0.8,
+        opacity: 0.9,
     })
 }
 
@@ -18,7 +18,7 @@ function precalcCirle() {
             start: "top bottom",
             scrub: 1,
         },
-        opacity: 0.8,
+        opacity: 0.9,
     })
 
     gsap.to(precalc_circle, {
@@ -37,7 +37,7 @@ function exercisesShape() {
             start: "top bottom",
             scrub: 1,
         },
-        opacity: 0.8,
+        opacity: 0.9,
     })
 }
 
