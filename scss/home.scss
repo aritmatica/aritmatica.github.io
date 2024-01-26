@@ -10,6 +10,7 @@
 body {
     color: $text-color;
     background-color: $background-color;
+    overflow-x: hidden;
 }
 
 #home-container {
