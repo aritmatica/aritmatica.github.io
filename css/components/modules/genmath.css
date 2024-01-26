@@ -49,6 +49,7 @@
   position: relative;
   cursor: pointer;
   overflow: hidden;
+  color: white;
   text-decoration: none;
   display: flex;
   justify-content: center;
@@ -123,6 +124,7 @@
   position: relative;
   cursor: pointer;
   overflow: hidden;
+  color: white;
   text-decoration: none;
   display: flex;
   justify-content: center;
