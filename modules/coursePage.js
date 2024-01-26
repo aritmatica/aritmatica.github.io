@@ -3,6 +3,7 @@ import { injectAll } from "../js/modular.js";
 function animateModulesNav() {
     const BREAK_POINT = 1024
 
+    const buttonContainer = document.getElementsByClassName("open-button")[0]
     const navOpen = document.getElementById("open-modules-nav")
     const modulesNav = document.getElementById("modules-nav")
 
@@ -13,10 +14,12 @@ function animateModulesNav() {
     function animateMenu(state, skip) {
         var set = (skip === true) ? gsap.set : gsap.to
         if (state) {
+            buttonContainer.classList.add("open")
             set(modulesNav, {
                 translateY: -16,
             })
         } else {
+            buttonContainer.classList.remove("open")
             set(modulesNav, {
                 translateY: "-100%",
             })

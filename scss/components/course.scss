@@ -59,7 +59,9 @@ body {
                 list-style: none;
     
                 .active {
-                    background-color: $select-color;
+                    background-color: $primary-color;
+                    border-radius: 1rem;
+                    border: solid $course-accent-color;
                 }
     
                 li {
@@ -84,7 +86,7 @@ body {
                 position: absolute;
                 left: 20%;
     
-                background-color: $background-color;
+                background-color: $primary-color;
                 width: fit-content;
                 height: 3rem;
                 margin-top: -1px;
@@ -92,10 +94,19 @@ body {
                 border-left: solid $course-accent-color;
                 border-bottom: solid $course-accent-color;
                 border-right: solid $course-accent-color;
+
+                border-bottom-left-radius: 0.75rem;
+                border-bottom-right-radius: 0.75rem;
     
                 display: none;
                 flex-direction: column;
                 justify-content: center;
+
+                transition: background-color 250ms;
+
+                &[class="open-button open"] {
+                    background-color: $background-color;
+                }
     
                 input {
                     position: absolute;
@@ -137,6 +148,8 @@ body {
                 height: auto;
 
                 margin-top: 1rem;
+                border-radius: 1rem;
+                border: solid $course-accent-color;
             }
     
             article {
@@ -186,26 +199,13 @@ body {
     
                         padding: 1.5rem 1.5rem 1.5rem 1.5rem;
                         border-radius: 1rem;
+                        border: solid $course-accent-color;
     
                         h3 {
                             font-size: 1.25rem;
                             font-family: $Mori-SemiBold;
                             margin-top: 0;
                             margin-bottom: 0;
-                        }
-
-                        position: relative;
-
-                        .flair {
-                            height: 0;
-                            width: 90%;
-
-                            position: absolute;
-                            right: 1rem;
-
-                            opacity: 0.1;
-                            box-shadow: 0 0 4rem 2rem $course-accent-color;
-                            z-index: -1;
                         }
                     }
                 }
