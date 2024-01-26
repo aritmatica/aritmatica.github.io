@@ -128,7 +128,7 @@ body {
   gap: 1rem;
   font-size: min(2rem, 1.25vw);
   text-align: center;
-  box-shadow: 0 0 1rem 1px #333;
+  border: solid #333;
 }
 #pricing .plans #plan-trial .title {
   font-size: 2.75em;
@@ -139,13 +139,14 @@ body {
   color: gray;
 }
 #pricing .plans #plan-trial .price {
+  color: #FFFFFF;
   font-size: 3.5em;
 }
 #pricing .plans #plan-trial .price sup {
   position: absolute;
   margin-left: -0.75em;
   font-size: 0.4em;
-  color: gray;
+  opacity: 0.5;
 }
 #pricing .plans #plan-trial .period {
   font-size: 0.75em;
@@ -180,7 +181,7 @@ body {
   gap: 1rem;
   font-size: min(2rem, 1.25vw);
   text-align: center;
-  box-shadow: 0 0 1rem 1px #e36970;
+  border: solid #e36970;
 }
 #pricing .plans #plan-standard .title {
   font-size: 2.75em;
@@ -191,13 +192,14 @@ body {
   color: gray;
 }
 #pricing .plans #plan-standard .price {
+  color: #e36970;
   font-size: 3.5em;
 }
 #pricing .plans #plan-standard .price sup {
   position: absolute;
   margin-left: -0.75em;
   font-size: 0.4em;
-  color: gray;
+  opacity: 0.5;
 }
 #pricing .plans #plan-standard .period {
   font-size: 0.75em;
@@ -232,7 +234,7 @@ body {
   gap: 1rem;
   font-size: min(2rem, 1.25vw);
   text-align: center;
-  box-shadow: 0 0 1rem 1px #7c72ff;
+  border: solid #7c72ff;
 }
 #pricing .plans #plan-premium .title {
   font-size: 2.75em;
@@ -243,13 +245,14 @@ body {
   color: gray;
 }
 #pricing .plans #plan-premium .price {
+  color: #7c72ff;
   font-size: 3.5em;
 }
 #pricing .plans #plan-premium .price sup {
   position: absolute;
   margin-left: -0.75em;
   font-size: 0.4em;
-  color: gray;
+  opacity: 0.5;
 }
 #pricing .plans #plan-premium .period {
   font-size: 0.75em;

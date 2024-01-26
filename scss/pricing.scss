@@ -65,7 +65,8 @@ body {
 
             text-align: center;
 
-            box-shadow: 0 0 1rem 1px $plan-shadow-color;
+            border: solid $plan-shadow-color;
+            //box-shadow: 0 0 1rem 1px $plan-shadow-color;
 
             .title {
                 font-size: 2.75em;
@@ -76,12 +77,13 @@ body {
                 color: gray;
             }
             .price {
+                color: $plan-accent-color;
                 font-size: 3.5em;
                 sup {
                     position: absolute;
                     margin-left: -0.75em;
                     font-size: 0.4em;
-                    color: gray;
+                    opacity: 0.5;
                 }
             }
             .period {
