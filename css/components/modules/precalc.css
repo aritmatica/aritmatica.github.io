@@ -237,6 +237,7 @@ body {
 }
 .main-container main {
   background-color: #121212;
+  z-index: 0;
   height: 1000rem;
   padding: 3em 3em 3em 3em;
   line-height: 1.5;
@@ -278,13 +279,23 @@ body {
   margin-bottom: 1rem;
 }
 .main-container main article section .callout {
-  background-color: rgba(29, 29, 33, 0.95);
+  background-color: #191a1f;
   padding: 1.5rem 1.5rem 1.5rem 1.5rem;
   border-radius: 1rem;
+  position: relative;
 }
 .main-container main article section .callout h3 {
   font-size: 1.25rem;
   font-family: "PPMori-SemiBold", Arial, sans-serif;
+}
+.main-container main article section .callout .flair {
+  height: 0;
+  width: 50%;
+  position: absolute;
+  right: 1rem;
+  opacity: 0.1;
+  box-shadow: 0 0 4rem 2rem #ff6200;
+  z-index: -1;
 }
 .main-container .toc {
   max-height: calc(100vh - 4rem);
