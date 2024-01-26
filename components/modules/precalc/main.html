@@ -1,8 +1,11 @@
 <article id="module-content">
     <h1>The Circle</h1>
     <p class="module-description">
-        A circle is all points in a plane that are a fixed distance from a given point in the plane.
-        The circle has a focus known as the center of the circle.    
+        <span>
+            A circle is all points in a plane that are a fixed distance from a given point in the plane.
+            The circle has a focus known as the center of the circle.
+        </span>
+        <span id="conic-section-svg" include="/components/svg/conicsections.html"></span>
     </p>
 
     <section id="video-tutorial">
@@ -18,10 +21,20 @@
                 $$ (x-h)^2 + (y-k)^2 = r^2 $$
             </span>
 
+            While a circle whose center is placed at $(0, 0)$ is as follows:
+            <span class="formula">
+                $$ x^2 + y^2 = r^2 $$
+            </span>
+
+            Now that seems like a familiar formula, huh? Remember the <strong class="highlight">Pythagorean Theorem</strong>?
+            <span class="formula">
+                $$ a^2 + b^2 = c^2 $$
+            </span>
+
             <div>
                 <h3>Desmos Graph of Circle at $(h, k)$</h3>
                 <span>(You can drag the center and the radius to adjust them)</span>
-                <iframe class="desmos" src="https://www.desmos.com/calculator/2kmerjeuhv?embed" width="500" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
+                <iframe class="desmos" src="https://www.desmos.com/calculator/7edvtwrcoh?embed" width="500" height="500" frameborder=0></iframe>
             </div>
 
             <div class="solving">
@@ -31,11 +44,14 @@
                     <span class="indent">$ (x-5)^2 + (y+4)^2 = 27 $</span>
 
                     <span>
-                        The center is $(5, -4)$. <br>
+                        The center is at $(5, -4)$.
                         Notice how the numbers signs have been switched. This is the case for all circles due to the negative in the base equation above.
                         To better illustrate, take a look at the figure below:
                     </span>
-                    <span class="indent">$ (x-(5))^2 + (y-(-4))^2 = 9 $</span>
+                    <span class="indent">$ 
+                        (x-(5))^2 + (y-(-4))^2 = 9 \newline
+                        = C(5, -4)
+                    $</span>
                     <span>
                         Now we're going to find the radius. If $r^2 = 9$ then $r$ must be $r=\sqrt{9}$ which is $r=3$. 
                         We do not accept the negative solution to the radius because a circle's radius must be $r\ge 0$.
@@ -50,6 +66,53 @@
             <div class="callout">
                 <h3> Fun Fact: Circles with $r=0$</h3>
                 Circles with a radius of $r=0$ are called <strong>point circles</strong>!
+            </div>
+        </p>
+    </section>
+    <section id="graphing-circles">
+        <h2><a href="#graphing-circles">Graphing Circles</a></h2>
+        <p>
+            Now that we have discussed how to get the center and the radius from the standard equation of a circle,
+            we can now move on to graphing a sketch of the circle.
+
+            <h3>Getting the N.E.W.S. of the Circle</h3>
+            N.E.W.S. means north, east, west, and south. To get the N.E.W.S. of a Circle we follow this format:
+            <span>$$
+                N: (h, k + r) \newline
+                E: (h + r, k) \newline
+                W: (h - r, k) \newline
+                S: (h, k - r)
+            $$</span>
+
+            <div class="solving">
+                <h3>Example</h3>
+                <div>
+                    <span>Find the N.E.W.S. of:</span>
+                    <span class="indent">$ (x+5)^2 + (y-3)^2 = 4 $</span>
+
+                    <span>Let us find the center first:</span>
+                    <span class="indent">$
+                        (x-(-5))^2 + (y-(3))^2 = 4 \newline
+                        = C(-5, 3)
+                    $</span>
+
+                    <span>Then let us find the radius next:</span>
+                    <span class="indent">$
+                        (x-5)^2 + (y-3)^2 = 2^2 \newline
+                        r=2
+                    $</span>
+
+                    <span>Now that we have both the center and the radius, we can now obtain the N.E.W.S.</span>
+                    <span class="indent">$
+                        N: (-5, 3 + 2) = (-5, 5) \newline
+                        E: (-5 + 2, 3) = (3, 3) \newline
+                        W: (-5 - 2, 3) = (-7, 3)  \newline
+                        S: (-5, 3 - 2) = (-5, 5)
+                    $</span>
+
+                    <span>Let us now plot the N.E.W.S. of the circle into the cartesian plane:</span>
+                    <iframe src="https://www.desmos.com/calculator/zu3j5ksnrh?embed" width="500" height="500" frameborder=0></iframe>
+                </div>
             </div>
         </p>
     </section>

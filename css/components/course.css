@@ -83,4 +83,10 @@ body {
   color: #FFFFFF;
 }
 
+@media screen and (max-width: 1024px) {
+  html {
+    scroll-padding-top: 8rem;
+  }
+}
+
 /*# sourceMappingURL=course.css.map */

@@ -1,4 +1,5 @@
 import { injectAll } from "../js/modular.js";
+import { scanForButtons } from "../js/fancyButtons.js";
 
 function animateModulesNav() {
     const BREAK_POINT = 1024
@@ -60,7 +61,21 @@ function renderKateX() {
     })
 }
 
+function spoiler() {
+    const spoilers = document.getElementsByClassName("spoiler")
+    for (let i = 0; i < spoilers.length; i++) {
+        const elem = spoilers[i];
+        elem.onclick = () => {
+            elem.style.opacity = 0;
+        }
+    }
+}
+
 document.addEventListener("DOMContentLoaded", () => {
     animateModulesNav()
-    injectAll().then(renderKateX)
+    injectAll().then(() => {
+        renderKateX()
+        scanForButtons(document.querySelector("article"))
+        spoiler()
+    })
 })

@@ -140,6 +140,7 @@ body {
 
             padding: 3em 3em 3em 3em;
     
+            font-size: 1.1rem;
             line-height: 1.5;
     
             iframe {
@@ -147,8 +148,8 @@ body {
                 width: 100%;
                 height: auto;
 
-                margin-top: 1rem;
-                border-radius: 1rem;
+                margin-top: 1em;
+                border-radius: 1em;
                 border: solid $course-accent-color;
             }
     
@@ -157,52 +158,107 @@ body {
         
                 h1 {
                     font-size: 2.5em;
-                    margin-bottom: 1rem;
+                    margin-bottom: 1em;
                 }
         
                 .module-description {
-                    margin-bottom: 3rem;
+                    margin-bottom: 3em;
+                }
+
+                a {
+                    color: $course-accent-color;
+                    font-family: $Mori-SemiBold;
+                };
+
+                h2 {
+                    font-size: 2em;
+                    font-family: $Mori-SemiBold;
+                }
+
+                h3 {
+                    margin-top: 1em;
+                    margin-bottom: 0.5em;
+
+                    font-size: 1.5em;
+                    font-family: $Mori-SemiBold;
+                }
+
+                .highlight {
+                    color: $course-accent-color;
+                }
+
+                .spoiler-container {
+                    position: relative;
+                    .spoiler {
+                        background-color: $primary-color;
+
+                        border: solid $course-accent-color;
+                        border-radius: 1rem;
+                        width: 105%;
+                        height: 110%;
+
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        transform: translate(-2.5%, -5%);
+
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        z-index: 1;
+
+                        transition: opacity 500ms;
+
+                        .fancy-button {
+                            background-color: transparent !important;
+                            border: solid $course-accent-color;
+                            border-radius: 4rem;
+                            padding: 0.25em 0.5em 0.25em 0.5em;
+
+                            font-size: 1.5em;
+        
+                            @include fancyButton($course-accent-color, $text-color, $course-accent-color);
+        
+                            transition: opacity 250ms;
+                        }
+
+                        @supports (backdrop-filter: blur()) {
+                            background-color: $transparent-color;
+                            backdrop-filter: blur(1rem);
+                        }
+                    }
                 }
     
                 section {
-                    margin-top: 1rem;
-                    margin-bottom: 2rem;
-    
-                    a {
-                        color: $course-accent-color;
-                        font-family: $Mori-SemiBold;
-                    };
-    
-                    h2 {
-                        font-size: 2em;
-                    }
-    
-                    h3 {
-                        margin-top: 1rem;
-                        margin-bottom: 0.5rem;
+                    margin-top: 1em;
+                    margin-bottom: 2em;
+
+                    ol {
+                        padding-left: 1em;
                     }
     
                     .solving {
                         div {
                             display: flex;
                             flex-direction: column;
-                            padding-left: 1rem;
+                            padding-left: 1em;
                         }
                         .indent {
-                            padding-left: 1rem;
-                            margin-bottom: 1rem;
+                            padding-left: 1em;
+                            margin-bottom: 1em;
                         }
                     }
     
                     .callout {
                         background-color: $secondary-color;
     
-                        padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+                        padding: 1.5em 1.5em 1.5em 1.5em;
                         border-radius: 1rem;
                         border: solid $course-accent-color;
     
                         h3 {
-                            font-size: 1.25rem;
+                            font-size: 1.25em;
                             font-family: $Mori-SemiBold;
                             margin-top: 0;
                             margin-bottom: 0;
@@ -246,6 +302,7 @@ body {
                 }
             }
             main {
+                font-size: 1.15rem;
                 padding-top: 6em;
             }
         }
@@ -257,11 +314,20 @@ body {
                 }
             }
             main {
+                padding-left: 2rem;
+                padding-right: 2rem;
+                font-size: 1.25rem;
                 .desmos {
                     aspect-ratio: 1;
                     height: auto;
                 }
             }
         }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    html {
+        scroll-padding-top: 8rem;
     }
 }

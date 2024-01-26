@@ -2,4 +2,27 @@
 @import "../../fancyButtons";
 @import "../course";
 
-@include course($precalc-color)
+@include course($precalc-color);
+
+.module-description {
+    display: flex;
+
+    #conic-section-svg {
+        svg {
+            margin-top: -6rem;
+            height: 24rem;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+        align-items: center;
+
+        #conic-section-svg {
+            svg {
+                margin-top: 4rem;
+                width: 36rem;
+            }
+        }
+    }
+}

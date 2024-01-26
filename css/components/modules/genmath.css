@@ -158,6 +158,11 @@ body {
   color: #FFFFFF;
 }
 
+@media screen and (max-width: 1024px) {
+  html {
+    scroll-padding-top: 8rem;
+  }
+}
 footer {
   background-color: #141515;
 }
@@ -257,14 +262,15 @@ footer * {
   background-color: #121212;
   z-index: 0;
   padding: 3em 3em 3em 3em;
+  font-size: 1.1rem;
   line-height: 1.5;
 }
 .main-container main iframe {
   aspect-ratio: 16/9;
   width: 100%;
   height: auto;
-  margin-top: 1rem;
-  border-radius: 1rem;
+  margin-top: 1em;
+  border-radius: 1em;
   border: solid #3fb950;
 }
 .main-container main article {
@@ -272,43 +278,93 @@ footer * {
 }
 .main-container main article h1 {
   font-size: 2.5em;
-  margin-bottom: 1rem;
+  margin-bottom: 1em;
 }
 .main-container main article .module-description {
-  margin-bottom: 3rem;
+  margin-bottom: 3em;
 }
-.main-container main article section {
-  margin-top: 1rem;
-  margin-bottom: 2rem;
-}
-.main-container main article section a {
+.main-container main article a {
   color: #3fb950;
   font-family: "PPMori-SemiBold", Arial, sans-serif;
 }
-.main-container main article section h2 {
+.main-container main article h2 {
   font-size: 2em;
+  font-family: "PPMori-SemiBold", Arial, sans-serif;
 }
-.main-container main article section h3 {
-  margin-top: 1rem;
-  margin-bottom: 0.5rem;
+.main-container main article h3 {
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  font-size: 1.5em;
+  font-family: "PPMori-SemiBold", Arial, sans-serif;
+}
+.main-container main article .highlight {
+  color: #3fb950;
+}
+.main-container main article .spoiler-container {
+  position: relative;
+}
+.main-container main article .spoiler-container .spoiler {
+  background-color: #141515;
+  border: solid #3fb950;
+  border-radius: 1rem;
+  width: 105%;
+  height: 110%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  transform: translate(-2.5%, -5%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  transition: opacity 500ms;
+}
+.main-container main article .spoiler-container .spoiler .fancy-button {
+  background-color: transparent !important;
+  border: solid #3fb950;
+  border-radius: 4rem;
+  padding: 0.25em 0.5em 0.25em 0.5em;
+  font-size: 1.5em;
+  border-color: #3fb950;
+  color: #3fb950;
+  transition: opacity 250ms;
+}
+.main-container main article .spoiler-container .spoiler .fancy-button .flair {
+  background-color: #3fb950;
+}
+.main-container main article .spoiler-container .spoiler .fancy-button:hover {
+  color: #FFFFFF;
+}
+@supports (backdrop-filter: blur()) {
+  .main-container main article .spoiler-container .spoiler {
+    background-color: rgba(29, 29, 33, 0.4);
+    backdrop-filter: blur(1rem);
+  }
+}
+.main-container main article section {
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+.main-container main article section ol {
+  padding-left: 1em;
 }
 .main-container main article section .solving div {
   display: flex;
   flex-direction: column;
-  padding-left: 1rem;
+  padding-left: 1em;
 }
 .main-container main article section .solving .indent {
-  padding-left: 1rem;
-  margin-bottom: 1rem;
+  padding-left: 1em;
+  margin-bottom: 1em;
 }
 .main-container main article section .callout {
   background-color: #191a1f;
-  padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+  padding: 1.5em 1.5em 1.5em 1.5em;
   border-radius: 1rem;
   border: solid #3fb950;
 }
 .main-container main article section .callout h3 {
-  font-size: 1.25rem;
+  font-size: 1.25em;
   font-family: "PPMori-SemiBold", Arial, sans-serif;
   margin-top: 0;
   margin-bottom: 0;
@@ -342,12 +398,18 @@ footer * {
     display: flex;
   }
   .main-container main {
+    font-size: 1.15rem;
     padding-top: 6em;
   }
 }
 @media screen and (max-width: 768px) {
   .main-container .sidebar .open-button {
     left: 1rem;
+  }
+  .main-container main {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-size: 1.25rem;
   }
   .main-container main .desmos {
     aspect-ratio: 1;
