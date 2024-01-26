@@ -111,10 +111,11 @@ body {
     grid-template-columns: 1fr;
   }
   #pricing .plans div {
-    font-size: 2rem !important;
+    font-size: min(2rem, 4vw) !important;
   }
   #pricing .plans div .fancy-button {
     width: 100% !important;
+    font-size: 1.25em !important;
   }
 }
 #pricing .plans #plan-trial {
@@ -147,7 +148,7 @@ body {
   color: gray;
 }
 #pricing .plans #plan-trial .period {
-  font-size: 0.75rem;
+  font-size: 0.75em;
   line-height: 2;
   color: gray;
 }
@@ -199,7 +200,7 @@ body {
   color: gray;
 }
 #pricing .plans #plan-standard .period {
-  font-size: 0.75rem;
+  font-size: 0.75em;
   line-height: 2;
   color: gray;
 }
@@ -251,7 +252,7 @@ body {
   color: gray;
 }
 #pricing .plans #plan-premium .period {
-  font-size: 0.75rem;
+  font-size: 0.75em;
   line-height: 2;
   color: gray;
 }
