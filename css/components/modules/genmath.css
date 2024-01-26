@@ -250,7 +250,10 @@ footer * {
   line-height: 1.5;
 }
 .main-container main iframe {
+  aspect-ratio: 16/9;
   width: 100%;
+  height: auto;
+  margin-top: 1rem;
 }
 .main-container main article {
   display: block;
@@ -274,6 +277,7 @@ footer * {
   font-size: 2em;
 }
 .main-container main article section h3 {
+  margin-top: 1rem;
   margin-bottom: 0.5rem;
 }
 .main-container main article section .solving div {
@@ -294,10 +298,12 @@ footer * {
 .main-container main article section .callout h3 {
   font-size: 1.25rem;
   font-family: "PPMori-SemiBold", Arial, sans-serif;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 .main-container main article section .callout .flair {
   height: 0;
-  width: 50%;
+  width: 90%;
   position: absolute;
   right: 1rem;
   opacity: 0.1;
@@ -339,6 +345,10 @@ footer * {
 @media screen and (max-width: 768px) {
   .main-container .sidebar .open-button {
     left: 1rem;
+  }
+  .main-container main .desmos {
+    aspect-ratio: 1;
+    height: auto;
   }
 }
 

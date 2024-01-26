@@ -1,118 +1,56 @@
 <article id="module-content">
-    <h1>Law of Logarithms</h1>
+    <h1>The Circle</h1>
     <p class="module-description">
-        Logarithms are the inverse of exponentiation and just like exponents, they have a set of given laws. 
-        Laws of logarithms are rules that can be applied to simplify and solve complicated logarithmic equations.
+        A circle is all points in a plane that are a fixed distance from a given point in the plane.
+        The circle has a focus known as the center of the circle.    
     </p>
 
     <section id="video-tutorial">
         <h2><a href="#video-tutorial">Video Tutorial</a></h2>
-        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/bowrJ31ojOg?si=oFE_BCDfzyKYUiPf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/u_39J-syjB0?si=prcE-EQzcOebGsl0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </section>
 
-    <section id="product-law">
-        <h2><a href="#product-law">Product Law</a></h2>
+    <section id="standard-form-of-the-equation-of-a-circle">
+        <h2><a href="#standard-form-of-the-equation-of-a-circle">Standard Form of the Equation of a Circle</a></h2>
         <p>
-            The product rule for logarithms can be used to simplify a logarithm of a product by rewriting it as a sum of individual logarithms.
+            The standard form of the equation of a circle with center at (h, k), and radius r is as follows:
             <span class="formula">
-                $$\log_{b}{uv}=\log_{b}{u}+\log_{b}{v}$$
+                $$ (x-h)^2 + (y-k)^2 = r^2 $$
             </span>
 
-            <div class="solving">
-                <h3>Illustrative Example 1</h3>
-                <div>
-                    <span>Expand:</span>
-                    <span class="indent">$\log_{6}{24}$</span>
-
-                    <span>Expand $24$ into factors that we can later simplify:</span>
-                    <span class="indent">$\log_{6}{(6\cdot 4)=\log_{6}{6}+\log_{6}{4}}$</span>
-
-                    <span>Recall <a>Property 2 of Logarithms</a>:</span>
-                    <span class="indent">$1+\log_{6}{(4)}$</span>
-
-                    <span>Further expand the argument of the second logarithm:</span>
-                    <span class="indent">$1+\log_{6}{(2^2)}$</span>
-
-                    <span>Bring out the exponent using the <a href="#power-law">Power Law of Logarithms</a>:</span>
-                    <span class="indent">$ \boxed{ 1+2\log_{6}{(2)} } $</span>
-                </div>
+            <div>
+                <h3>Desmos Graph of Circle at $(h, k)$</h3>
+                <span>(You can drag the center and the radius to adjust them)</span>
+                <iframe class="desmos" src="https://www.desmos.com/calculator/2kmerjeuhv?embed" width="500" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
             </div>
 
-            <div class="callout">
-                <h3> Recall: Property 2 of Logarithms</h3>
-                When the base and the argument of the logarithm are equal. The result will be $1$.
-                $$log_{b}{b}=1$$
-                <span class="flair"></span>
-            </div>
-        </p>
-    </section>
-
-    <section id="quotient-law">
-        <h2><a href="#quotient-law">Quotient Law</a></h2>
-        <p>
-            The quotient rule for logarithms says that the logarithm of a quotient is equal to a difference of logarithms. 
-            Just as with the product rule, we can use the inverse property to derive the quotient rule.
-            <span class="formula">
-                $$\log_{b}{\frac{u}{v}}=\log_{b}{u}-\log_{b}{b}$$
-            </span>
-
             <div class="solving">
-                <h3>Illustrative Example 1</h3>
+                <h3>Example</h3>
                 <div>
-                    <span>Expand:</span>
-                    <span class="indent">$ \log_{2}{(\frac{32}{8})} $</span>
+                    <span>Find the center and radius of:</span>
+                    <span class="indent">$ (x-5)^2 + (y+4)^2 = 27 $</span>
 
-                    <span>Expand the logarithm:</span>
-                    <span class="indent">$ \log_{2}{(\frac{32}{8})}=\log_{2}{32}+\log_{2}{8} $</span>
-
-                    <span>Simplify:</span>
-                    <span class="indent">$ \log_{2}{(2^5)}+\log_{2}{(2^3)} $</span>
-
-                    <span>We can now extract their exponent as per <a>Property 3 of Logarithms</a>:</span>
+                    <span>
+                        The center is $(5, -4)$. <br>
+                        Notice how the numbers signs have been switched. This is the case for all circles due to the negative in the base equation above.
+                        To better illustrate, take a look at the figure below:
+                    </span>
+                    <span class="indent">$ (x-(5))^2 + (y-(-4))^2 = 9 $</span>
+                    <span>
+                        Now we're going to find the radius. If $r^2 = 9$ then $r$ must be $r=\sqrt{9}$ which is $r=3$. 
+                        We do not accept the negative solution to the radius because a circle's radius must be $r\ge 0$.
+                    </span>
                     <span class="indent">$
-                        = 5-3 \newline
-                        \boxed{= 2}
+                        (x-(5))^2 + (y-(-4))^2 = 3^2 \newline
+                        r=3
                     $</span>
                 </div>
             </div>
 
             <div class="callout">
-                <h3> Recall: Property 3 of Logarithms</h3>
-                When the base of the logarithm and the base of the argument is the same. The logarithm is equal to the exponent of the argument's base.
-                $$log_{b}{b^x}=x$$
+                <h3> Fun Fact: Circles with $r=0$</h3>
+                Circles with a radius of $r=0$ are called <strong>point circles</strong>!
                 <span class="flair"></span>
-            </div>
-        </p>
-    </section>
-
-    <section id="power-law">
-        <h2><a href="#power-law">Power Law</a></h2>
-        <p>
-            The power rule for logarithms can be used to simplify the logarithm of a power by rewriting it as the product of the exponent times the logarithm of the base.
-            <span class="formula">
-                $$\log_{b}{u^n}=n\log_{b}{u}$$
-            </span>
-            <div class="solving">
-                <h3>Illustrative Example 1</h3>
-                <div>
-                    <span>Expand:</span>
-                    <span class="indent">$ \log_{10}{64} $</span>
-
-                    <span >Simplify $64$ into $8^2$:</span>
-                    <span class="indent">$ \log_{10}{(8^2)} $</span>
-
-                    <span>Bring out the exponent using the law:</span>
-                    <span class="indent">$ 2\log_{10}{(8)} $</span>
-
-                    <span>Further expand the argument:</span>
-                    <span class="indent">$ 2\log_{10}{(2^3)} $</span>
-
-                    <span>Bring out the exponent:</span>
-                    <span class="indent">$ 
-                        = 3 \cdot 2 \log_{10}{(2)} \newline
-                        \boxed{= 6 \log_{10}{(2)}}
-                    $</span>
-                </div>
             </div>
         </p>
     </section>

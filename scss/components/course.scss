@@ -132,7 +132,11 @@ body {
             line-height: 1.5;
     
             iframe {
+                aspect-ratio: 16/9;
                 width: 100%;
+                height: auto;
+
+                margin-top: 1rem;
             }
     
             article {
@@ -161,6 +165,7 @@ body {
                     }
     
                     h3 {
+                        margin-top: 1rem;
                         margin-bottom: 0.5rem;
                     }
     
@@ -185,13 +190,15 @@ body {
                         h3 {
                             font-size: 1.25rem;
                             font-family: $Mori-SemiBold;
+                            margin-top: 0;
+                            margin-bottom: 0;
                         }
 
                         position: relative;
 
                         .flair {
                             height: 0;
-                            width: 50%;
+                            width: 90%;
 
                             position: absolute;
                             right: 1rem;
@@ -247,6 +254,12 @@ body {
             .sidebar {
                 .open-button {
                     left: 1rem;
+                }
+            }
+            main {
+                .desmos {
+                    aspect-ratio: 1;
+                    height: auto;
                 }
             }
         }
