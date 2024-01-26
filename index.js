@@ -41,6 +41,25 @@ function exercisesShape() {
     })
 }
 
+function joinCirle() {
+    const join_circle = document.getElementById("join-circle-shape")
+    gsap.to(join_circle, {
+        scrollTrigger: {
+            trigger: join_circle,
+            start: "top bottom",
+            scrub: 1,
+        },
+        opacity: 0.2,
+    })
+
+    gsap.to(join_circle, {
+        rotate: -360,
+        repeat: -1,
+        duration: 60,
+        ease: "none",
+    })
+}
+
 function scrollAnimations() {
     const header = document.querySelector("header")
 
@@ -93,5 +112,6 @@ document.addEventListener("DOMContentLoaded", () => {
     genmathLog()
     precalcCirle()
     exercisesShape()
+    joinCirle()
     scrollAnimations()
 })

@@ -316,10 +316,31 @@ header {
             border-bottom-right-radius: 0;
         }
         .icons:last-child {
+            position: relative;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            #join-circle-shape {
+                background-color: desaturate($accent-color, 10);
+                -webkit-mask: url(/assets/svg/circle.svg) no-repeat center / cover;
+                mask: url(/assets/svg/circle.svg) no-repeat center / cover;
+                opacity: 0;
+    
+                position: absolute;
+                aspect-ratio: 1;
+                height: 48rem;
+                
+                z-index: -1;
+            }
+
             .glow {
                 width: 0;
                 height: 0;
+                transform: translateY(-1rem);
                 box-shadow: 18px 18px 36px 18px $accent-color;
+                z-index: -1;
             }
         }
     }
