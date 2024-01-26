@@ -1,9 +1,9 @@
 footer {
-    --footer-accent: white;
+    --footer-accent: gray;
     width: 100%;
     height: fit-content;
     
-    padding: 8rem 24rem 8rem 24rem;
+    padding: 8rem 18rem 8rem 18rem;
 
     display: flex;
     flex-wrap: wrap;
@@ -39,6 +39,7 @@ footer {
 
     @media screen and (max-width: 1024px) {
         gap: 2rem;
+        padding: 4rem 2rem 4rem 2rem;
         #footer-title {
             width: 100%;
         }
