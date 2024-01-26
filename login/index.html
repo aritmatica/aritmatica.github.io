@@ -15,14 +15,20 @@
     <script src="/js/gsap.js"></script>
     <script src="/js/gsap/scrollTrigger.js"></script>
     <script src="/js/scrollreveal.js"></script>
-    <script src="/js/modular_auto.js" type="module"></script>
     <script src="/js/fancyButtons.js"></script>
+
+    <script defer src="/js/squaresAnim.js" type="module"></script>
 </head>
 
 <body>
     <nav include="/components/nav"></nav>
 
     <main class="main-container">
+        <div class="bg-effect">
+            <div id="bg-left" include="/components/svg/squares-left.html"></div>
+            <div id="bg-right" include="/components/svg/squares-right.html"></div>
+        </div>
+
         <div class="form-content">
             <header>
                 <span class="title">Log in</span>
@@ -39,7 +45,7 @@
                     <a href="#">Forgot password?</a>
                 </div>
                 <div class="button">
-                    <a class="fancy-button" href="#">
+                    <a class="fancy-button" href="/modules/">
                         <span class="flair"></span>
                         <span class="label">Log In</span>
                     </a>

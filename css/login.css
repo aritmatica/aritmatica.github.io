@@ -95,6 +95,38 @@ footer * {
   justify-content: center;
   text-align: center;
 }
+.main-container .bg-effect {
+  position: absolute;
+  max-width: 1440px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  z-index: -1;
+}
+.main-container .bg-effect div {
+  opacity: 0.5;
+}
+.main-container .bg-effect div svg {
+  width: 100%;
+}
+.main-container .bg-effect div svg path {
+  fill: #7c72ff;
+}
+@media screen and (max-width: 1440px) {
+  .main-container .bg-effect #bg-right {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main-container .bg-effect {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .main-container .bg-effect #bg-right {
+    display: unset;
+  }
+}
 .main-container .form-content {
   background-color: #191a1f;
   width: 28rem;
