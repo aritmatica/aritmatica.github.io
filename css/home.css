@@ -221,7 +221,10 @@ header main span {
   margin-top: 1.125rem;
 }
 #genmath main h2 .highlight, #genmath main h2 span .highlight {
-  color: #3fb950;
+  color: transparent;
+  background-image: linear-gradient(90deg, #3fb950, #3fb979);
+  -webkit-background-clip: text;
+  background-clip: text;
 }
 #genmath main h3, #genmath main h3 span {
   margin-top: 1rem;
@@ -289,7 +292,7 @@ header main span {
   }
 }
 #genmath #genmath-log {
-  background-color: #3fb950;
+  background-image: linear-gradient(#3fb950, #3fb983);
   -webkit-mask: url(/assets/svg/logarithm.svg) no-repeat center/cover;
   mask: url(/assets/svg/logarithm.svg) no-repeat center/cover;
   opacity: 0.01;
@@ -324,7 +327,10 @@ header main span {
   margin-top: 1.125rem;
 }
 #precalc main h2 .highlight, #precalc main h2 span .highlight {
-  color: #ff6200;
+  color: transparent;
+  background-image: linear-gradient(90deg, #ff6200, #ffb700);
+  -webkit-background-clip: text;
+  background-clip: text;
 }
 #precalc main h3, #precalc main h3 span {
   margin-top: 1rem;
@@ -392,7 +398,7 @@ header main span {
   }
 }
 #precalc .card-media #precalc-circle {
-  background-color: #ff6200;
+  background-image: linear-gradient(#ff6200, #ffb700);
   -webkit-mask: url(/assets/svg/circle.svg) no-repeat center/cover;
   mask: url(/assets/svg/circle.svg) no-repeat center/cover;
   opacity: 0.01;
@@ -427,7 +433,10 @@ header main span {
   margin-top: 1.125rem;
 }
 #exercises main h2 .highlight, #exercises main h2 span .highlight {
-  color: #7c72ff;
+  color: transparent;
+  background-image: linear-gradient(90deg, #7c72ff, #ab72ff);
+  -webkit-background-clip: text;
+  background-clip: text;
 }
 #exercises main h3, #exercises main h3 span {
   margin-top: 1rem;
@@ -508,7 +517,7 @@ header main span {
   height: 64rem;
 }
 #exercises #exercises-shape {
-  background-color: #7c72ff;
+  background-image: linear-gradient(#7c72ff, #c372ff);
   -webkit-mask: url(/assets/svg/shape2.svg) no-repeat center/cover;
   mask: url(/assets/svg/shape2.svg) no-repeat center/cover;
   opacity: 0.01;

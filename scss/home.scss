@@ -1,4 +1,6 @@
-    @import "global";
+@use "sass:color";
+
+@import "global";
 @import "fancyButtons";
 
 @mixin four-sided-padding($padding) {
@@ -179,7 +181,13 @@ header {
             font-family: $Mori-SemiBold;
             margin-top: 1.125rem;
             .highlight {
-                color: $section-color;
+                color: transparent;
+                background-image: linear-gradient(90deg, $section-color, adjust-hue($section-color, 20));
+                //background-image: linear-gradient(90deg, $genmath-color, #3fb9a5);
+                //background-image: linear-gradient(90deg,#a17be7, #e26dad);
+                -webkit-background-clip: text;
+                background-clip: text;
+                //color: $section-color;
             }
         }
         
@@ -268,7 +276,7 @@ header {
 #genmath {
     @include section($genmath-color, $precalc-color);
     #genmath-log {
-        background-color: $genmath-color;
+        background-image: linear-gradient($genmath-color, adjust-hue($genmath-color, 25));
         -webkit-mask: url(/assets/svg/logarithm.svg) no-repeat center / cover;
         mask: url(/assets/svg/logarithm.svg) no-repeat center / cover;
         opacity: 0.01;
@@ -286,7 +294,7 @@ header {
 
     .card-media {
         #precalc-circle {
-            background-color: $precalc-color;
+            background-image: linear-gradient($precalc-color, adjust-hue($precalc-color, 20));
             -webkit-mask: url(/assets/svg/circle.svg) no-repeat center / cover;
             mask: url(/assets/svg/circle.svg) no-repeat center / cover;
             opacity: 0.01;
@@ -319,7 +327,7 @@ header {
         height: 64rem;
     }
     #exercises-shape {
-        background-color: $exercises-color;
+        background-image: linear-gradient($exercises-color, adjust-hue($exercises-color, 30));
         -webkit-mask: url(/assets/svg/shape2.svg) no-repeat center / cover;
         mask: url(/assets/svg/shape2.svg) no-repeat center / cover;
         opacity: 0.01;
