@@ -24,6 +24,8 @@ async function injectHTML(filePath, elem) {
             // replace existing script tag to a new one
             script.parentNode.replaceChild(newScript, script);
         })
+
+        injectElem(elem)
     } catch (err) {
         console.error(err.message);
     }
@@ -32,6 +34,12 @@ async function injectHTML(filePath, elem) {
 function injectTag(tag) {    
     document.querySelectorAll(`${tag}[include]`).forEach((elem) => {
         injectHTML(elem.getAttribute("include"),elem);
+    })
+}
+
+function injectElem(elem) {
+    elem.querySelectorAll("*[include]").forEach((e) => {
+        injectHTML(e.getAttribute("include"),e);
     })
 }
 
@@ -49,4 +57,4 @@ function injectAll() {
     })
 }
 
-export {injectTag, injectAll}
+export {injectTag, injectAll, injectElem}
