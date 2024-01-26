@@ -132,6 +132,7 @@ footer * {
   width: 28rem;
   height: auto;
   border-radius: 1rem;
+  border: solid #b96065;
   padding-bottom: 1rem;
 }
 .main-container .form-content header {
