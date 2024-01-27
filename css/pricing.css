@@ -85,6 +85,11 @@ body {
   flex-direction: column;
   align-items: center;
 }
+@media screen and (max-width: 1024px) {
+  #pricing {
+    width: 90%;
+  }
+}
 #pricing .title {
   font-size: 2.75rem;
   font-family: "PPMori-SemiBold", Arial, sans-serif;
@@ -100,13 +105,24 @@ body {
   font-size: 0.5em;
 }
 #pricing .plans {
-  width: 100%;
   margin-top: 2rem;
   display: grid;
   gap: 2em;
   grid-template-columns: repeat(3, 1fr);
 }
 @media screen and (max-width: 1024px) {
+  #pricing .plans {
+    gap: 1em;
+  }
+  #pricing .plans div {
+    font-size: min(2em, 1.5vw) !important;
+  }
+  #pricing .plans div .fancy-button {
+    width: 100% !important;
+    font-size: 1em !important;
+  }
+}
+@media screen and (max-width: 768px) {
   #pricing .plans {
     grid-template-columns: 1fr;
   }
