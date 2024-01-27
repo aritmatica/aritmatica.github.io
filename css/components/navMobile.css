@@ -1,12 +1,12 @@
 @font-face {
   font-family: "PPMori-Regular";
-  src: url("/assets/fonts/PPMori-Regular.otf") format("opentype");
+  src: url("https://cdn.jsdelivr.net/gh/aritmatica/cdn/fonts/PPMori-Regular.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "PPMori-SemiBold";
-  src: url("/assets/fonts/PPMori-SemiBold.otf") format("opentype");
+  src: url("https://cdn.jsdelivr.net/gh/aritmatica/cdn/fonts/PPMori-SemiBold.otf") format("opentype");
   font-weight: 600;
   font-style: normal;
 }
@@ -14,7 +14,7 @@
   font-family: "Material Symbols Outlined";
   font-style: normal;
   font-weight: 100 700;
-  src: url(/assets/gstatic/kJEhBvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oFsI.woff2) format("woff2");
+  src: url(https://cdn.jsdelivr.net/gh/aritmatica/cdn/gstatic/icons.woff2) format("woff2");
 }
 :root {
   color-scheme: dark;

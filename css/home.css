@@ -1,12 +1,12 @@
 @font-face {
   font-family: "PPMori-Regular";
-  src: url("/assets/fonts/PPMori-Regular.otf") format("opentype");
+  src: url("https://cdn.jsdelivr.net/gh/aritmatica/cdn/fonts/PPMori-Regular.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "PPMori-SemiBold";
-  src: url("/assets/fonts/PPMori-SemiBold.otf") format("opentype");
+  src: url("https://cdn.jsdelivr.net/gh/aritmatica/cdn/fonts/PPMori-SemiBold.otf") format("opentype");
   font-weight: 600;
   font-style: normal;
 }
@@ -14,7 +14,7 @@
   font-family: "Material Symbols Outlined";
   font-style: normal;
   font-weight: 100 700;
-  src: url(/assets/gstatic/kJEhBvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oFsI.woff2) format("woff2");
+  src: url(https://cdn.jsdelivr.net/gh/aritmatica/cdn/gstatic/icons.woff2) format("woff2");
 }
 :root {
   color-scheme: dark;
@@ -294,8 +294,8 @@ header main span {
 }
 #genmath #genmath-log {
   background-image: linear-gradient(#3fb950, #3fb983);
-  -webkit-mask: url(/assets/svg/logarithm.svg) no-repeat center/cover;
-  mask: url(/assets/svg/logarithm.svg) no-repeat center/cover;
+  -webkit-mask: url(https://cdn.jsdelivr.net/gh/aritmatica/cdn/svg/aritmatica-logarithm.svg) no-repeat center/cover;
+  mask: url(https://cdn.jsdelivr.net/gh/aritmatica/cdn/svg/aritmatica-logarithm.svg) no-repeat center/cover;
   opacity: 0.01;
   position: absolute;
   width: 125%;
@@ -400,8 +400,8 @@ header main span {
 }
 #precalc .card-media #precalc-circle {
   background-image: linear-gradient(#ff6200, #ffb700);
-  -webkit-mask: url(/assets/svg/circle.svg) no-repeat center/cover;
-  mask: url(/assets/svg/circle.svg) no-repeat center/cover;
+  -webkit-mask: url(https://cdn.jsdelivr.net/gh/aritmatica/cdn/svg/aritmatica-circle.svg) no-repeat center/cover;
+  mask: url(https://cdn.jsdelivr.net/gh/aritmatica/cdn/svg/aritmatica-circle.svg) no-repeat center/cover;
   opacity: 0.01;
   position: absolute;
   top: 0;
@@ -534,8 +534,8 @@ header main span {
 }
 #exercises #exercises-shape {
   background-image: linear-gradient(#7c72ff, #c372ff);
-  -webkit-mask: url(/assets/svg/shape2.svg) no-repeat center/cover;
-  mask: url(/assets/svg/shape2.svg) no-repeat center/cover;
+  -webkit-mask: url(https://cdn.jsdelivr.net/gh/aritmatica/cdn/svg/aritmatica-abstract-shape.svg) no-repeat center/cover;
+  mask: url(https://cdn.jsdelivr.net/gh/aritmatica/cdn/svg/aritmatica-abstract-shape.svg) no-repeat center/cover;
   opacity: 0.01;
   position: absolute;
   width: 125%;
