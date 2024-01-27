@@ -394,6 +394,10 @@ footer * {
     position: fixed;
     transform: translateY(-100%);
   }
+  .main-container .sidebar > ul {
+    height: 50vh;
+    overflow-y: scroll;
+  }
   .main-container .sidebar .open-button {
     display: flex;
   }

@@ -297,6 +297,11 @@ body {
                 position: fixed;
                 transform: translateY(-100%);
     
+                > ul {
+                    height: 50vh;
+                    overflow-y: scroll;
+                }
+
                 .open-button {
                     display: flex;
                 }
