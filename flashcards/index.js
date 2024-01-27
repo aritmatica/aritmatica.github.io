@@ -1,5 +1,18 @@
 import { scanForButtons } from "https://cdn.jsdelivr.net/gh/aritmatica/cdn/js/fancyButtons.js";
 
+var _domContentLoaded = false
+function DOMContentLoaded(...args) {
+    if (_domContentLoaded) {
+        return Promise.resolve(...args)
+    } else {
+        return new Promise(resolve => document.addEventListener("DOMContentLoaded", () => {
+            _domContentLoaded = true
+            resolve(...args)
+        }))
+    }
+}
+DOMContentLoaded()
+
 function populateCardpack(template, data, index) {
     template.classList.add(data.courseClass)
     if (data.active === true) { template.classList.add("active") }
@@ -48,7 +61,7 @@ function populateCardpack(template, data, index) {
     price.classList.add(data.price.toLowerCase())
 }
 
-async function makeCardpacks(parent) {
+async function makeCardpacks(flkty) {
     try {
         const templateResponse = await fetch("/components/cardpack.html")
         if (!templateResponse.ok) {
@@ -75,7 +88,7 @@ async function makeCardpacks(parent) {
 
             populateCardpack(cardpack, cardpackData, i)
 
-            parent.appendChild(cardpack)
+            flkty.append(cardpack)
         }
     } catch (err) {
         console.error(err.message)
@@ -85,16 +98,18 @@ async function makeCardpacks(parent) {
 function setupFlickity () {
     const flashcards = document.getElementById("flashcards")
     const fc_carousel = flashcards.getElementsByClassName("flashcards-carousel")[0]
-    
     const fc_flkty = new Flickity(fc_carousel, {
         cellAlign: "center",
         autoPlay: true,
     });
+
+    return fc_flkty
 }
 
-document.addEventListener("DOMContentLoaded", () => {
+DOMContentLoaded()
+.then(setupFlickity)
+.then(makeCardpacks)
+.then(() => {
     const flashcardsCarousel = document.getElementsByClassName("flashcards-carousel")[0]
-    makeCardpacks(flashcardsCarousel).then(setupFlickity).then(() => {
-        scanForButtons(flashcardsCarousel)
-    })
+    scanForButtons(flashcardsCarousel)
 })
