@@ -17,6 +17,8 @@
     <script src="https://cdn.jsdelivr.net/gh/aritmatica/cdn/js/scrollreveal.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/aritmatica/cdn/js/modular_auto.js" type="module"></script>
     <script src="https://cdn.jsdelivr.net/gh/aritmatica/cdn/js/fancyButtons.js" type="module"></script>
+
+    <script defer src="index.js"></script>
 </head>
 
 <body>
@@ -72,6 +74,29 @@
             </div>
         </div>
     </section>
+
+    <div id="error-prompt">
+        <div class="error-content">
+            <img class="error-mascot" src="https://cdn.jsdelivr.net/gh/aritmatica/cdn/img/aritmatica-mascot-capybara.png">
+            <h1 class="error-title">Oops!</h1>
+            <span class="error-description">
+                Aritmatica's free plan ends here!
+            </span>
+            <span class="error-tip">
+                Avail a higher membership plan to unlock the content you've requested.
+            </span>
+            <div class="error-buttons">
+                <button id="error-continue" class="fancy-button">
+                    <span class="flair"></span>
+                    <span class="label">Continue</span>
+                </button>
+                <button id="error-go-back" class="fancy-button" onclick="history.back()">
+                    <span class="flair"></span>
+                    <span class="label">Go back</span>
+                </button>
+            </div>
+        </div>
+    </div>
 
     <footer include="/components/footer.html"></footer>
 </body>
