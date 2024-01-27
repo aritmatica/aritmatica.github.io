@@ -28,7 +28,7 @@ body[show-error] {
         text-align: center;
 
         h1 {
-            background: linear-gradient(90deg, $accent-color, $exercises-color 100%);
+            background: linear-gradient(90deg, $accent-color, $violet-color 100%);
             background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -132,7 +132,7 @@ body[show-error] {
         }
 
         #plan-premium {
-            @include plan($primary-color, $exercises-color, $exercises-color, $exercises-color, $text-color);
+            @include plan($primary-color, $violet-color, $violet-color, $violet-color, $text-color);
         }
     }
 }

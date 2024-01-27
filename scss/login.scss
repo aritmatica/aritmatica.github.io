@@ -41,7 +41,7 @@ footer {
             svg {
                 width: 100%;
                 path {
-                    fill: $exercises-color;
+                    fill: $violet-color;
                 }
             }
         }
@@ -68,7 +68,7 @@ footer {
         width: 28rem;
         height: auto;
         border-radius: 1rem;
-        border: solid desaturate(darken($exercises-color, 10), 30);
+        border: solid desaturate(darken($violet-color, 10), 30);
 
         padding-bottom: 1rem;
 
@@ -118,7 +118,7 @@ footer {
                     transition: border-color 500ms;
 
                     &:focus {
-                        border: 2px solid $exercises-color;
+                        border: 2px solid $violet-color;
                     }
                 }
             }
@@ -130,7 +130,7 @@ footer {
                 justify-content: center;
 
                 a {
-                    color: $exercises-color;
+                    color: $violet-color;
                 }
             }
 

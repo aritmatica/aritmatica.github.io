@@ -30,7 +30,7 @@ header, section {
     gap: 1vw;
 
     aside {
-        //background-color: $exercises-color;
+        //background-color: $violet-color;
         width: 5%;
 
         display: flex;
@@ -291,7 +291,7 @@ header {
 }
 
 #precalc {
-    @include section($precalc-color, $exercises-color);
+    @include section($precalc-color, $violet-color);
 
     .card-media {
         #precalc-circle {
@@ -309,7 +309,7 @@ header {
 }
 
 #exercises {
-    @include section($exercises-color, $accent-color);
+    @include section($violet-color, $accent-color);
     aside {
         .line {
             height: 80rem;
@@ -346,7 +346,7 @@ header {
         height: 64rem;
     }
     #exercises-shape {
-        background-image: linear-gradient($exercises-color, adjust-hue($exercises-color, 30));
+        background-image: linear-gradient($violet-color, adjust-hue($violet-color, 30));
         -webkit-mask: url(https://cdn.jsdelivr.net/gh/aritmatica/cdn/svg/aritmatica-abstract-shape.svg) no-repeat center / cover;
         mask: url(https://cdn.jsdelivr.net/gh/aritmatica/cdn/svg/aritmatica-abstract-shape.svg) no-repeat center / cover;
         opacity: 0.01;
