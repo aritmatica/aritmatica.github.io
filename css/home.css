@@ -516,12 +516,10 @@ header main span {
   justify-content: center;
 }
 #exercises aside .icons:last-child #join-circle-shape {
-  -webkit-mask: url(/assets/svg/circle.svg) no-repeat center/cover;
-  mask: url(/assets/svg/circle.svg) no-repeat center/cover;
   opacity: 0;
   position: absolute;
   aspect-ratio: 1;
-  height: min(48rem, 150vw);
+  height: min(48rem, 100vw);
   z-index: -1;
 }
 #exercises aside .icons:last-child .glow {
