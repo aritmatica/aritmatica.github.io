@@ -1,5 +1,5 @@
-import { injectAll } from "../js/modular.js";
-import { scanForButtons } from "../js/fancyButtons.js";
+import { injectAll } from "https://cdn.jsdelivr.net/gh/aritmatica/cdn/js/modular.js";
+import { scanForButtons } from "https://cdn.jsdelivr.net/gh/aritmatica/cdn/js/fancyButtons.js";
 
 function animateModulesNav() {
     const BREAK_POINT = 1024
