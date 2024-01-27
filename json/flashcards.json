@@ -1,0 +1,89 @@
+{
+    "cardPacks": [
+        {
+            "courseClass": "genmath",
+            "active": true,
+
+            "courseCode": "GENMATH 001",
+            "title": "Law of Logarithms",
+            "description": "",
+
+            "difficulty": "Easy",
+            "price": "Free",
+
+            "moduleHref": "/modules/genmath",
+
+            "cards": [
+                [
+                    "When the logarithm's argument can be rewritten into a sum of logarithms.",
+                    "Product Law"
+                ],
+                [
+                    "$$\blog_{b}{uv}=\blog_{b}{u}+\blog_{b}{v}$$",
+                    "Product Law"
+                ],
+
+                [
+                    "When the logarithm's argument can be rewritten into a difference of logarithms.",
+                    "Quotient Law"
+                ],
+                [
+                    "$$\blog_{b}{\frac{u}{v}}=\blog_{b}{u}-\blog_{b}{b}$$",
+                    "Quotient Law"
+                ]
+            ]
+        },
+
+        {
+            "courseClass": "precalc",
+            "active": true,
+
+            "courseCode": "CALC 001",
+            "title": "Circles at (h,k)",
+            "description": "",
+
+            "difficulty": "Easy",
+            "price": "Free",
+
+            "moduleHref": "/modules/precalc",
+
+            "cards": [
+                [
+                    "When the logarithm's argument can be rewritten into a sum of logarithms.",
+                    "Product Law"
+                ],
+                [
+                    "$$\blog_{b}{uv}=\blog_{b}{u}+\blog_{b}{v}$$",
+                    "Product Law"
+                ],
+
+                [
+                    "When the logarithm's argument can be rewritten into a difference of logarithms.",
+                    "Quotient Law"
+                ],
+                [
+                    "$$\blog_{b}{\frac{u}{v}}=\blog_{b}{u}-\blog_{b}{b}$$",
+                    "Quotient Law"
+                ]
+            ]
+        },
+        
+        {
+            "courseClass": "genmath",
+            "active": false,
+
+            "courseCode": "GENMATH 001",
+            "title": "All About Logarithms",
+            "description": "",
+
+            "difficulty": "Hard",
+            "price": "Premium",
+
+            "moduleHref": false,
+
+            "cards": [
+                [],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]
+            ]
+        }
+    ]
+}

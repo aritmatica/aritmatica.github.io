@@ -1,0 +1,245 @@
+@import "global";
+@import "fancyButtons";
+
+body {
+    background-color: $background-color;
+    color: $text-color;
+}
+
+#flashcards {
+    width: 100%;
+    margin: 4rem auto 0rem auto;
+
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    > .title {
+        font-size: min(3rem, 12vw);
+        font-family: $Mori-SemiBold;
+        font-weight: 600;
+        text-align: center;
+
+        display: flex;
+        flex-direction: column;
+
+        h1 {
+            $title-color: $violet-color;
+            $title-color-2: adjust-hue($violet-color, 30);
+            color: transparent;
+            background-image: linear-gradient(90deg, $title-color, desaturate($title-color, 50), $title-color-2);
+            background-clip: text;
+        }
+
+        span {
+            color: gray;
+            font-size: 0.3em;
+        }
+    }
+
+    .flashcards-carousel {
+        max-width: 952px;
+        width: 80%;
+        height: 36rem;
+        margin-top: 2rem;
+
+        .flickity-viewport {
+            border-radius: inherit;
+            overflow: visible;
+            height: 100% !important;
+        }
+        
+        .flickity-button {
+            background-color: rgba($secondary-color, 0.75);
+            .flickity-button-icon {
+                fill: $violet-color;
+            }
+        }
+
+        @mixin cardpack-property($property-color) {
+            background-color: $property-color;
+            border-radius: 1em;
+            padding: 0.5em 1em 0.5em 1em;
+
+            color: $text-color;
+            font-size: 1em;
+            font-family: $Mori-SemiBold;
+            text-wrap: nowrap;
+        }
+
+        @mixin cardpack ($cardpack-accent) {
+            width: 100%;
+            height: 100%;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .cardpack-content {
+                background-color: $secondary-color;
+
+                width: 80%;
+                height: 80%;
+                padding: 1.5em 1em 1.5em 1em;
+                border: solid $cardpack-accent;
+                border-radius: 2rem;
+
+                opacity: 0.1;
+
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 1em;
+
+                font-size: 1em;
+                text-align: center;
+
+                transition: opacity 500ms;
+
+                .cardpack-course-code {
+                    color: gray;
+                    font-size: min(1rem, 5vw);
+                }
+
+                .cardpack-title {
+                    color: $cardpack-accent;
+                    font-size: min(2.5rem, 10vw);
+                }
+
+                .cardpack-properties {
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+
+                    font-size: min(1rem, 4.25vw);
+                    gap: 1em;
+
+                    div {
+                        @include cardpack-property(desaturate(darken($cardpack-accent, 25), 10));
+                    }
+
+                    .cardpack-terms {
+                        @include cardpack-property(#0277BD);
+                    }
+
+                    .cardpack-difficulty {
+                        &.easy {
+                            @include cardpack-property(#2E7D32);
+                        }
+                        &.medium {
+                            @include cardpack-property(#F57F17);
+                        }
+                        &.hard {
+                            @include cardpack-property(#d7342a);
+                        }
+                    }
+
+                    .cardpack-price {
+                        &.free {
+                            @include cardpack-property(lighten($secondary-color, 20));
+                        }
+                        &.standard {
+                            @include cardpack-property($accent-color);
+                        }
+                        &.premium {
+                            @include cardpack-property($violet-color);
+                        }
+                    }
+                }
+
+                .buttons {
+                    width: 75%;
+                    margin-top: auto;
+
+                    display: flex;
+                    flex-direction: row;
+                    gap: 1em;
+
+                    .fancy-button {
+                        font-size: 1.25em;
+                        font-family: $Mori-SemiBold;
+                        text-wrap: nowrap;
+                        
+                        margin-top: auto;
+                        border: solid $text-color;
+                        border-radius: 1em;
+                        padding: 0.5em 1em 0.5em 1em;
+                        width: 75%;
+                        height: fit-content;
+                        @include fancyButton($cardpack-accent, $text-color, $cardpack-accent);
+
+                        .unavailable {
+                            display: none;
+                        }
+
+                        &.locked {
+                            background-color: lighten($primary-color, 10);
+                            border-color: lighten($secondary-color, 10);
+                            color: gray;
+                            cursor: default;
+                            .flair {
+                                display: none;
+                            }
+                            .unavailable {
+                                display: initial;
+                            }
+                            .available {
+                                display: none;
+                            }
+                        }
+
+                        &.upgrade-standard {
+                            @include fancyButton($accent-color, $text-color, $accent-color);
+                            .unavailable {
+                                display: initial;
+                            }
+                            .available {
+                                display: none;
+                            }
+                        }
+
+                        &.upgrade-premium {
+                            @include fancyButton($violet-color, $text-color, $violet-color);
+                            .unavailable {
+                                display: initial;
+                            }
+                            .available {
+                                display: none;
+                            }
+                        }
+                    }
+
+                    @media screen and (max-width: 1024px) {
+                        width: 90%;
+                    }
+
+                    @media screen and (max-width: 768px) {
+                        width: 100%;
+                        flex-direction: column-reverse;
+                        .fancy-button {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+
+        .is-selected .cardpack-content {
+            opacity: 1 !important;
+        }
+
+        .cardpack.genmath {
+            @include cardpack($genmath-color)
+        }
+
+        .cardpack.precalc {
+            @include cardpack($precalc-color)
+        }
+
+        @media screen and (max-width: 768px) {
+            width: 100%;
+        }
+    }
+}

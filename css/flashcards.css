@@ -1,0 +1,532 @@
+@font-face {
+  font-family: "PPMori-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/aritmatica/cdn/fonts/PPMori-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "PPMori-SemiBold";
+  src: url("https://cdn.jsdelivr.net/gh/aritmatica/cdn/fonts/PPMori-SemiBold.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Material Symbols Outlined";
+  font-style: normal;
+  font-weight: 100 700;
+  src: url(https://cdn.jsdelivr.net/gh/aritmatica/cdn/gstatic/icons.woff2) format("woff2");
+}
+:root {
+  color-scheme: dark;
+}
+
+.icons {
+  font-family: "Material Symbols Outlined";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1.25em;
+  line-height: 0.79;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  font-feature-settings: "liga";
+  -webkit-font-feature-settings: "liga";
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "PPMori-Regular", Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+.fancy-button {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  color: white;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fancy-button .flair {
+  position: absolute;
+  background-color: white;
+  aspect-ratio: 1;
+  width: 200%;
+  pointer-events: none;
+  border-radius: 100%;
+  will-change: transform;
+  z-index: 0;
+}
+.fancy-button .label {
+  z-index: 0;
+  transition: color 0.2s;
+}
+.fancy-button:hover {
+  color: black;
+}
+
+body {
+  background-color: #0e0f0f;
+  color: #FFFFFF;
+}
+
+#flashcards {
+  width: 100%;
+  margin: 4rem auto 0rem auto;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#flashcards > .title {
+  font-size: min(3rem, 12vw);
+  font-family: "PPMori-SemiBold", Arial, sans-serif;
+  font-weight: 600;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+#flashcards > .title h1 {
+  color: transparent;
+  background-image: linear-gradient(90deg, #7c72ff, #9a95dc, #c372ff);
+  background-clip: text;
+}
+#flashcards > .title span {
+  color: gray;
+  font-size: 0.3em;
+}
+#flashcards .flashcards-carousel {
+  max-width: 952px;
+  width: 80%;
+  height: 36rem;
+  margin-top: 2rem;
+}
+#flashcards .flashcards-carousel .flickity-viewport {
+  border-radius: inherit;
+  overflow: visible;
+  height: 100% !important;
+}
+#flashcards .flashcards-carousel .flickity-button {
+  background-color: rgba(25, 26, 31, 0.75);
+}
+#flashcards .flashcards-carousel .flickity-button .flickity-button-icon {
+  fill: #7c72ff;
+}
+#flashcards .flashcards-carousel .is-selected .cardpack-content {
+  opacity: 1 !important;
+}
+#flashcards .flashcards-carousel .cardpack.genmath {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#flashcards .flashcards-carousel .cardpack.genmath .cardpack-content {
+  background-color: #191a1f;
+  width: 80%;
+  height: 80%;
+  padding: 1.5em 1em 1.5em 1em;
+  border: solid #3fb950;
+  border-radius: 2rem;
+  opacity: 0.1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  font-size: 1em;
+  text-align: center;
+  transition: opacity 500ms;
+}
+#flashcards .flashcards-carousel .cardpack.genmath .cardpack-content .cardpack-course-code {
+  color: gray;
+  font-size: min(1rem, 5vw);
+}
+#flashcards .flashcards-carousel .cardpack.genmath .cardpack-content .cardpack-title {
+  color: #3fb950;
+  font-size: min(2.5rem, 10vw);
+}
+#flashcards .flashcards-carousel .cardpack.genmath .cardpack-content .cardpack-properties {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: min(1rem, 4.25vw);
+  gap: 1em;
+}
+#flashcards .flashcards-carousel .cardpack.genmath .cardpack-content .cardpack-properties div {
+  background-color: #25542b;
+  border-radius: 1em;
+  padding: 0.5em 1em 0.5em 1em;
+  color: #FFFFFF;
+  font-size: 1em;
+  font-family: "PPMori-SemiBold", Arial, sans-serif;
+  text-wrap: nowrap;
+}
+#flashcards .flashcards-carousel .cardpack.genmath .cardpack-content .cardpack-properties .cardpack-terms {
+  background-color: #0277BD;
+  border-radius: 1em;
+  padding: 0.5em 1em 0.5em 1em;
+  color: #FFFFFF;
+  font-size: 1em;
+  font-family: "PPMori-SemiBold", Arial, sans-serif;
+  text-wrap: nowrap;
+}
+#flashcards .flashcards-carousel .cardpack.genmath .cardpack-content .cardpack-properties .cardpack-difficulty.easy {
+  background-color: #2E7D32;
+  border-radius: 1em;
+  padding: 0.5em 1em 0.5em 1em;
+  color: #FFFFFF;
+  font-size: 1em;
+  font-family: "PPMori-SemiBold", Arial, sans-serif;
+  text-wrap: nowrap;
+}
+#flashcards .flashcards-carousel .cardpack.genmath .cardpack-content .cardpack-properties .cardpack-difficulty.medium {
+  background-color: #F57F17;
+  border-radius: 1em;
+  padding: 0.5em 1em 0.5em 1em;
+  color: #FFFFFF;
+  font-size: 1em;
+  font-family: "PPMori-SemiBold", Arial, sans-serif;
+  text-wrap: nowrap;
+}
+#flashcards .flashcards-carousel .cardpack.genmath .cardpack-content .cardpack-properties .cardpack-difficulty.hard {
+  background-color: #d7342a;
+  border-radius: 1em;
+  padding: 0.5em 1em 0.5em 1em;
+  color: #FFFFFF;
+  font-size: 1em;
+  font-family: "PPMori-SemiBold", Arial, sans-serif;
+  text-wrap: nowrap;
+}
+#flashcards .flashcards-carousel .cardpack.genmath .cardpack-content .cardpack-properties .cardpack-price.free {
+  background-color: #474957;
+  border-radius: 1em;
+  padding: 0.5em 1em 0.5em 1em;
+  color: #FFFFFF;
+  font-size: 1em;
+  font-family: "PPMori-SemiBold", Arial, sans-serif;
+  text-wrap: nowrap;
+}
+#flashcards .flashcards-carousel .cardpack.genmath .cardpack-content .cardpack-properties .cardpack-price.standard {
+  background-color: #e36970;
+  border-radius: 1em;
+  padding: 0.5em 1em 0.5em 1em;
+  color: #FFFFFF;
+  font-size: 1em;
+  font-family: "PPMori-SemiBold", Arial, sans-serif;
+  text-wrap: nowrap;
+}
+#flashcards .flashcards-carousel .cardpack.genmath .cardpack-content .cardpack-properties .cardpack-price.premium {
+  background-color: #7c72ff;
+  border-radius: 1em;
+  padding: 0.5em 1em 0.5em 1em;
+  color: #FFFFFF;
+  font-size: 1em;
+  font-family: "PPMori-SemiBold", Arial, sans-serif;
+  text-wrap: nowrap;
+}
+#flashcards .flashcards-carousel .cardpack.genmath .cardpack-content .buttons {
+  width: 75%;
+  margin-top: auto;
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+}
+#flashcards .flashcards-carousel .cardpack.genmath .cardpack-content .buttons .fancy-button {
+  font-size: 1.25em;
+  font-family: "PPMori-SemiBold", Arial, sans-serif;
+  text-wrap: nowrap;
+  margin-top: auto;
+  border: solid #FFFFFF;
+  border-radius: 1em;
+  padding: 0.5em 1em 0.5em 1em;
+  width: 75%;
+  height: fit-content;
+  border-color: #3fb950;
+  color: #3fb950;
+}
+#flashcards .flashcards-carousel .cardpack.genmath .cardpack-content .buttons .fancy-button .flair {
+  background-color: #3fb950;
+}
+#flashcards .flashcards-carousel .cardpack.genmath .cardpack-content .buttons .fancy-button:hover {
+  color: #FFFFFF;
+}
+#flashcards .flashcards-carousel .cardpack.genmath .cardpack-content .buttons .fancy-button .unavailable {
+  display: none;
+}
+#flashcards .flashcards-carousel .cardpack.genmath .cardpack-content .buttons .fancy-button.locked {
+  background-color: #2d2f2f;
+  border-color: #30323b;
+  color: gray;
+  cursor: default;
+}
+#flashcards .flashcards-carousel .cardpack.genmath .cardpack-content .buttons .fancy-button.locked .flair {
+  display: none;
+}
+#flashcards .flashcards-carousel .cardpack.genmath .cardpack-content .buttons .fancy-button.locked .unavailable {
+  display: initial;
+}
+#flashcards .flashcards-carousel .cardpack.genmath .cardpack-content .buttons .fancy-button.locked .available {
+  display: none;
+}
+#flashcards .flashcards-carousel .cardpack.genmath .cardpack-content .buttons .fancy-button.upgrade-standard {
+  border-color: #e36970;
+  color: #e36970;
+}
+#flashcards .flashcards-carousel .cardpack.genmath .cardpack-content .buttons .fancy-button.upgrade-standard .flair {
+  background-color: #e36970;
+}
+#flashcards .flashcards-carousel .cardpack.genmath .cardpack-content .buttons .fancy-button.upgrade-standard:hover {
+  color: #FFFFFF;
+}
+#flashcards .flashcards-carousel .cardpack.genmath .cardpack-content .buttons .fancy-button.upgrade-standard .unavailable {
+  display: initial;
+}
+#flashcards .flashcards-carousel .cardpack.genmath .cardpack-content .buttons .fancy-button.upgrade-standard .available {
+  display: none;
+}
+#flashcards .flashcards-carousel .cardpack.genmath .cardpack-content .buttons .fancy-button.upgrade-premium {
+  border-color: #7c72ff;
+  color: #7c72ff;
+}
+#flashcards .flashcards-carousel .cardpack.genmath .cardpack-content .buttons .fancy-button.upgrade-premium .flair {
+  background-color: #7c72ff;
+}
+#flashcards .flashcards-carousel .cardpack.genmath .cardpack-content .buttons .fancy-button.upgrade-premium:hover {
+  color: #FFFFFF;
+}
+#flashcards .flashcards-carousel .cardpack.genmath .cardpack-content .buttons .fancy-button.upgrade-premium .unavailable {
+  display: initial;
+}
+#flashcards .flashcards-carousel .cardpack.genmath .cardpack-content .buttons .fancy-button.upgrade-premium .available {
+  display: none;
+}
+@media screen and (max-width: 1024px) {
+  #flashcards .flashcards-carousel .cardpack.genmath .cardpack-content .buttons {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 768px) {
+  #flashcards .flashcards-carousel .cardpack.genmath .cardpack-content .buttons {
+    width: 100%;
+    flex-direction: column-reverse;
+  }
+  #flashcards .flashcards-carousel .cardpack.genmath .cardpack-content .buttons .fancy-button {
+    width: 100%;
+  }
+}
+#flashcards .flashcards-carousel .cardpack.precalc {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#flashcards .flashcards-carousel .cardpack.precalc .cardpack-content {
+  background-color: #191a1f;
+  width: 80%;
+  height: 80%;
+  padding: 1.5em 1em 1.5em 1em;
+  border: solid #ff6200;
+  border-radius: 2rem;
+  opacity: 0.1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  font-size: 1em;
+  text-align: center;
+  transition: opacity 500ms;
+}
+#flashcards .flashcards-carousel .cardpack.precalc .cardpack-content .cardpack-course-code {
+  color: gray;
+  font-size: min(1rem, 5vw);
+}
+#flashcards .flashcards-carousel .cardpack.precalc .cardpack-content .cardpack-title {
+  color: #ff6200;
+  font-size: min(2.5rem, 10vw);
+}
+#flashcards .flashcards-carousel .cardpack.precalc .cardpack-content .cardpack-properties {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: min(1rem, 4.25vw);
+  gap: 1em;
+}
+#flashcards .flashcards-carousel .cardpack.precalc .cardpack-content .cardpack-properties div {
+  background-color: #793206;
+  border-radius: 1em;
+  padding: 0.5em 1em 0.5em 1em;
+  color: #FFFFFF;
+  font-size: 1em;
+  font-family: "PPMori-SemiBold", Arial, sans-serif;
+  text-wrap: nowrap;
+}
+#flashcards .flashcards-carousel .cardpack.precalc .cardpack-content .cardpack-properties .cardpack-terms {
+  background-color: #0277BD;
+  border-radius: 1em;
+  padding: 0.5em 1em 0.5em 1em;
+  color: #FFFFFF;
+  font-size: 1em;
+  font-family: "PPMori-SemiBold", Arial, sans-serif;
+  text-wrap: nowrap;
+}
+#flashcards .flashcards-carousel .cardpack.precalc .cardpack-content .cardpack-properties .cardpack-difficulty.easy {
+  background-color: #2E7D32;
+  border-radius: 1em;
+  padding: 0.5em 1em 0.5em 1em;
+  color: #FFFFFF;
+  font-size: 1em;
+  font-family: "PPMori-SemiBold", Arial, sans-serif;
+  text-wrap: nowrap;
+}
+#flashcards .flashcards-carousel .cardpack.precalc .cardpack-content .cardpack-properties .cardpack-difficulty.medium {
+  background-color: #F57F17;
+  border-radius: 1em;
+  padding: 0.5em 1em 0.5em 1em;
+  color: #FFFFFF;
+  font-size: 1em;
+  font-family: "PPMori-SemiBold", Arial, sans-serif;
+  text-wrap: nowrap;
+}
+#flashcards .flashcards-carousel .cardpack.precalc .cardpack-content .cardpack-properties .cardpack-difficulty.hard {
+  background-color: #d7342a;
+  border-radius: 1em;
+  padding: 0.5em 1em 0.5em 1em;
+  color: #FFFFFF;
+  font-size: 1em;
+  font-family: "PPMori-SemiBold", Arial, sans-serif;
+  text-wrap: nowrap;
+}
+#flashcards .flashcards-carousel .cardpack.precalc .cardpack-content .cardpack-properties .cardpack-price.free {
+  background-color: #474957;
+  border-radius: 1em;
+  padding: 0.5em 1em 0.5em 1em;
+  color: #FFFFFF;
+  font-size: 1em;
+  font-family: "PPMori-SemiBold", Arial, sans-serif;
+  text-wrap: nowrap;
+}
+#flashcards .flashcards-carousel .cardpack.precalc .cardpack-content .cardpack-properties .cardpack-price.standard {
+  background-color: #e36970;
+  border-radius: 1em;
+  padding: 0.5em 1em 0.5em 1em;
+  color: #FFFFFF;
+  font-size: 1em;
+  font-family: "PPMori-SemiBold", Arial, sans-serif;
+  text-wrap: nowrap;
+}
+#flashcards .flashcards-carousel .cardpack.precalc .cardpack-content .cardpack-properties .cardpack-price.premium {
+  background-color: #7c72ff;
+  border-radius: 1em;
+  padding: 0.5em 1em 0.5em 1em;
+  color: #FFFFFF;
+  font-size: 1em;
+  font-family: "PPMori-SemiBold", Arial, sans-serif;
+  text-wrap: nowrap;
+}
+#flashcards .flashcards-carousel .cardpack.precalc .cardpack-content .buttons {
+  width: 75%;
+  margin-top: auto;
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+}
+#flashcards .flashcards-carousel .cardpack.precalc .cardpack-content .buttons .fancy-button {
+  font-size: 1.25em;
+  font-family: "PPMori-SemiBold", Arial, sans-serif;
+  text-wrap: nowrap;
+  margin-top: auto;
+  border: solid #FFFFFF;
+  border-radius: 1em;
+  padding: 0.5em 1em 0.5em 1em;
+  width: 75%;
+  height: fit-content;
+  border-color: #ff6200;
+  color: #ff6200;
+}
+#flashcards .flashcards-carousel .cardpack.precalc .cardpack-content .buttons .fancy-button .flair {
+  background-color: #ff6200;
+}
+#flashcards .flashcards-carousel .cardpack.precalc .cardpack-content .buttons .fancy-button:hover {
+  color: #FFFFFF;
+}
+#flashcards .flashcards-carousel .cardpack.precalc .cardpack-content .buttons .fancy-button .unavailable {
+  display: none;
+}
+#flashcards .flashcards-carousel .cardpack.precalc .cardpack-content .buttons .fancy-button.locked {
+  background-color: #2d2f2f;
+  border-color: #30323b;
+  color: gray;
+  cursor: default;
+}
+#flashcards .flashcards-carousel .cardpack.precalc .cardpack-content .buttons .fancy-button.locked .flair {
+  display: none;
+}
+#flashcards .flashcards-carousel .cardpack.precalc .cardpack-content .buttons .fancy-button.locked .unavailable {
+  display: initial;
+}
+#flashcards .flashcards-carousel .cardpack.precalc .cardpack-content .buttons .fancy-button.locked .available {
+  display: none;
+}
+#flashcards .flashcards-carousel .cardpack.precalc .cardpack-content .buttons .fancy-button.upgrade-standard {
+  border-color: #e36970;
+  color: #e36970;
+}
+#flashcards .flashcards-carousel .cardpack.precalc .cardpack-content .buttons .fancy-button.upgrade-standard .flair {
+  background-color: #e36970;
+}
+#flashcards .flashcards-carousel .cardpack.precalc .cardpack-content .buttons .fancy-button.upgrade-standard:hover {
+  color: #FFFFFF;
+}
+#flashcards .flashcards-carousel .cardpack.precalc .cardpack-content .buttons .fancy-button.upgrade-standard .unavailable {
+  display: initial;
+}
+#flashcards .flashcards-carousel .cardpack.precalc .cardpack-content .buttons .fancy-button.upgrade-standard .available {
+  display: none;
+}
+#flashcards .flashcards-carousel .cardpack.precalc .cardpack-content .buttons .fancy-button.upgrade-premium {
+  border-color: #7c72ff;
+  color: #7c72ff;
+}
+#flashcards .flashcards-carousel .cardpack.precalc .cardpack-content .buttons .fancy-button.upgrade-premium .flair {
+  background-color: #7c72ff;
+}
+#flashcards .flashcards-carousel .cardpack.precalc .cardpack-content .buttons .fancy-button.upgrade-premium:hover {
+  color: #FFFFFF;
+}
+#flashcards .flashcards-carousel .cardpack.precalc .cardpack-content .buttons .fancy-button.upgrade-premium .unavailable {
+  display: initial;
+}
+#flashcards .flashcards-carousel .cardpack.precalc .cardpack-content .buttons .fancy-button.upgrade-premium .available {
+  display: none;
+}
+@media screen and (max-width: 1024px) {
+  #flashcards .flashcards-carousel .cardpack.precalc .cardpack-content .buttons {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 768px) {
+  #flashcards .flashcards-carousel .cardpack.precalc .cardpack-content .buttons {
+    width: 100%;
+    flex-direction: column-reverse;
+  }
+  #flashcards .flashcards-carousel .cardpack.precalc .cardpack-content .buttons .fancy-button {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  #flashcards .flashcards-carousel {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=flashcards.css.map */
