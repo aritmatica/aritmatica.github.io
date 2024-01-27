@@ -120,7 +120,7 @@ body {
                         @include cardpack-property(desaturate(darken($cardpack-accent, 25), 10));
                     }
 
-                    .cardpack-terms {
+                    .cardpack-cards {
                         @include cardpack-property(#0277BD);
                     }
 
@@ -149,9 +149,19 @@ body {
                     }
                 }
 
+                .cardpack-locked-text {
+                    margin-top: auto;
+                    color: gray;
+                    opacity: 0;
+
+                    transition: opacity 1s;
+                    &.show {
+                        opacity: 1;
+                    }
+                }
+
                 .buttons {
                     width: 75%;
-                    margin-top: auto;
 
                     display: flex;
                     flex-direction: row;

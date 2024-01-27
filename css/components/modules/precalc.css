@@ -319,27 +319,28 @@ footer * {
   z-index: 1;
   transition: opacity 500ms;
 }
-.main-container main article .spoiler-container .spoiler .fancy-button {
-  background-color: transparent !important;
-  border: solid #ff6200;
-  border-radius: 4rem;
-  padding: 0.25em 0.5em 0.25em 0.5em;
-  font-size: 1.5em;
-  border-color: #ff6200;
-  color: #ff6200;
-  transition: opacity 250ms;
-}
-.main-container main article .spoiler-container .spoiler .fancy-button .flair {
-  background-color: #ff6200;
-}
-.main-container main article .spoiler-container .spoiler .fancy-button:hover {
-  color: #FFFFFF;
-}
 @supports (backdrop-filter: blur()) {
   .main-container main article .spoiler-container .spoiler {
     background-color: rgba(29, 29, 33, 0.4);
     backdrop-filter: blur(1rem);
   }
+}
+.main-container main article .fancy-button {
+  background-color: transparent !important;
+  border: solid #ff6200;
+  border-radius: 4rem;
+  padding: 0.5em 0.75em 0.5em 0.75em;
+  font-size: 1.25em;
+  text-decoration: none !important;
+  border-color: #ff6200;
+  color: #ff6200;
+  transition: opacity 250ms;
+}
+.main-container main article .fancy-button .flair {
+  background-color: #ff6200;
+}
+.main-container main article .fancy-button:hover {
+  color: #FFFFFF;
 }
 .main-container main article section {
   margin-top: 1em;
@@ -368,6 +369,12 @@ footer * {
   font-family: "PPMori-SemiBold", Arial, sans-serif;
   margin-top: 0;
   margin-bottom: 0;
+}
+.main-container main article #flashcards {
+  margin-top: 4em;
+}
+.main-container main article #flashcards .fancy-button {
+  margin-top: 2em;
 }
 .main-container .toc {
   max-height: calc(100vh - 4rem);

@@ -210,24 +210,25 @@ body {
 
                         transition: opacity 500ms;
 
-                        .fancy-button {
-                            background-color: transparent !important;
-                            border: solid $course-accent-color;
-                            border-radius: 4rem;
-                            padding: 0.25em 0.5em 0.25em 0.5em;
-
-                            font-size: 1.5em;
-        
-                            @include fancyButton($course-accent-color, $text-color, $course-accent-color);
-        
-                            transition: opacity 250ms;
-                        }
-
                         @supports (backdrop-filter: blur()) {
                             background-color: $transparent-color;
                             backdrop-filter: blur(1rem);
                         }
                     }
+                }
+
+                .fancy-button {
+                    background-color: transparent !important;
+                    border: solid $course-accent-color;
+                    border-radius: 4rem;
+                    padding: 0.5em 0.75em 0.5em 0.75em;
+
+                    font-size: 1.25em;
+                    text-decoration: none !important;
+
+                    @include fancyButton($course-accent-color, $text-color, $course-accent-color);
+
+                    transition: opacity 250ms;
                 }
     
                 section {
@@ -263,6 +264,13 @@ body {
                             margin-top: 0;
                             margin-bottom: 0;
                         }
+                    }
+                }
+
+                #flashcards {
+                    margin-top: 4em;
+                    .fancy-button {
+                        margin-top: 2em;
                     }
                 }
             }

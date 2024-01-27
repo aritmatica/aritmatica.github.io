@@ -170,7 +170,7 @@ body {
   font-family: "PPMori-SemiBold", Arial, sans-serif;
   text-wrap: nowrap;
 }
-#flashcards .flashcards-carousel .cardpack.genmath .cardpack-content .cardpack-properties .cardpack-terms {
+#flashcards .flashcards-carousel .cardpack.genmath .cardpack-content .cardpack-properties .cardpack-cards {
   background-color: #0277BD;
   border-radius: 1em;
   padding: 0.5em 1em 0.5em 1em;
@@ -233,9 +233,17 @@ body {
   font-family: "PPMori-SemiBold", Arial, sans-serif;
   text-wrap: nowrap;
 }
+#flashcards .flashcards-carousel .cardpack.genmath .cardpack-content .cardpack-locked-text {
+  margin-top: auto;
+  color: gray;
+  opacity: 0;
+  transition: opacity 1s;
+}
+#flashcards .flashcards-carousel .cardpack.genmath .cardpack-content .cardpack-locked-text.show {
+  opacity: 1;
+}
 #flashcards .flashcards-carousel .cardpack.genmath .cardpack-content .buttons {
   width: 75%;
-  margin-top: auto;
   display: flex;
   flex-direction: row;
   gap: 1em;
@@ -370,7 +378,7 @@ body {
   font-family: "PPMori-SemiBold", Arial, sans-serif;
   text-wrap: nowrap;
 }
-#flashcards .flashcards-carousel .cardpack.precalc .cardpack-content .cardpack-properties .cardpack-terms {
+#flashcards .flashcards-carousel .cardpack.precalc .cardpack-content .cardpack-properties .cardpack-cards {
   background-color: #0277BD;
   border-radius: 1em;
   padding: 0.5em 1em 0.5em 1em;
@@ -433,9 +441,17 @@ body {
   font-family: "PPMori-SemiBold", Arial, sans-serif;
   text-wrap: nowrap;
 }
+#flashcards .flashcards-carousel .cardpack.precalc .cardpack-content .cardpack-locked-text {
+  margin-top: auto;
+  color: gray;
+  opacity: 0;
+  transition: opacity 1s;
+}
+#flashcards .flashcards-carousel .cardpack.precalc .cardpack-content .cardpack-locked-text.show {
+  opacity: 1;
+}
 #flashcards .flashcards-carousel .cardpack.precalc .cardpack-content .buttons {
   width: 75%;
-  margin-top: auto;
   display: flex;
   flex-direction: row;
   gap: 1em;

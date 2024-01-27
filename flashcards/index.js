@@ -13,6 +13,17 @@ function DOMContentLoaded(...args) {
 }
 DOMContentLoaded()
 
+function addClassNameListener(elem, callback) {
+    var lastClassList = elem.getAttribute("class");
+    window.setInterval( function() {   
+        var classList = elem.getAttribute("class");
+        if (classList !== lastClassList) {
+            callback();   
+            lastClassList = classList;
+        }
+    }, 100);
+}
+
 function populateCardpack(template, data, index) {
     template.classList.add(data.courseClass)
     if (data.active === true) { template.classList.add("active") }
@@ -26,10 +37,11 @@ function populateCardpack(template, data, index) {
     const courseCode = template.getElementsByClassName(prefixer("course-code"))[0]
     const title = template.getElementsByClassName(prefixer("title"))[0]
     //const properties = template.getElementsByClassName(prefixer("properties"))[0]
-    const terms = template.getElementsByClassName(prefixer("terms"))[0]
+    const cards = template.getElementsByClassName(prefixer("cards"))[0]
     const difficulty = template.getElementsByClassName(prefixer("difficulty"))[0]
     const price = template.getElementsByClassName(prefixer("price"))[0]
     const description = template.getElementsByClassName(prefixer("description"))[0]
+    const lockedText = template.getElementsByClassName(prefixer("locked-text"))[0]
     const openCardpack = template.getElementsByClassName("open-cardpack")[0]
     const openModule = template.getElementsByClassName("open-module")[0]
     const meta = template.getElementsByClassName(prefixer("data"))[0]
@@ -37,7 +49,7 @@ function populateCardpack(template, data, index) {
     // transforms
     courseCode.innerHTML = data.courseCode
     title.innerHTML = data.title
-    terms.innerHTML = terms.innerHTML + String(data.cards.length)
+    cards.innerHTML = cards.innerHTML + String(data.cards.length)
     difficulty.innerHTML = difficulty.innerHTML + data.difficulty
     price.innerHTML = price.innerHTML + data.price
     description.innerHTML = data.description
@@ -46,6 +58,14 @@ function populateCardpack(template, data, index) {
     if (data.price != "Free") {
         openCardpack.classList.add("upgrade-" + data.price.toLowerCase())
         openCardpack.setAttribute("href", "/pricing/")
+
+        addClassNameListener(template, () => {
+            if (template.classList.contains("is-selected")) {
+                lockedText.classList.add("show")
+            } else {
+                lockedText.classList.remove("show")
+            }
+        })
     } else {
         openCardpack.setAttribute("href", openCardpack.getAttribute("href") + "?cardpack=" + index)
     }
