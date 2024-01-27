@@ -170,7 +170,7 @@ nav #nav-signup {
     height: 0.25rem;
   }
   nav .links .dropdown ul {
-    background-color: rgba(29, 29, 33, 0.4);
+    background-color: rgba(29, 29, 33, 0.95);
     position: absolute;
     height: fit-content;
     width: max-content;
@@ -179,12 +179,16 @@ nav #nav-signup {
     align-items: start;
     flex-direction: column;
     gap: 0;
-    backdrop-filter: blur(0.5rem);
-    -webkit-backdrop-filter: blur(0.5rem);
     opacity: 0;
     transform: translateY(1rem);
     pointer-events: none;
     transition: opacity 250ms, transform 250ms;
+  }
+  @supports (backdrop-filter: blur()) {
+    nav .links .dropdown ul {
+      background-color: rgba(29, 29, 33, 0.4);
+      backdrop-filter: blur(0.5rem);
+    }
   }
   nav .links .dropdown ul li {
     width: 100%;

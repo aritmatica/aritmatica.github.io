@@ -56,7 +56,11 @@ nav {
 
             // dropdown menu
             ul {
-                background-color: $transparent-color;
+                background-color: $dark-transparent-color;
+                @supports (backdrop-filter: blur()) {
+                    background-color: $transparent-color;
+                    backdrop-filter: blur(0.5rem);
+                }
 
                 position: absolute;
                 height: fit-content;
@@ -67,9 +71,6 @@ nav {
                 align-items: start;
                 flex-direction: column;
                 gap: 0;
-
-                backdrop-filter: blur(0.5rem);
-                -webkit-backdrop-filter: blur(0.5rem);
 
                 opacity: 0;
                 transform: translateY(1rem);
