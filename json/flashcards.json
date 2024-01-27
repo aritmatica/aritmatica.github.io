@@ -2,14 +2,14 @@
     "cardPacks": [
         {
             "courseClass": "genmath",
-            "active": true,
+            "active": false,
 
             "courseCode": "GENMATH 001",
             "title": "Law of Logarithms",
             "description": "",
 
             "difficulty": "Easy",
-            "price": "Free",
+            "price": "Standard",
 
             "moduleHref": "/modules/genmath",
 
@@ -36,14 +36,14 @@
 
         {
             "courseClass": "precalc",
-            "active": true,
+            "active": false,
 
             "courseCode": "CALC 001",
             "title": "Circles at (h,k)",
             "description": "",
 
             "difficulty": "Easy",
-            "price": "Free",
+            "price": "Standard",
 
             "moduleHref": "/modules/precalc",
 
