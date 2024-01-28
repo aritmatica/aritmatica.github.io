@@ -9,7 +9,7 @@
             "description": "",
 
             "difficulty": "Easy",
-            "price": "Standard",
+            "price": "Free",
 
             "moduleHref": "/modules/genmath",
 
@@ -19,7 +19,7 @@
                     "Product Law"
                 ],
                 [
-                    "$$\blog_{b}{uv}=\blog_{b}{u}+\blog_{b}{v}$$",
+                    "$$\\log_{b}{uv}=\\log_{b}{u}+\\log_{b}{v}$$",
                     "Product Law"
                 ],
 
@@ -28,7 +28,7 @@
                     "Quotient Law"
                 ],
                 [
-                    "$$\blog_{b}{\frac{u}{v}}=\blog_{b}{u}-\blog_{b}{b}$$",
+                    "$$\\log_{b}{\\frac{u}{v}}=\\log_{b}{u}-\\log_{b}{b}$$",
                     "Quotient Law"
                 ]
             ]

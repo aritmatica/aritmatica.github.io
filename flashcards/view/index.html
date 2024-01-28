@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flashcards</title>
+    <title>Cardpack</title>
     <link rel="icon" type="image/x-icon" href="/assets/favicon/logo.png">
 
-    <link rel="stylesheet" href="/css/flashcards.css"></link>
+    <link rel="stylesheet" href="/css/cardpack.css"></link>
 
     <link rel="stylesheet" href="/css/components/nav.css">
     <link rel="stylesheet" href="/css/components/footer.css">
@@ -21,12 +21,17 @@
     <script src="https://cdn.jsdelivr.net/gh/aritmatica/cdn/js/fancyButtons.js" type="module"></script>
     <script src="https://cdn.jsdelivr.net/gh/aritmatica/cdn/js/flickity.js"></script>
 
+    <!--katex-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/aritmatica/cdn/css/katex.css">
+    <script defer src="https://cdn.jsdelivr.net/gh/aritmatica/cdn/js/katex.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/gh/aritmatica/cdn/js/katex/autoRender.js"></script>
+
     <script src="index.js" type="module"></script>
 
     <!-- og -->
     <meta property="og:url" content="https://aritmatica.github.io/flashcards/view">
     <meta property="og:title" content="Aritmatica: Cardpacks">
-    <meta property="og:description" content="Test your knowledge">
+    <meta property="og:description" content="View Cardpack">
     <meta property="og:image" content="https://cdn.jsdelivr.net/gh/aritmatica/cdn/img/aritmatica-web-poster.png">
     <meta property="og:image:type" content="image/png">
     <meta property="og:image:alt" content="Aritmatica is a place to learn 11th grade math in an easy and intuitive manner.">
@@ -41,7 +46,8 @@
     <section id="cardpack">
         <header>
             <div id="cardpack-course-code"></div>
-            <div id="cardpack-title"></div>
+            <div id="cardpack-title" class="genmath"></div>
+            <div id="cardpack-description"></div>
             <div id="cardpack-properties">
                 <div id="cardpack-cards">Cards: </div>
                 <div id="cardpack-difficulty">Difficulty: </div>
@@ -49,9 +55,6 @@
             </div>
         </header>
         <div class="cards-carousel">
-            <div class="card">
-
-            </div>
         </div>
     </section>
 
