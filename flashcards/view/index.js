@@ -27,9 +27,16 @@ async function fetchCardpackData(cardpackNum) {
         if (!dataResponse.ok) { return console.error("response not ok 1") }
 
         const flashcardsData = await dataResponse.json()
-        if (flashcardsData.cardPacks[cardpackNum]) {
-            return flashcardsData.cardPacks[cardpackNum]
+        const cardpackData = flashcardsData.cardPacks[cardpackNum]
+
+        if (cardpackData) {
+            if (cardpackData.price != "Free") {
+                window.location.href = "/pricing/?error=free-trial"
+                return console.error("free trial")
+            }
+            return cardpackData
         } else {
+            window.location.href = "/flashcards/"
             return console.error(String(cardpackNum) + " is not a member of flashcards cardpacks")
         }
     } catch (err) {
