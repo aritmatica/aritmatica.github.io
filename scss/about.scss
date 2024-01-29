@@ -5,3 +5,43 @@ body {
     background-color: $background-color;
     color: $text-color;
 }
+
+.main-container {
+    background-color: $primary-color;
+
+    width: 90%;
+    margin: 6rem auto 0 auto;
+    padding: 4rem 5rem 4rem 5rem;
+    border-radius: 1em;
+
+    font-size: 1rem;
+}
+
+#how-it-started {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    font-size: 1rem;
+
+    .section-content {
+        h1 {
+            color: $accent-color;
+            font-size: 4em;
+            font-family: $font-black;
+        }
+        h2 {
+            color: gray;
+            font-size: 2em;
+            font-family: $font-black;
+        }
+    }
+
+    .section-media {
+        overflow: hidden;
+        .gallery-carousel {
+            img {
+                height: 24em;
+            }
+        }
+    }
+}

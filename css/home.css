@@ -1,15 +1,4 @@
-@font-face {
-  font-family: "PPMori-Regular";
-  src: url("https://cdn.jsdelivr.net/gh/aritmatica/cdn/fonts/PPMori-Regular.otf") format("opentype");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "PPMori-SemiBold";
-  src: url("https://cdn.jsdelivr.net/gh/aritmatica/cdn/fonts/PPMori-SemiBold.otf") format("opentype");
-  font-weight: 600;
-  font-style: normal;
-}
+@import url(https://cdn.jsdelivr.net/gh/aritmatica/cdn/fonts/satoshi/stylesheet.css);
 @font-face {
   font-family: "Material Symbols Outlined";
   font-style: normal;
@@ -41,7 +30,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "PPMori-Regular", Arial, sans-serif;
+  font-family: satoshi-regular, arial, sans-serif;
   box-sizing: border-box;
 }
 
@@ -218,7 +207,7 @@ header main span {
 }
 #genmath main h2, #genmath main h2 span {
   font-size: min(12vw, 4rem);
-  font-family: "PPMori-SemiBold", Arial, sans-serif;
+  font-family: satoshi-black, arial, sans-serif;
   margin-top: 1.125rem;
 }
 #genmath main h2 .highlight, #genmath main h2 span .highlight {
@@ -230,7 +219,7 @@ header main span {
 #genmath main h3, #genmath main h3 span {
   margin-top: 1rem;
   font-size: min(6vw, 2rem);
-  font-family: "PPMori-SemiBold", Arial, sans-serif;
+  font-family: satoshi-black, arial, sans-serif;
 }
 #genmath main .card {
   background-color: #191a1f;
@@ -275,7 +264,7 @@ header main span {
 }
 #genmath main .card .button-container .fancy-button {
   font-size: 1em;
-  font-family: "PPMori-SemiBold", Arial, sans-serif;
+  font-family: satoshi-black, arial, sans-serif;
   text-wrap: nowrap;
   border: solid #FFFFFF;
   border-radius: 1em;
@@ -324,7 +313,7 @@ header main span {
 }
 #precalc main h2, #precalc main h2 span {
   font-size: min(12vw, 4rem);
-  font-family: "PPMori-SemiBold", Arial, sans-serif;
+  font-family: satoshi-black, arial, sans-serif;
   margin-top: 1.125rem;
 }
 #precalc main h2 .highlight, #precalc main h2 span .highlight {
@@ -336,7 +325,7 @@ header main span {
 #precalc main h3, #precalc main h3 span {
   margin-top: 1rem;
   font-size: min(6vw, 2rem);
-  font-family: "PPMori-SemiBold", Arial, sans-serif;
+  font-family: satoshi-black, arial, sans-serif;
 }
 #precalc main .card {
   background-color: #191a1f;
@@ -381,7 +370,7 @@ header main span {
 }
 #precalc main .card .button-container .fancy-button {
   font-size: 1em;
-  font-family: "PPMori-SemiBold", Arial, sans-serif;
+  font-family: satoshi-black, arial, sans-serif;
   text-wrap: nowrap;
   border: solid #FFFFFF;
   border-radius: 1em;
@@ -430,7 +419,7 @@ header main span {
 }
 #exercises main h2, #exercises main h2 span {
   font-size: min(12vw, 4rem);
-  font-family: "PPMori-SemiBold", Arial, sans-serif;
+  font-family: satoshi-black, arial, sans-serif;
   margin-top: 1.125rem;
 }
 #exercises main h2 .highlight, #exercises main h2 span .highlight {
@@ -442,7 +431,7 @@ header main span {
 #exercises main h3, #exercises main h3 span {
   margin-top: 1rem;
   font-size: min(6vw, 2rem);
-  font-family: "PPMori-SemiBold", Arial, sans-serif;
+  font-family: satoshi-black, arial, sans-serif;
 }
 #exercises main .card {
   background-color: #191a1f;
@@ -487,7 +476,7 @@ header main span {
 }
 #exercises main .card .button-container .fancy-button {
   font-size: 1em;
-  font-family: "PPMori-SemiBold", Arial, sans-serif;
+  font-family: satoshi-black, arial, sans-serif;
   text-wrap: nowrap;
   border: solid #FFFFFF;
   border-radius: 1em;
@@ -563,7 +552,7 @@ header main span {
 }
 #join main h2, #join main h2 span {
   font-size: min(12vw, 4rem);
-  font-family: "PPMori-SemiBold", Arial, sans-serif;
+  font-family: satoshi-black, arial, sans-serif;
   margin-top: 1.125rem;
 }
 #join main h2 .highlight, #join main h2 span .highlight {
@@ -572,7 +561,7 @@ header main span {
 #join main h3, #join main h3 span {
   margin-top: 1rem;
   font-size: min(6vw, 2rem);
-  font-family: "PPMori-SemiBold", Arial, sans-serif;
+  font-family: satoshi-black, arial, sans-serif;
 }
 #join main .buttons {
   margin-top: 0.5rem;

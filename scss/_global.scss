@@ -1,18 +1,6 @@
 @use 'sass:color';
 
-@font-face {
-	font-family: "PPMori-Regular";
-	src: url("https://cdn.jsdelivr.net/gh/aritmatica/cdn/fonts/PPMori-Regular.otf") format("opentype");
-	font-weight: normal;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: "PPMori-SemiBold";
-	src: url("https://cdn.jsdelivr.net/gh/aritmatica/cdn/fonts/PPMori-SemiBold.otf") format("opentype");
-	font-weight: 600;
-	font-style: normal;
-}
+@import url(https://cdn.jsdelivr.net/gh/aritmatica/cdn/fonts/satoshi/stylesheet.css);
 
 // material icons
 @font-face {
@@ -45,8 +33,10 @@
 }
 
 // fonts
-$Mori-Regular: "PPMori-Regular", Arial, sans-serif;
-$Mori-SemiBold: "PPMori-SemiBold", Arial, sans-serif;
+$font-regular: satoshi-regular, arial, sans-serif;
+$font-medium: satoshi-medium, arial, sans-serif;
+$font-bold: satoshi-bold, arial, sans-serif;
+$font-black: satoshi-black, arial, sans-serif;
 
 // colors
 $primary-color: #141515;
@@ -66,6 +56,6 @@ $violet-color: #7c72ff;
 * {
     margin: 0;
     padding: 0;
-	font-family: $Mori-Regular;
+	font-family: $font-regular;
     box-sizing: border-box;
 }

@@ -31,7 +31,7 @@ body {
         }
         #cardpack-title {
             font-size: 4em;
-            font-family: $Mori-SemiBold;
+            font-family: $font-black;
             font-weight: 600;
             &.genmath {
                 @include gradient-text(
@@ -53,7 +53,7 @@ body {
     
                 color: $text-color;
                 font-size: 1em;
-                font-family: $Mori-SemiBold;
+                font-family: $font-black;
                 text-wrap: nowrap;
             }
 

@@ -167,12 +167,12 @@ body {
 
                 a {
                     color: $course-accent-color;
-                    font-family: $Mori-SemiBold;
+                    font-family: $font-black;
                 };
 
                 h2 {
                     font-size: 2em;
-                    font-family: $Mori-SemiBold;
+                    font-family: $font-black;
                 }
 
                 h3 {
@@ -180,7 +180,7 @@ body {
                     margin-bottom: 0.5em;
 
                     font-size: 1.5em;
-                    font-family: $Mori-SemiBold;
+                    font-family: $font-black;
                 }
 
                 .highlight {
@@ -260,7 +260,7 @@ body {
     
                         h3 {
                             font-size: 1.25em;
-                            font-family: $Mori-SemiBold;
+                            font-family: $font-black;
                             margin-top: 0;
                             margin-bottom: 0;
                         }

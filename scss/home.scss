@@ -179,7 +179,7 @@ header {
         margin-left: 1rem;
         h2, h2 span {
             font-size: min(12vw, 4rem);
-            font-family: $Mori-SemiBold;
+            font-family: $font-black;
             margin-top: 1.125rem;
             .highlight {
                 color: transparent;
@@ -195,7 +195,7 @@ header {
         h3, h3 span {
             margin-top: 1rem;
             font-size: min(6vw, 2rem);
-            font-family: $Mori-SemiBold;
+            font-family: $font-black;
         }
 
         .card {
@@ -251,7 +251,7 @@ header {
 
                 .fancy-button {
                     font-size: 1em;
-                    font-family: $Mori-SemiBold;
+                    font-family: $font-black;
                     text-wrap: nowrap;
                     
                     border: solid $text-color;
@@ -382,7 +382,7 @@ header {
         margin-left: 1rem;
         h2, h2 span {
             font-size: min(12vw, 4rem);
-            font-family: $Mori-SemiBold;
+            font-family: $font-black;
             margin-top: 1.125rem;
             .highlight {
                 color: $accent-color;
@@ -392,7 +392,7 @@ header {
         h3, h3 span {
             margin-top: 1rem;
             font-size: min(6vw, 2rem);
-            font-family: $Mori-SemiBold;
+            font-family: $font-black;
         }
 
         .buttons {

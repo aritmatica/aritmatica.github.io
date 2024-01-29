@@ -24,7 +24,7 @@ body[show-error] {
 
     .title {
         font-size: 2.75rem;
-        font-family: $Mori-SemiBold;
+        font-family: $font-black;
         text-align: center;
 
         h1 {
@@ -111,7 +111,7 @@ body[show-error] {
             }
             .fancy-button {
                 font-size: 0.75em;
-                font-family: $Mori-SemiBold;
+                font-family: $font-black;
                 text-wrap: nowrap;
                 
                 border: solid $text-color;
@@ -184,13 +184,13 @@ body[show-error] #error-prompt {
 
         .error-title {
             font-size: 4em;
-            font-family: $Mori-SemiBold;
+            font-family: $font-black;
             font-weight: 600;
         }
 
         .error-description {
             font-size: 1.5em;
-            font-family: $Mori-SemiBold;
+            font-family: $font-black;
             font-weight: 600;
         }
         

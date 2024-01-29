@@ -1,15 +1,4 @@
-@font-face {
-  font-family: "PPMori-Regular";
-  src: url("https://cdn.jsdelivr.net/gh/aritmatica/cdn/fonts/PPMori-Regular.otf") format("opentype");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "PPMori-SemiBold";
-  src: url("https://cdn.jsdelivr.net/gh/aritmatica/cdn/fonts/PPMori-SemiBold.otf") format("opentype");
-  font-weight: 600;
-  font-style: normal;
-}
+@import url(https://cdn.jsdelivr.net/gh/aritmatica/cdn/fonts/satoshi/stylesheet.css);
 @font-face {
   font-family: "Material Symbols Outlined";
   font-style: normal;
@@ -41,7 +30,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "PPMori-Regular", Arial, sans-serif;
+  font-family: satoshi-regular, arial, sans-serif;
   box-sizing: border-box;
 }
 
@@ -59,7 +48,7 @@ nav {
   z-index: 99;
 }
 nav .title {
-  font-family: "PPMori-SemiBold", Arial, sans-serif;
+  font-family: satoshi-black, arial, sans-serif;
   font-weight: bolder;
   font-size: 1.5rem;
   text-align: center;
@@ -80,18 +69,7 @@ nav #nav-signup {
 }
 
 @media screen and (min-width: 768px) {
-  @font-face {
-    font-family: "PPMori-Regular";
-    src: url("https://cdn.jsdelivr.net/gh/aritmatica/cdn/fonts/PPMori-Regular.otf") format("opentype");
-    font-weight: normal;
-    font-style: normal;
-  }
-  @font-face {
-    font-family: "PPMori-SemiBold";
-    src: url("https://cdn.jsdelivr.net/gh/aritmatica/cdn/fonts/PPMori-SemiBold.otf") format("opentype");
-    font-weight: 600;
-    font-style: normal;
-  }
+  @import url(https://cdn.jsdelivr.net/gh/aritmatica/cdn/fonts/satoshi/stylesheet.css);
   @font-face {
     font-family: "Material Symbols Outlined";
     font-style: normal;
@@ -121,7 +99,7 @@ nav #nav-signup {
   * {
     margin: 0;
     padding: 0;
-    font-family: "PPMori-Regular", Arial, sans-serif;
+    font-family: satoshi-regular, arial, sans-serif;
     box-sizing: border-box;
   }
   nav {
@@ -232,18 +210,7 @@ nav #nav-signup {
   }
 }
 @media screen and (max-width: 768px) {
-  @font-face {
-    font-family: "PPMori-Regular";
-    src: url("https://cdn.jsdelivr.net/gh/aritmatica/cdn/fonts/PPMori-Regular.otf") format("opentype");
-    font-weight: normal;
-    font-style: normal;
-  }
-  @font-face {
-    font-family: "PPMori-SemiBold";
-    src: url("https://cdn.jsdelivr.net/gh/aritmatica/cdn/fonts/PPMori-SemiBold.otf") format("opentype");
-    font-weight: 600;
-    font-style: normal;
-  }
+  @import url(https://cdn.jsdelivr.net/gh/aritmatica/cdn/fonts/satoshi/stylesheet.css);
   @font-face {
     font-family: "Material Symbols Outlined";
     font-style: normal;
@@ -273,7 +240,7 @@ nav #nav-signup {
   * {
     margin: 0;
     padding: 0;
-    font-family: "PPMori-Regular", Arial, sans-serif;
+    font-family: satoshi-regular, arial, sans-serif;
     box-sizing: border-box;
   }
   nav {

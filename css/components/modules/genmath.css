@@ -1,15 +1,5 @@
-@font-face {
-  font-family: "PPMori-Regular";
-  src: url("https://cdn.jsdelivr.net/gh/aritmatica/cdn/fonts/PPMori-Regular.otf") format("opentype");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "PPMori-SemiBold";
-  src: url("https://cdn.jsdelivr.net/gh/aritmatica/cdn/fonts/PPMori-SemiBold.otf") format("opentype");
-  font-weight: 600;
-  font-style: normal;
-}
+@import url(https://cdn.jsdelivr.net/gh/aritmatica/cdn/fonts/satoshi/stylesheet.css);
+@import url(https://cdn.jsdelivr.net/gh/aritmatica/cdn/fonts/satoshi/stylesheet.css);
 @font-face {
   font-family: "Material Symbols Outlined";
   font-style: normal;
@@ -41,7 +31,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "PPMori-Regular", Arial, sans-serif;
+  font-family: satoshi-regular, arial, sans-serif;
   box-sizing: border-box;
 }
 
@@ -74,18 +64,6 @@
 }
 
 @font-face {
-  font-family: "PPMori-Regular";
-  src: url("https://cdn.jsdelivr.net/gh/aritmatica/cdn/fonts/PPMori-Regular.otf") format("opentype");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "PPMori-SemiBold";
-  src: url("https://cdn.jsdelivr.net/gh/aritmatica/cdn/fonts/PPMori-SemiBold.otf") format("opentype");
-  font-weight: 600;
-  font-style: normal;
-}
-@font-face {
   font-family: "Material Symbols Outlined";
   font-style: normal;
   font-weight: 100 700;
@@ -116,7 +94,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "PPMori-Regular", Arial, sans-serif;
+  font-family: satoshi-regular, arial, sans-serif;
   box-sizing: border-box;
 }
 
@@ -285,17 +263,17 @@ footer * {
 }
 .main-container main article a {
   color: #3fb950;
-  font-family: "PPMori-SemiBold", Arial, sans-serif;
+  font-family: satoshi-black, arial, sans-serif;
 }
 .main-container main article h2 {
   font-size: 2em;
-  font-family: "PPMori-SemiBold", Arial, sans-serif;
+  font-family: satoshi-black, arial, sans-serif;
 }
 .main-container main article h3 {
   margin-top: 1em;
   margin-bottom: 0.5em;
   font-size: 1.5em;
-  font-family: "PPMori-SemiBold", Arial, sans-serif;
+  font-family: satoshi-black, arial, sans-serif;
 }
 .main-container main article .highlight {
   color: #3fb950;
@@ -366,7 +344,7 @@ footer * {
 }
 .main-container main article section .callout h3 {
   font-size: 1.25em;
-  font-family: "PPMori-SemiBold", Arial, sans-serif;
+  font-family: satoshi-black, arial, sans-serif;
   margin-top: 0;
   margin-bottom: 0;
 }

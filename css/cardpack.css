@@ -1,15 +1,4 @@
-@font-face {
-  font-family: "PPMori-Regular";
-  src: url("https://cdn.jsdelivr.net/gh/aritmatica/cdn/fonts/PPMori-Regular.otf") format("opentype");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "PPMori-SemiBold";
-  src: url("https://cdn.jsdelivr.net/gh/aritmatica/cdn/fonts/PPMori-SemiBold.otf") format("opentype");
-  font-weight: 600;
-  font-style: normal;
-}
+@import url(https://cdn.jsdelivr.net/gh/aritmatica/cdn/fonts/satoshi/stylesheet.css);
 @font-face {
   font-family: "Material Symbols Outlined";
   font-style: normal;
@@ -41,7 +30,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "PPMori-Regular", Arial, sans-serif;
+  font-family: satoshi-regular, arial, sans-serif;
   box-sizing: border-box;
 }
 
@@ -96,7 +85,7 @@ body {
 }
 #cardpack header #cardpack-title {
   font-size: 4em;
-  font-family: "PPMori-SemiBold", Arial, sans-serif;
+  font-family: satoshi-black, arial, sans-serif;
   font-weight: 600;
 }
 #cardpack header #cardpack-title.genmath {
@@ -116,7 +105,7 @@ body {
   padding: 0.5em 1em 0.5em 1em;
   color: #FFFFFF;
   font-size: 1em;
-  font-family: "PPMori-SemiBold", Arial, sans-serif;
+  font-family: satoshi-black, arial, sans-serif;
   text-wrap: nowrap;
 }
 #cardpack header #cardpack-properties #cardpack-difficulty.easy {
@@ -125,7 +114,7 @@ body {
   padding: 0.5em 1em 0.5em 1em;
   color: #FFFFFF;
   font-size: 1em;
-  font-family: "PPMori-SemiBold", Arial, sans-serif;
+  font-family: satoshi-black, arial, sans-serif;
   text-wrap: nowrap;
 }
 #cardpack header #cardpack-properties #cardpack-difficulty.medium {
@@ -134,7 +123,7 @@ body {
   padding: 0.5em 1em 0.5em 1em;
   color: #FFFFFF;
   font-size: 1em;
-  font-family: "PPMori-SemiBold", Arial, sans-serif;
+  font-family: satoshi-black, arial, sans-serif;
   text-wrap: nowrap;
 }
 #cardpack header #cardpack-properties #cardpack-difficulty.hard {
@@ -143,7 +132,7 @@ body {
   padding: 0.5em 1em 0.5em 1em;
   color: #FFFFFF;
   font-size: 1em;
-  font-family: "PPMori-SemiBold", Arial, sans-serif;
+  font-family: satoshi-black, arial, sans-serif;
   text-wrap: nowrap;
 }
 #cardpack header #cardpack-properties #cardpack-price.free {
@@ -152,7 +141,7 @@ body {
   padding: 0.5em 1em 0.5em 1em;
   color: #FFFFFF;
   font-size: 1em;
-  font-family: "PPMori-SemiBold", Arial, sans-serif;
+  font-family: satoshi-black, arial, sans-serif;
   text-wrap: nowrap;
 }
 #cardpack header #cardpack-properties #cardpack-price.standard {
@@ -161,7 +150,7 @@ body {
   padding: 0.5em 1em 0.5em 1em;
   color: #FFFFFF;
   font-size: 1em;
-  font-family: "PPMori-SemiBold", Arial, sans-serif;
+  font-family: satoshi-black, arial, sans-serif;
   text-wrap: nowrap;
 }
 #cardpack header #cardpack-properties #cardpack-price.premium {
@@ -170,7 +159,7 @@ body {
   padding: 0.5em 1em 0.5em 1em;
   color: #FFFFFF;
   font-size: 1em;
-  font-family: "PPMori-SemiBold", Arial, sans-serif;
+  font-family: satoshi-black, arial, sans-serif;
   text-wrap: nowrap;
 }
 #cardpack .card.genmath .card-content, #cardpack .nav-card.genmath {

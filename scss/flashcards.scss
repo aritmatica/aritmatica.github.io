@@ -18,7 +18,7 @@ body {
 
     > .title {
         font-size: min(3rem, 12vw);
-        font-family: $Mori-SemiBold;
+        font-family: $font-black;
         font-weight: 600;
         text-align: center;
 
@@ -65,7 +65,7 @@ body {
 
             color: $text-color;
             font-size: 1em;
-            font-family: $Mori-SemiBold;
+            font-family: $font-black;
             text-wrap: nowrap;
         }
 
@@ -170,7 +170,7 @@ body {
 
                     .fancy-button {
                         font-size: 1.25em;
-                        font-family: $Mori-SemiBold;
+                        font-family: $font-black;
                         text-wrap: nowrap;
                         
                         margin-top: auto;
