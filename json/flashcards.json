@@ -22,7 +22,6 @@
                     "$$\\log_{b}{uv}=\\log_{b}{u}+\\log_{b}{v}$$",
                     "Product Law"
                 ],
-
                 [
                     "When the logarithm's argument can be rewritten into a difference of logarithms.",
                     "Quotient Law"
@@ -30,6 +29,14 @@
                 [
                     "$$\\log_{b}{\\frac{u}{v}}=\\log_{b}{u}-\\log_{b}{b}$$",
                     "Quotient Law"
+                ],
+                [
+                    "The logarithm of a number raised to an exponent is equal to the exponent times the logarithm of the base.",
+                    "Power Law"
+                ],
+                [
+                    "$$\\log_{b}{u^n}=n\\log_{b}{u}$$",
+                    "Power Law"
                 ]
             ]
         },
