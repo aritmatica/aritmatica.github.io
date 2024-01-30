@@ -24,8 +24,6 @@ body {
 
     > .title {
         font-size: min(3rem, 12vw);
-        font-family: $font-black;
-        font-weight: 600;
         text-align: center;
 
         display: flex;
@@ -34,6 +32,7 @@ body {
         h1 {
             $title-color: $violet-color;
             $title-color-2: adjust-hue($violet-color, 30);
+            font-family: $font-black;
             color: transparent;
             background-image: linear-gradient(90deg, $title-color, desaturate($title-color, 50), $title-color-2);
             background-clip: text;

@@ -257,6 +257,7 @@ footer * {
 .main-container main article h1 {
   font-size: 2.5em;
   margin-bottom: 1em;
+  font-family: satoshi-black, arial, sans-serif;
 }
 .main-container main article .module-description {
   margin-bottom: 3em;

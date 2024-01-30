@@ -76,12 +76,12 @@ body {
 }
 #modules > .title {
   font-size: min(4rem, 14vw);
-  font-family: satoshi-black, arial, sans-serif;
   text-align: center;
   display: flex;
   flex-direction: column;
 }
 #modules > .title h1 {
+  font-family: satoshi-black, arial, sans-serif;
   color: transparent;
   background-image: linear-gradient(90deg, #ff96f9, #e5b0e2, #00bae2);
   background-clip: text;
@@ -124,6 +124,7 @@ body {
   color: gray;
 }
 #modules .courses #modules-genmath .title {
+  font-family: satoshi-black, arial, sans-serif;
   font-size: 2.75em;
   color: #3fb950;
   margin-top: auto;
@@ -164,6 +165,7 @@ body {
   color: gray;
 }
 #modules .courses #modules-precalc .title {
+  font-family: satoshi-black, arial, sans-serif;
   font-size: 2.75em;
   color: #ff6200;
   margin-top: auto;

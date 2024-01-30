@@ -127,11 +127,13 @@ footer * {
 .main-container .form-content header {
   margin-top: 2rem;
   margin-bottom: 2rem;
-  font-family: satoshi-black, arial, sans-serif;
   font-size: 2.5rem;
   display: flex;
   flex-direction: column;
   gap: 0.25rem;
+}
+.main-container .form-content header .title {
+  font-family: satoshi-black, arial, sans-serif;
 }
 .main-container .form-content header .description {
   color: gray;

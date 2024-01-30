@@ -16,7 +16,6 @@ body {
 
     > .title {
         font-size: min(4rem, 14vw);
-        font-family: $font-black;
         text-align: center;
 
         display: flex;
@@ -25,6 +24,7 @@ body {
         h1 {
             $title-color: #ff96f9;
             $title-color-2: #00bae2;
+            font-family: $font-black;
             color: transparent;
             background-image: linear-gradient(90deg, $title-color, desaturate($title-color, 50), $title-color-2);
             background-clip: text;
@@ -76,6 +76,7 @@ body {
                 color: gray;
             }
             .title {
+                font-family: $font-black;
                 font-size: 2.75em;
                 color: $module-accent-color;
                 margin-top: auto;
