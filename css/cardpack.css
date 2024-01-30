@@ -55,6 +55,7 @@
   z-index: 0;
 }
 .fancy-button .label {
+  font-family: inherit;
   z-index: 0;
   transition: color 0.2s;
 }
@@ -124,6 +125,7 @@ body {
 #cardpack header .buttons #shuffle-flashcards {
   background-color: transparent;
   font-size: 1.25em;
+  font-family: satoshi-bold, arial, sans-serif;
   text-wrap: nowrap;
   margin-top: auto;
   border: solid #FFFFFF;
@@ -140,15 +142,13 @@ body {
 #cardpack header .buttons #shuffle-flashcards:hover {
   color: #FFFFFF;
 }
-#cardpack header .buttons #shuffle-flashcards .label {
-  font-family: satoshi-bold, arial, sans-serif;
-}
 #cardpack header .buttons #shuffle-flashcards .icons {
   margin-left: -0.1em;
 }
 #cardpack header .buttons #back-flashcards {
   background-color: transparent;
   font-size: 1.25em;
+  font-family: satoshi-bold, arial, sans-serif;
   text-wrap: nowrap;
   margin-top: auto;
   border: solid #FFFFFF;
@@ -164,9 +164,6 @@ body {
 }
 #cardpack header .buttons #back-flashcards:hover {
   color: #FFFFFF;
-}
-#cardpack header .buttons #back-flashcards .label {
-  font-family: satoshi-bold, arial, sans-serif;
 }
 #cardpack header .buttons #back-flashcards .icons {
   margin-left: -0.1em;

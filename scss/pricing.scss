@@ -113,7 +113,7 @@ body[show-error] {
             }
             .fancy-button {
                 font-size: 0.75em;
-                font-family: $font-black;
+                font-family: $font-bold;
                 text-wrap: nowrap;
                 
                 border: solid $text-color;
@@ -216,6 +216,7 @@ body[show-error] #error-prompt {
                 border: solid $button-color;
                 border-radius: 4em;
     
+                font-family: $font-bold;
                 font-size: 2em;
                 text-wrap: nowrap;
     

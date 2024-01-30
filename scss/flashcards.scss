@@ -178,6 +178,7 @@ body {
                     gap: 1em;
 
                     .fancy-button {
+                        font-family: $font-bold;
                         font-size: 1.25em;
                         text-wrap: nowrap;
                         
@@ -188,6 +189,10 @@ body {
                         width: 75%;
                         height: fit-content;
                         @include fancyButton($cardpack-accent, $text-color, $cardpack-accent);
+
+                        * {
+                            font-family: inherit;
+                        }
 
                         .unavailable {
                             display: none;

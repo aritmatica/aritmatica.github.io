@@ -55,6 +55,7 @@
   z-index: 0;
 }
 .fancy-button .label {
+  font-family: inherit;
   z-index: 0;
   transition: color 0.2s;
 }
@@ -242,6 +243,7 @@ body {
   gap: 1em;
 }
 #flashcards .flashcards-carousel .cardpack.genmath .cardpack-content .buttons .fancy-button {
+  font-family: satoshi-bold, arial, sans-serif;
   font-size: 1.25em;
   text-wrap: nowrap;
   margin-top: auto;
@@ -258,6 +260,9 @@ body {
 }
 #flashcards .flashcards-carousel .cardpack.genmath .cardpack-content .buttons .fancy-button:hover {
   color: #FFFFFF;
+}
+#flashcards .flashcards-carousel .cardpack.genmath .cardpack-content .buttons .fancy-button * {
+  font-family: inherit;
 }
 #flashcards .flashcards-carousel .cardpack.genmath .cardpack-content .buttons .fancy-button .unavailable {
   display: none;
@@ -478,6 +483,7 @@ body {
   gap: 1em;
 }
 #flashcards .flashcards-carousel .cardpack.precalc .cardpack-content .buttons .fancy-button {
+  font-family: satoshi-bold, arial, sans-serif;
   font-size: 1.25em;
   text-wrap: nowrap;
   margin-top: auto;
@@ -494,6 +500,9 @@ body {
 }
 #flashcards .flashcards-carousel .cardpack.precalc .cardpack-content .buttons .fancy-button:hover {
   color: #FFFFFF;
+}
+#flashcards .flashcards-carousel .cardpack.precalc .cardpack-content .buttons .fancy-button * {
+  font-family: inherit;
 }
 #flashcards .flashcards-carousel .cardpack.precalc .cardpack-content .buttons .fancy-button .unavailable {
   display: none;

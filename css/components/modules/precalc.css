@@ -56,6 +56,7 @@
   z-index: 0;
 }
 .fancy-button .label {
+  font-family: inherit;
   z-index: 0;
   transition: color 0.2s;
 }
@@ -119,6 +120,7 @@
   z-index: 0;
 }
 .fancy-button .label {
+  font-family: inherit;
   z-index: 0;
   transition: color 0.2s;
 }
@@ -309,6 +311,7 @@ footer * {
   border: solid #ff6200;
   border-radius: 4rem;
   padding: 0.5em 0.75em 0.5em 0.75em;
+  font-family: satoshi-bold, arial, sans-serif;
   font-size: 1.25em;
   text-decoration: none !important;
   border-color: #ff6200;
@@ -353,6 +356,7 @@ footer * {
   margin-top: 4em;
 }
 .main-container main article #flashcards .fancy-button {
+  font-family: satoshi-bold, arial, sans-serif;
   margin-top: 2em;
 }
 .main-container .toc {

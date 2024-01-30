@@ -55,6 +55,7 @@
   z-index: 0;
 }
 .fancy-button .label {
+  font-family: inherit;
   z-index: 0;
   transition: color 0.2s;
 }
@@ -131,7 +132,7 @@ body {
 }
 #modules .courses #modules-genmath .fancy-button {
   font-size: 1em;
-  font-family: satoshi-black, arial, sans-serif;
+  font-family: satoshi-bold, arial, sans-serif;
   text-wrap: nowrap;
   margin-top: auto;
   border: solid #FFFFFF;
@@ -172,7 +173,7 @@ body {
 }
 #modules .courses #modules-precalc .fancy-button {
   font-size: 1em;
-  font-family: satoshi-black, arial, sans-serif;
+  font-family: satoshi-bold, arial, sans-serif;
   text-wrap: nowrap;
   margin-top: auto;
   border: solid #FFFFFF;

@@ -55,6 +55,7 @@
   z-index: 0;
 }
 .fancy-button .label {
+  font-family: inherit;
   z-index: 0;
   transition: color 0.2s;
 }
@@ -166,7 +167,7 @@ body[show-error] {
 }
 #pricing .plans #plan-trial .fancy-button {
   font-size: 0.75em;
-  font-family: satoshi-black, arial, sans-serif;
+  font-family: satoshi-bold, arial, sans-serif;
   text-wrap: nowrap;
   border: solid #FFFFFF;
   border-radius: 1em;
@@ -221,7 +222,7 @@ body[show-error] {
 }
 #pricing .plans #plan-standard .fancy-button {
   font-size: 0.75em;
-  font-family: satoshi-black, arial, sans-serif;
+  font-family: satoshi-bold, arial, sans-serif;
   text-wrap: nowrap;
   border: solid #FFFFFF;
   border-radius: 1em;
@@ -276,7 +277,7 @@ body[show-error] {
 }
 #pricing .plans #plan-premium .fancy-button {
   font-size: 0.75em;
-  font-family: satoshi-black, arial, sans-serif;
+  font-family: satoshi-bold, arial, sans-serif;
   text-wrap: nowrap;
   border: solid #FFFFFF;
   border-radius: 1em;
@@ -358,6 +359,7 @@ body[show-error] #error-prompt .error-content .error-buttons #error-continue {
   padding: 0.25em 1em 0.25em 1em;
   border: solid #e36970;
   border-radius: 4em;
+  font-family: satoshi-bold, arial, sans-serif;
   font-size: 2em;
   text-wrap: nowrap;
   border-color: #e36970;
@@ -375,6 +377,7 @@ body[show-error] #error-prompt .error-content .error-buttons #error-go-back {
   padding: 0.25em 1em 0.25em 1em;
   border: solid #3fb950;
   border-radius: 4em;
+  font-family: satoshi-bold, arial, sans-serif;
   font-size: 2em;
   text-wrap: nowrap;
   border-color: #3fb950;

@@ -224,6 +224,7 @@ body {
                     border-radius: 4rem;
                     padding: 0.5em 0.75em 0.5em 0.75em;
 
+                    font-family: $font-bold;
                     font-size: 1.25em;
                     text-decoration: none !important;
 
@@ -271,6 +272,7 @@ body {
                 #flashcards {
                     margin-top: 4em;
                     .fancy-button {
+                        font-family: $font-bold;
                         margin-top: 2em;
                     }
                 }

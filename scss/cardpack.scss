@@ -75,6 +75,7 @@ body {
             @mixin button($button-accent) {
                 background-color: transparent;
                 font-size: 1.25em;
+                font-family: $font-bold;
                 text-wrap: nowrap;
                 
                 margin-top: auto;
@@ -84,10 +85,6 @@ body {
                 width: fit-content;
                 height: fit-content;
                 @include fancyButton($button-accent, $text-color, $button-accent);
-
-                .label {
-                    font-family: $font-bold;
-                }
 
                 .icons {
                     margin-left: -0.1em;
