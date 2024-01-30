@@ -122,7 +122,7 @@ function setupFlickity () {
         cellAlign: "center",
         autoPlay: true,
     });
-
+    fc_flkty.resize()
     return fc_flkty
 }
 
