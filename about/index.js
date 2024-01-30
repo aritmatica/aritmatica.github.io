@@ -16,8 +16,16 @@ function setupImageCarousels() {
     for (let i = 0; i < galleries.length; i++) {
         const elem = galleries[i];
         const gallery_flkty = new Flickity(elem, {
-            autoPlay: true,
+            autoPlay: 3000,
+            adaptiveHeight: false,
+            pageDots: false,
+            prevNextButtons: false,
+            cellAlign: "center",
+            draggable: false,
+            wrapAround: true,
+            cellSelector: ".cell",
         });
+        gallery_flkty.resize()
     }
 }
 
