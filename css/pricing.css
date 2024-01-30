@@ -85,10 +85,10 @@ body[show-error] {
 }
 #pricing .title {
   font-size: 2.75rem;
-  font-family: satoshi-black, arial, sans-serif;
   text-align: center;
 }
 #pricing .title h1 {
+  font-family: satoshi-black, arial, sans-serif;
   background: linear-gradient(90deg, #e36970, #7c72ff 100%);
   background-clip: text;
   -webkit-background-clip: text;
@@ -140,7 +140,8 @@ body[show-error] {
   border: solid #333;
 }
 #pricing .plans #plan-trial .title {
-  font-size: 2.75em;
+  font-family: satoshi-medium, arial, sans-serif;
+  font-size: 2em;
   color: #FFFFFF;
 }
 #pricing .plans #plan-trial .description {
@@ -149,6 +150,7 @@ body[show-error] {
 }
 #pricing .plans #plan-trial .price {
   color: #FFFFFF;
+  font-family: satoshi-medium, arial, sans-serif;
   font-size: 3.5em;
 }
 #pricing .plans #plan-trial .price sup {
@@ -193,7 +195,8 @@ body[show-error] {
   border: solid #e36970;
 }
 #pricing .plans #plan-standard .title {
-  font-size: 2.75em;
+  font-family: satoshi-medium, arial, sans-serif;
+  font-size: 2em;
   color: #e36970;
 }
 #pricing .plans #plan-standard .description {
@@ -202,6 +205,7 @@ body[show-error] {
 }
 #pricing .plans #plan-standard .price {
   color: #e36970;
+  font-family: satoshi-medium, arial, sans-serif;
   font-size: 3.5em;
 }
 #pricing .plans #plan-standard .price sup {
@@ -246,7 +250,8 @@ body[show-error] {
   border: solid #7c72ff;
 }
 #pricing .plans #plan-premium .title {
-  font-size: 2.75em;
+  font-family: satoshi-medium, arial, sans-serif;
+  font-size: 2em;
   color: #7c72ff;
 }
 #pricing .plans #plan-premium .description {
@@ -255,6 +260,7 @@ body[show-error] {
 }
 #pricing .plans #plan-premium .price {
   color: #7c72ff;
+  font-family: satoshi-medium, arial, sans-serif;
   font-size: 3.5em;
 }
 #pricing .plans #plan-premium .price sup {
