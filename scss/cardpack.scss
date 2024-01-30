@@ -13,40 +13,96 @@ body {
 }
 
 #cardpack {
-    width: 100%;
-    margin: 2rem auto 0rem auto;
+    width: 90%;
+    padding: 2rem 2rem 2rem 2rem;
+    margin: 1.5rem auto 0rem auto;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 
     overflow: hidden;
 
-    .button-container {
-        width: 100%;
-        margin-bottom: 2em;
+    @media screen and (max-width: 1440px) {
+        grid-template-columns: 60% 1fr;
+        
+        header .buttons {
+            flex-direction: column;
+        }
+    }
 
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    @media screen and (max-width: 768px) {
+        padding: 0rem 0rem 0rem 0rem;
+        grid-template-columns: 1fr;
 
-        .fancy-button {
-            font-size: 1.25em;
-            text-wrap: nowrap;
-            
-            margin-top: auto;
-            border: solid $text-color;
-            border-radius: 1em;
-            padding: 0.5em 1em 0.5em 1em;
-            width: fit-content;
-            height: fit-content;
-            @include fancyButton($violet-color, $text-color, $violet-color);
+        .cards-carousel {
+            grid-row: 2;
+            .card {
+                font-size: min(1rem, 2vw) !important;
+            }
+        }
+        
+        header {
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+            font-size: min(1rem, 4vw) !important;
+            .buttons {
+                flex-direction: column;
+            }
         }
     }
 
     header {
+        height: 100%;
         padding-left: 3rem;
         padding-right: 3rem;
+
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+
+        font-size: min(1rem, 1.25vw);
+
+        .buttons {
+            width: 100%;
+            margin-top: auto;
+            margin-bottom: 1em;
+    
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            gap: 1em;
+
+            @mixin button($button-accent) {
+                background-color: transparent;
+                font-size: 1.25em;
+                text-wrap: nowrap;
+                
+                margin-top: auto;
+                border: solid $text-color;
+                border-radius: 1em;
+                padding: 0.5em 1em 0.5em 1em;
+                width: fit-content;
+                height: fit-content;
+                @include fancyButton($button-accent, $text-color, $button-accent);
+
+                .label {
+                    font-family: $font-bold;
+                }
+
+                .icons {
+                    margin-left: -0.1em;
+                }
+            }
+
+            #shuffle-flashcards {
+                @include button($violet-color)
+            }
+
+            #back-flashcards {
+                @include button($accent-color)
+            }
+        }
+
         #cardpack-course-code {
             color: gray;
             font-size: 1em;
@@ -65,7 +121,7 @@ body {
             margin-top: 0.5em;
 
             display: flex;
-            justify-content: end;
+            justify-content: start;
             gap: 1em;
 
             @mixin cardpack-property($property-color) {
@@ -127,14 +183,50 @@ body {
     }
 
     .cards-carousel {
+        background-color: lighten($background-color, 1);
+
         max-width: 952px;
         aspect-ratio: 3/2;
         width: 100%;
+        margin-top: 1em;
+        border-radius: 1em;
+
+        position: relative;
+
+        .loader-container {
+            background-color: lighten($background-color, 1);
+
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: inherit;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            opacity: 0;
+            z-index: 1;
+
+            transition: opacity 250ms;
+            pointer-events: none;
+
+            .loader {
+                aspect-ratio: 1;
+                width: 10%;
+            }
+
+            &.load {
+                opacity: 1;
+            }
+        }
 
         .flickity-viewport {
             border-radius: inherit;
-            overflow: visible;
+            overflow: hidden;
             height: 100% !important;
+
+            transition: opacity 1000ms;
         }
 
         .card {
@@ -145,7 +237,7 @@ body {
             justify-content: center;
             align-items: center;
 
-            font-size: min(1rem, 2vw);
+            font-size: min(1rem, 1vw);
 
             .card-content {
                 background-color: $accent-color;
@@ -167,7 +259,12 @@ body {
 
                 transform: rotate3d(0, 1, 0, 0deg);
 
-                transition: scale 500ms, transform 500ms ease-out;
+                transition: 
+                    filter 500ms,
+                    opacity 500ms, 
+                    scale 500ms, 
+                    transform 500ms ease-out,
+                ;
 
                 div {
                     position: absolute;
@@ -182,6 +279,7 @@ body {
 
                 &.reveal {
                     transform: rotate3d(0, 1, 0, 180deg);
+                    filter: hue-rotate(-5deg);
                     .front {
                         opacity: 0;
                     }

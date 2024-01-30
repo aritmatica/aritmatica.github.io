@@ -11,6 +11,24 @@ function DOMContentLoaded(...args) {
 }
 DOMContentLoaded()
 
+function shuffle(array) {
+    let currentIndex = array.length, randomIndex;
+
+    // While there remain elements to shuffle.
+    while (currentIndex > 0) {
+
+        // Pick a remaining element.
+        randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex--;
+
+        // And swap it with the current element.
+        [array[currentIndex], array[randomIndex]] = [
+            array[randomIndex], array[currentIndex]];
+    }
+
+    return array;
+}
+
 function renderKateX() {
     renderMathInElement(document.body, {
         delimiters: [
@@ -81,7 +99,7 @@ function makeCards(data) {
 }
 
 function setupHeader(data) {
-    function prefixer(text) {return "cardpack-" + text}
+    function prefixer(text) { return "cardpack-" + text }
 
     const course_code = document.getElementById(prefixer("course-code"))
     const title = document.getElementById(prefixer("title"))
@@ -110,6 +128,7 @@ function setupFlickity() {
     const cards_flkty = new Flickity(cards_carousel, {
         cellAlign: "center",
         draggable: false,
+        cellSelector: ".card",
     });
 
     var currentCard = cards_flkty.cells[0].element
@@ -123,7 +142,7 @@ function setupFlickity() {
         }
     })
 
-    return
+    return cards_flkty
 }
 
 function rotateCardsOnClick() {
@@ -146,9 +165,32 @@ function rotateCardsOnClick() {
     }
 }
 
-
 const searchParams = new URLSearchParams(window.location.search);
 const cardpackParam = searchParams.get("cardpack")
+
+function handleShuffle(flkty) {
+    const loader_container = document.getElementsByClassName("loader-container")[0]
+    const shuffle_button = document.getElementById("shuffle-flashcards")
+    shuffle_button.onclick = () => {
+        loader_container.classList.add("load")
+        setTimeout(() => {
+            const shuffledCells = shuffle(flkty.cells)
+            
+            for (let i = 0; i < shuffledCells.length; i++) {
+                const cell = shuffledCells[i];
+                flkty.remove(cell.element)
+                if (Math.random() > 0.5) {
+                    flkty.append(cell.element)
+                } else {
+                    flkty.prepend(cell.element)
+                }
+            }
+
+            flkty.select(0, false, true)
+            loader_container.classList.remove("load")
+        }, 500)
+    }
+}
 
 if (cardpackParam) {
     const cardpackNum = Number(cardpackParam)
@@ -159,6 +201,7 @@ if (cardpackParam) {
         .then(renderKateX)
         .then(rotateCardsOnClick)
         .then(setupFlickity)
+        .then(handleShuffle)
 } else {
     window.location.href = "/flashcards/"
 }

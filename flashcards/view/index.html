@@ -46,11 +46,10 @@
     <nav include="/components/nav"></nav>
 
     <section id="cardpack">
-        <div class="button-container">
-            <a id="back-flashcards" class="fancy-button" href="/flashcards/">
-                <span class="flair"></span>
-                <span class="label">Back to Cardpacks</span>
-            </a>
+        <div class="cards-carousel">
+            <div class="loader-container">
+                <img class="loader" src="/assets/svg/loader.svg" alt="loading">
+            </div>
         </div>
         <header>
             <div id="cardpack-course-code"></div>
@@ -61,9 +60,25 @@
                 <div id="cardpack-difficulty">Difficulty: </div>
                 <div id="cardpack-price"></div>
             </div>
+
+            <div class="buttons">
+                <button id="shuffle-flashcards" class="fancy-button">
+                    <span class="flair"></span>
+                    <span class="label">
+                        <span class="icons">shuffle</span>
+                        Shuffle Flashcards
+                    </span>
+                </button>
+
+                <a id="back-flashcards" class="fancy-button" href="/flashcards/">
+                    <span class="flair"></span>
+                    <span class="label">
+                        <span class="icons">exit_to_app</span>
+                        Back to Cardpacks
+                    </span>
+                </a>
+            </div>
         </header>
-        <div class="cards-carousel">
-        </div>
     </section>
 
     <footer include="/components/footer.html"></footer>
