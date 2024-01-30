@@ -1,13 +1,13 @@
 @use 'sass:color';
 
-@import url(https://cdn.jsdelivr.net/gh/aritmatica/cdn/fonts/satoshi/stylesheet.css);
+@import url(https://cdn.jsdelivr.net/gh/aritmatica/cdn@main/fonts/satoshi/stylesheet.css);
 
 // material icons
 @font-face {
     font-family: 'Material Symbols Outlined';
     font-style: normal;
     font-weight: 100 700;
-    src: url(https://cdn.jsdelivr.net/gh/aritmatica/cdn/gstatic/icons.woff2) format('woff2');
+    src: url(https://cdn.jsdelivr.net/gh/aritmatica/cdn@main/gstatic/icons.woff2) format('woff2');
 }
 
 :root {

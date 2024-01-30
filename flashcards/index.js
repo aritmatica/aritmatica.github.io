@@ -1,4 +1,4 @@
-import { scanForButtons } from "https://cdn.jsdelivr.net/gh/aritmatica/cdn/js/fancyButtons.js";
+import { scanForButtons } from "https://cdn.jsdelivr.net/gh/aritmatica/cdn@main/js/fancyButtons.js";
 
 var _domContentLoaded = false
 function DOMContentLoaded(...args) {

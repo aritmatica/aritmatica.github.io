@@ -1,9 +1,9 @@
-@import url(https://cdn.jsdelivr.net/gh/aritmatica/cdn/fonts/satoshi/stylesheet.css);
+@import url(https://cdn.jsdelivr.net/gh/aritmatica/cdn@main/fonts/satoshi/stylesheet.css);
 @font-face {
   font-family: "Material Symbols Outlined";
   font-style: normal;
   font-weight: 100 700;
-  src: url(https://cdn.jsdelivr.net/gh/aritmatica/cdn/gstatic/icons.woff2) format("woff2");
+  src: url(https://cdn.jsdelivr.net/gh/aritmatica/cdn@main/gstatic/icons.woff2) format("woff2");
 }
 :root {
   color-scheme: dark;
@@ -283,8 +283,8 @@ header main span {
 }
 #genmath #genmath-log {
   background-image: linear-gradient(#3fb950, #3fb983);
-  -webkit-mask: url(https://cdn.jsdelivr.net/gh/aritmatica/cdn/svg/aritmatica-logarithm.svg) no-repeat center/cover;
-  mask: url(https://cdn.jsdelivr.net/gh/aritmatica/cdn/svg/aritmatica-logarithm.svg) no-repeat center/cover;
+  -webkit-mask: url(https://cdn.jsdelivr.net/gh/aritmatica/cdn@main/svg/aritmatica-logarithm.svg) no-repeat center/cover;
+  mask: url(https://cdn.jsdelivr.net/gh/aritmatica/cdn@main/svg/aritmatica-logarithm.svg) no-repeat center/cover;
   opacity: 0.01;
   position: absolute;
   width: 125%;
@@ -389,8 +389,8 @@ header main span {
 }
 #precalc .card-media #precalc-circle {
   background-image: linear-gradient(#ff6200, #ffb700);
-  -webkit-mask: url(https://cdn.jsdelivr.net/gh/aritmatica/cdn/svg/aritmatica-circle.svg) no-repeat center/cover;
-  mask: url(https://cdn.jsdelivr.net/gh/aritmatica/cdn/svg/aritmatica-circle.svg) no-repeat center/cover;
+  -webkit-mask: url(https://cdn.jsdelivr.net/gh/aritmatica/cdn@main/svg/aritmatica-circle.svg) no-repeat center/cover;
+  mask: url(https://cdn.jsdelivr.net/gh/aritmatica/cdn@main/svg/aritmatica-circle.svg) no-repeat center/cover;
   opacity: 0.01;
   position: absolute;
   top: 0;
@@ -523,8 +523,8 @@ header main span {
 }
 #exercises #exercises-shape {
   background-image: linear-gradient(#7c72ff, #c372ff);
-  -webkit-mask: url(https://cdn.jsdelivr.net/gh/aritmatica/cdn/svg/aritmatica-abstract-shape.svg) no-repeat center/cover;
-  mask: url(https://cdn.jsdelivr.net/gh/aritmatica/cdn/svg/aritmatica-abstract-shape.svg) no-repeat center/cover;
+  -webkit-mask: url(https://cdn.jsdelivr.net/gh/aritmatica/cdn@main/svg/aritmatica-abstract-shape.svg) no-repeat center/cover;
+  mask: url(https://cdn.jsdelivr.net/gh/aritmatica/cdn@main/svg/aritmatica-abstract-shape.svg) no-repeat center/cover;
   opacity: 0.01;
   position: absolute;
   width: 125%;
