@@ -111,6 +111,7 @@ img {
 #how-it-started .section-content .section-description {
   margin-top: 0.25em;
   font-size: 2em;
+  line-height: 1.4;
 }
 #how-it-started .section-media {
   display: flex;
