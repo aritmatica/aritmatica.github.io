@@ -142,7 +142,10 @@ body {
   font-size: min(1rem, 5vw);
 }
 #flashcards .flashcards-carousel .cardpack.genmath .cardpack-content .cardpack-title {
-  color: #3fb950;
+  color: transparent;
+  background-image: linear-gradient(90deg, #3fb950, #3fb96f);
+  background-clip: text;
+  font-family: satoshi-black, arial, sans-serif;
   font-size: min(2.5rem, 10vw);
 }
 #flashcards .flashcards-carousel .cardpack.genmath .cardpack-content .cardpack-properties {
@@ -153,75 +156,75 @@ body {
   gap: 1em;
 }
 #flashcards .flashcards-carousel .cardpack.genmath .cardpack-content .cardpack-properties div {
-  background-color: #25542b;
+  background-image: linear-gradient(90deg, #25542b, #255433);
   border-radius: 1em;
   padding: 0.5em 1em 0.5em 1em;
   color: #FFFFFF;
   font-size: 1em;
-  font-family: satoshi-black, arial, sans-serif;
+  font-family: satoshi-bold, arial, sans-serif;
   text-wrap: nowrap;
 }
 #flashcards .flashcards-carousel .cardpack.genmath .cardpack-content .cardpack-properties .cardpack-cards {
-  background-color: #0277BD;
+  background-image: linear-gradient(90deg, #0277BD, #0258bd);
   border-radius: 1em;
   padding: 0.5em 1em 0.5em 1em;
   color: #FFFFFF;
   font-size: 1em;
-  font-family: satoshi-black, arial, sans-serif;
+  font-family: satoshi-bold, arial, sans-serif;
   text-wrap: nowrap;
 }
 #flashcards .flashcards-carousel .cardpack.genmath .cardpack-content .cardpack-properties .cardpack-difficulty.easy {
-  background-color: #2E7D32;
+  background-image: linear-gradient(90deg, #2E7D32, #2e7d3f);
   border-radius: 1em;
   padding: 0.5em 1em 0.5em 1em;
   color: #FFFFFF;
   font-size: 1em;
-  font-family: satoshi-black, arial, sans-serif;
+  font-family: satoshi-bold, arial, sans-serif;
   text-wrap: nowrap;
 }
 #flashcards .flashcards-carousel .cardpack.genmath .cardpack-content .cardpack-properties .cardpack-difficulty.medium {
-  background-color: #F57F17;
+  background-image: linear-gradient(90deg, #F57F17, #f5a417);
   border-radius: 1em;
   padding: 0.5em 1em 0.5em 1em;
   color: #FFFFFF;
   font-size: 1em;
-  font-family: satoshi-black, arial, sans-serif;
+  font-family: satoshi-bold, arial, sans-serif;
   text-wrap: nowrap;
 }
 #flashcards .flashcards-carousel .cardpack.genmath .cardpack-content .cardpack-properties .cardpack-difficulty.hard {
-  background-color: #d7342a;
+  background-image: linear-gradient(90deg, #d7342a, #d7512a);
   border-radius: 1em;
   padding: 0.5em 1em 0.5em 1em;
   color: #FFFFFF;
   font-size: 1em;
-  font-family: satoshi-black, arial, sans-serif;
+  font-family: satoshi-bold, arial, sans-serif;
   text-wrap: nowrap;
 }
 #flashcards .flashcards-carousel .cardpack.genmath .cardpack-content .cardpack-properties .cardpack-price.free {
-  background-color: #474957;
+  background-image: linear-gradient(90deg, #474957, #474757);
   border-radius: 1em;
   padding: 0.5em 1em 0.5em 1em;
   color: #FFFFFF;
   font-size: 1em;
-  font-family: satoshi-black, arial, sans-serif;
+  font-family: satoshi-bold, arial, sans-serif;
   text-wrap: nowrap;
 }
 #flashcards .flashcards-carousel .cardpack.genmath .cardpack-content .cardpack-properties .cardpack-price.standard {
-  background-color: #e36970;
+  background-image: linear-gradient(90deg, #e36970, #e37669);
   border-radius: 1em;
   padding: 0.5em 1em 0.5em 1em;
   color: #FFFFFF;
   font-size: 1em;
-  font-family: satoshi-black, arial, sans-serif;
+  font-family: satoshi-bold, arial, sans-serif;
   text-wrap: nowrap;
 }
 #flashcards .flashcards-carousel .cardpack.genmath .cardpack-content .cardpack-properties .cardpack-price.premium {
-  background-color: #7c72ff;
+  background-image: linear-gradient(90deg, #7c72ff, #9472ff);
   border-radius: 1em;
   padding: 0.5em 1em 0.5em 1em;
   color: #FFFFFF;
   font-size: 1em;
-  font-family: satoshi-black, arial, sans-serif;
+  font-family: satoshi-bold, arial, sans-serif;
   text-wrap: nowrap;
 }
 #flashcards .flashcards-carousel .cardpack.genmath .cardpack-content .cardpack-locked-text {
@@ -241,7 +244,6 @@ body {
 }
 #flashcards .flashcards-carousel .cardpack.genmath .cardpack-content .buttons .fancy-button {
   font-size: 1.25em;
-  font-family: satoshi-black, arial, sans-serif;
   text-wrap: nowrap;
   margin-top: auto;
   border: solid #FFFFFF;
@@ -261,6 +263,21 @@ body {
 #flashcards .flashcards-carousel .cardpack.genmath .cardpack-content .buttons .fancy-button .unavailable {
   display: none;
 }
+#flashcards .flashcards-carousel .cardpack.genmath .cardpack-content .buttons .fancy-button.open-cardpack {
+  background-color: #3fb950;
+  color: #FFFFFF !important;
+  border-color: #75d081;
+  color: #3fb950;
+}
+#flashcards .flashcards-carousel .cardpack.genmath .cardpack-content .buttons .fancy-button.open-cardpack .flair {
+  background-color: #75d081;
+}
+#flashcards .flashcards-carousel .cardpack.genmath .cardpack-content .buttons .fancy-button.open-cardpack:hover {
+  color: #FFFFFF;
+}
+#flashcards .flashcards-carousel .cardpack.genmath .cardpack-content .buttons .fancy-button.open-cardpack:hover {
+  color: black !important;
+}
 #flashcards .flashcards-carousel .cardpack.genmath .cardpack-content .buttons .fancy-button.locked {
   background-color: #2d2f2f;
   border-color: #30323b;
@@ -277,14 +294,19 @@ body {
   display: none;
 }
 #flashcards .flashcards-carousel .cardpack.genmath .cardpack-content .buttons .fancy-button.upgrade-standard {
-  border-color: #e36970;
+  background-color: #e36970;
+  color: #FFFFFF !important;
+  border-color: #e77e84;
   color: #e36970;
 }
 #flashcards .flashcards-carousel .cardpack.genmath .cardpack-content .buttons .fancy-button.upgrade-standard .flair {
-  background-color: #e36970;
+  background-color: #e77e84;
 }
 #flashcards .flashcards-carousel .cardpack.genmath .cardpack-content .buttons .fancy-button.upgrade-standard:hover {
   color: #FFFFFF;
+}
+#flashcards .flashcards-carousel .cardpack.genmath .cardpack-content .buttons .fancy-button.upgrade-standard:hover {
+  color: black !important;
 }
 #flashcards .flashcards-carousel .cardpack.genmath .cardpack-content .buttons .fancy-button.upgrade-standard .unavailable {
   display: initial;
@@ -293,14 +315,19 @@ body {
   display: none;
 }
 #flashcards .flashcards-carousel .cardpack.genmath .cardpack-content .buttons .fancy-button.upgrade-premium {
-  border-color: #7c72ff;
+  background-color: #7c72ff;
+  color: #FFFFFF !important;
+  border-color: #948cff;
   color: #7c72ff;
 }
 #flashcards .flashcards-carousel .cardpack.genmath .cardpack-content .buttons .fancy-button.upgrade-premium .flair {
-  background-color: #7c72ff;
+  background-color: #948cff;
 }
 #flashcards .flashcards-carousel .cardpack.genmath .cardpack-content .buttons .fancy-button.upgrade-premium:hover {
   color: #FFFFFF;
+}
+#flashcards .flashcards-carousel .cardpack.genmath .cardpack-content .buttons .fancy-button.upgrade-premium:hover {
+  color: black !important;
 }
 #flashcards .flashcards-carousel .cardpack.genmath .cardpack-content .buttons .fancy-button.upgrade-premium .unavailable {
   display: initial;
@@ -351,7 +378,10 @@ body {
   font-size: min(1rem, 5vw);
 }
 #flashcards .flashcards-carousel .cardpack.precalc .cardpack-content .cardpack-title {
-  color: #ff6200;
+  color: transparent;
+  background-image: linear-gradient(90deg, #ff6200, #ffa200);
+  background-clip: text;
+  font-family: satoshi-black, arial, sans-serif;
   font-size: min(2.5rem, 10vw);
 }
 #flashcards .flashcards-carousel .cardpack.precalc .cardpack-content .cardpack-properties {
@@ -362,75 +392,75 @@ body {
   gap: 1em;
 }
 #flashcards .flashcards-carousel .cardpack.precalc .cardpack-content .cardpack-properties div {
-  background-color: #793206;
+  background-image: linear-gradient(90deg, #793206, #794606);
   border-radius: 1em;
   padding: 0.5em 1em 0.5em 1em;
   color: #FFFFFF;
   font-size: 1em;
-  font-family: satoshi-black, arial, sans-serif;
+  font-family: satoshi-bold, arial, sans-serif;
   text-wrap: nowrap;
 }
 #flashcards .flashcards-carousel .cardpack.precalc .cardpack-content .cardpack-properties .cardpack-cards {
-  background-color: #0277BD;
+  background-image: linear-gradient(90deg, #0277BD, #0258bd);
   border-radius: 1em;
   padding: 0.5em 1em 0.5em 1em;
   color: #FFFFFF;
   font-size: 1em;
-  font-family: satoshi-black, arial, sans-serif;
+  font-family: satoshi-bold, arial, sans-serif;
   text-wrap: nowrap;
 }
 #flashcards .flashcards-carousel .cardpack.precalc .cardpack-content .cardpack-properties .cardpack-difficulty.easy {
-  background-color: #2E7D32;
+  background-image: linear-gradient(90deg, #2E7D32, #2e7d3f);
   border-radius: 1em;
   padding: 0.5em 1em 0.5em 1em;
   color: #FFFFFF;
   font-size: 1em;
-  font-family: satoshi-black, arial, sans-serif;
+  font-family: satoshi-bold, arial, sans-serif;
   text-wrap: nowrap;
 }
 #flashcards .flashcards-carousel .cardpack.precalc .cardpack-content .cardpack-properties .cardpack-difficulty.medium {
-  background-color: #F57F17;
+  background-image: linear-gradient(90deg, #F57F17, #f5a417);
   border-radius: 1em;
   padding: 0.5em 1em 0.5em 1em;
   color: #FFFFFF;
   font-size: 1em;
-  font-family: satoshi-black, arial, sans-serif;
+  font-family: satoshi-bold, arial, sans-serif;
   text-wrap: nowrap;
 }
 #flashcards .flashcards-carousel .cardpack.precalc .cardpack-content .cardpack-properties .cardpack-difficulty.hard {
-  background-color: #d7342a;
+  background-image: linear-gradient(90deg, #d7342a, #d7512a);
   border-radius: 1em;
   padding: 0.5em 1em 0.5em 1em;
   color: #FFFFFF;
   font-size: 1em;
-  font-family: satoshi-black, arial, sans-serif;
+  font-family: satoshi-bold, arial, sans-serif;
   text-wrap: nowrap;
 }
 #flashcards .flashcards-carousel .cardpack.precalc .cardpack-content .cardpack-properties .cardpack-price.free {
-  background-color: #474957;
+  background-image: linear-gradient(90deg, #474957, #474757);
   border-radius: 1em;
   padding: 0.5em 1em 0.5em 1em;
   color: #FFFFFF;
   font-size: 1em;
-  font-family: satoshi-black, arial, sans-serif;
+  font-family: satoshi-bold, arial, sans-serif;
   text-wrap: nowrap;
 }
 #flashcards .flashcards-carousel .cardpack.precalc .cardpack-content .cardpack-properties .cardpack-price.standard {
-  background-color: #e36970;
+  background-image: linear-gradient(90deg, #e36970, #e37669);
   border-radius: 1em;
   padding: 0.5em 1em 0.5em 1em;
   color: #FFFFFF;
   font-size: 1em;
-  font-family: satoshi-black, arial, sans-serif;
+  font-family: satoshi-bold, arial, sans-serif;
   text-wrap: nowrap;
 }
 #flashcards .flashcards-carousel .cardpack.precalc .cardpack-content .cardpack-properties .cardpack-price.premium {
-  background-color: #7c72ff;
+  background-image: linear-gradient(90deg, #7c72ff, #9472ff);
   border-radius: 1em;
   padding: 0.5em 1em 0.5em 1em;
   color: #FFFFFF;
   font-size: 1em;
-  font-family: satoshi-black, arial, sans-serif;
+  font-family: satoshi-bold, arial, sans-serif;
   text-wrap: nowrap;
 }
 #flashcards .flashcards-carousel .cardpack.precalc .cardpack-content .cardpack-locked-text {
@@ -450,7 +480,6 @@ body {
 }
 #flashcards .flashcards-carousel .cardpack.precalc .cardpack-content .buttons .fancy-button {
   font-size: 1.25em;
-  font-family: satoshi-black, arial, sans-serif;
   text-wrap: nowrap;
   margin-top: auto;
   border: solid #FFFFFF;
@@ -470,6 +499,21 @@ body {
 #flashcards .flashcards-carousel .cardpack.precalc .cardpack-content .buttons .fancy-button .unavailable {
   display: none;
 }
+#flashcards .flashcards-carousel .cardpack.precalc .cardpack-content .buttons .fancy-button.open-cardpack {
+  background-color: #ff6200;
+  color: #FFFFFF !important;
+  border-color: #ff914d;
+  color: #ff6200;
+}
+#flashcards .flashcards-carousel .cardpack.precalc .cardpack-content .buttons .fancy-button.open-cardpack .flair {
+  background-color: #ff914d;
+}
+#flashcards .flashcards-carousel .cardpack.precalc .cardpack-content .buttons .fancy-button.open-cardpack:hover {
+  color: #FFFFFF;
+}
+#flashcards .flashcards-carousel .cardpack.precalc .cardpack-content .buttons .fancy-button.open-cardpack:hover {
+  color: black !important;
+}
 #flashcards .flashcards-carousel .cardpack.precalc .cardpack-content .buttons .fancy-button.locked {
   background-color: #2d2f2f;
   border-color: #30323b;
@@ -486,14 +530,19 @@ body {
   display: none;
 }
 #flashcards .flashcards-carousel .cardpack.precalc .cardpack-content .buttons .fancy-button.upgrade-standard {
-  border-color: #e36970;
+  background-color: #e36970;
+  color: #FFFFFF !important;
+  border-color: #e77e84;
   color: #e36970;
 }
 #flashcards .flashcards-carousel .cardpack.precalc .cardpack-content .buttons .fancy-button.upgrade-standard .flair {
-  background-color: #e36970;
+  background-color: #e77e84;
 }
 #flashcards .flashcards-carousel .cardpack.precalc .cardpack-content .buttons .fancy-button.upgrade-standard:hover {
   color: #FFFFFF;
+}
+#flashcards .flashcards-carousel .cardpack.precalc .cardpack-content .buttons .fancy-button.upgrade-standard:hover {
+  color: black !important;
 }
 #flashcards .flashcards-carousel .cardpack.precalc .cardpack-content .buttons .fancy-button.upgrade-standard .unavailable {
   display: initial;
@@ -502,14 +551,19 @@ body {
   display: none;
 }
 #flashcards .flashcards-carousel .cardpack.precalc .cardpack-content .buttons .fancy-button.upgrade-premium {
-  border-color: #7c72ff;
+  background-color: #7c72ff;
+  color: #FFFFFF !important;
+  border-color: #948cff;
   color: #7c72ff;
 }
 #flashcards .flashcards-carousel .cardpack.precalc .cardpack-content .buttons .fancy-button.upgrade-premium .flair {
-  background-color: #7c72ff;
+  background-color: #948cff;
 }
 #flashcards .flashcards-carousel .cardpack.precalc .cardpack-content .buttons .fancy-button.upgrade-premium:hover {
   color: #FFFFFF;
+}
+#flashcards .flashcards-carousel .cardpack.precalc .cardpack-content .buttons .fancy-button.upgrade-premium:hover {
+  color: black !important;
 }
 #flashcards .flashcards-carousel .cardpack.precalc .cardpack-content .buttons .fancy-button.upgrade-premium .unavailable {
   display: initial;

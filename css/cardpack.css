@@ -105,7 +105,7 @@ body {
   padding: 0.5em 1em 0.5em 1em;
   color: #FFFFFF;
   font-size: 1em;
-  font-family: satoshi-black, arial, sans-serif;
+  font-family: satoshi-bold, arial, sans-serif;
   text-wrap: nowrap;
 }
 #cardpack header #cardpack-properties #cardpack-difficulty.easy {
@@ -114,7 +114,7 @@ body {
   padding: 0.5em 1em 0.5em 1em;
   color: #FFFFFF;
   font-size: 1em;
-  font-family: satoshi-black, arial, sans-serif;
+  font-family: satoshi-bold, arial, sans-serif;
   text-wrap: nowrap;
 }
 #cardpack header #cardpack-properties #cardpack-difficulty.medium {
@@ -123,7 +123,7 @@ body {
   padding: 0.5em 1em 0.5em 1em;
   color: #FFFFFF;
   font-size: 1em;
-  font-family: satoshi-black, arial, sans-serif;
+  font-family: satoshi-bold, arial, sans-serif;
   text-wrap: nowrap;
 }
 #cardpack header #cardpack-properties #cardpack-difficulty.hard {
@@ -132,7 +132,7 @@ body {
   padding: 0.5em 1em 0.5em 1em;
   color: #FFFFFF;
   font-size: 1em;
-  font-family: satoshi-black, arial, sans-serif;
+  font-family: satoshi-bold, arial, sans-serif;
   text-wrap: nowrap;
 }
 #cardpack header #cardpack-properties #cardpack-price.free {
@@ -141,7 +141,7 @@ body {
   padding: 0.5em 1em 0.5em 1em;
   color: #FFFFFF;
   font-size: 1em;
-  font-family: satoshi-black, arial, sans-serif;
+  font-family: satoshi-bold, arial, sans-serif;
   text-wrap: nowrap;
 }
 #cardpack header #cardpack-properties #cardpack-price.standard {
@@ -150,7 +150,7 @@ body {
   padding: 0.5em 1em 0.5em 1em;
   color: #FFFFFF;
   font-size: 1em;
-  font-family: satoshi-black, arial, sans-serif;
+  font-family: satoshi-bold, arial, sans-serif;
   text-wrap: nowrap;
 }
 #cardpack header #cardpack-properties #cardpack-price.premium {
@@ -159,7 +159,7 @@ body {
   padding: 0.5em 1em 0.5em 1em;
   color: #FFFFFF;
   font-size: 1em;
-  font-family: satoshi-black, arial, sans-serif;
+  font-family: satoshi-bold, arial, sans-serif;
   text-wrap: nowrap;
 }
 #cardpack .card.genmath .card-content, #cardpack .nav-card.genmath {
