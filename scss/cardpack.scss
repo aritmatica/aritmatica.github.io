@@ -22,6 +22,28 @@ body {
 
     overflow: hidden;
 
+    .button-container {
+        width: 100%;
+        margin-bottom: 2em;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .fancy-button {
+            font-size: 1.25em;
+            text-wrap: nowrap;
+            
+            margin-top: auto;
+            border: solid $text-color;
+            border-radius: 1em;
+            padding: 0.5em 1em 0.5em 1em;
+            width: fit-content;
+            height: fit-content;
+            @include fancyButton($violet-color, $text-color, $violet-color);
+        }
+    }
+
     header {
         padding-left: 3rem;
         padding-right: 3rem;
@@ -108,7 +130,6 @@ body {
         max-width: 952px;
         aspect-ratio: 3/2;
         width: 100%;
-        margin-top: 1rem;
 
         .flickity-viewport {
             border-radius: inherit;

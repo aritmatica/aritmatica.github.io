@@ -75,6 +75,31 @@ body {
   align-items: center;
   overflow: hidden;
 }
+#cardpack .button-container {
+  width: 100%;
+  margin-bottom: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#cardpack .button-container .fancy-button {
+  font-size: 1.25em;
+  text-wrap: nowrap;
+  margin-top: auto;
+  border: solid #FFFFFF;
+  border-radius: 1em;
+  padding: 0.5em 1em 0.5em 1em;
+  width: fit-content;
+  height: fit-content;
+  border-color: #7c72ff;
+  color: #7c72ff;
+}
+#cardpack .button-container .fancy-button .flair {
+  background-color: #7c72ff;
+}
+#cardpack .button-container .fancy-button:hover {
+  color: #FFFFFF;
+}
 #cardpack header {
   padding-left: 3rem;
   padding-right: 3rem;
@@ -180,7 +205,6 @@ body {
   max-width: 952px;
   aspect-ratio: 3/2;
   width: 100%;
-  margin-top: 1rem;
 }
 #cardpack .cards-carousel .flickity-viewport {
   border-radius: inherit;
