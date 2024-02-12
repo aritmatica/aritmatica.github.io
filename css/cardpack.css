@@ -58,6 +58,7 @@
   font-family: inherit;
   z-index: 0;
   transition: color 0.2s;
+  white-space: nowrap;
 }
 .fancy-button:hover {
   color: black;
@@ -126,7 +127,7 @@ body {
   background-color: transparent;
   font-size: 1.25em;
   font-family: satoshi-bold, arial, sans-serif;
-  text-wrap: nowrap;
+  white-space: nowrap;
   margin-top: auto;
   border: solid #FFFFFF;
   border-radius: 1em;
@@ -151,7 +152,7 @@ body {
   background-color: transparent;
   font-size: 1.25em;
   font-family: satoshi-bold, arial, sans-serif;
-  text-wrap: nowrap;
+  white-space: nowrap;
   margin-top: auto;
   border: solid #FFFFFF;
   border-radius: 1em;
@@ -200,7 +201,7 @@ body {
   color: #FFFFFF;
   font-size: 1em;
   font-family: satoshi-bold, arial, sans-serif;
-  text-wrap: nowrap;
+  white-space: nowrap;
 }
 #cardpack header #cardpack-properties #cardpack-difficulty.easy {
   background-color: #2E7D32;
@@ -209,7 +210,7 @@ body {
   color: #FFFFFF;
   font-size: 1em;
   font-family: satoshi-bold, arial, sans-serif;
-  text-wrap: nowrap;
+  white-space: nowrap;
 }
 #cardpack header #cardpack-properties #cardpack-difficulty.medium {
   background-color: #F57F17;
@@ -218,7 +219,7 @@ body {
   color: #FFFFFF;
   font-size: 1em;
   font-family: satoshi-bold, arial, sans-serif;
-  text-wrap: nowrap;
+  white-space: nowrap;
 }
 #cardpack header #cardpack-properties #cardpack-difficulty.hard {
   background-color: #d7342a;
@@ -227,7 +228,7 @@ body {
   color: #FFFFFF;
   font-size: 1em;
   font-family: satoshi-bold, arial, sans-serif;
-  text-wrap: nowrap;
+  white-space: nowrap;
 }
 #cardpack header #cardpack-properties #cardpack-price.free {
   background-color: #474957;
@@ -236,7 +237,7 @@ body {
   color: #FFFFFF;
   font-size: 1em;
   font-family: satoshi-bold, arial, sans-serif;
-  text-wrap: nowrap;
+  white-space: nowrap;
 }
 #cardpack header #cardpack-properties #cardpack-price.standard {
   background-color: #e36970;
@@ -245,7 +246,7 @@ body {
   color: #FFFFFF;
   font-size: 1em;
   font-family: satoshi-bold, arial, sans-serif;
-  text-wrap: nowrap;
+  white-space: nowrap;
 }
 #cardpack header #cardpack-properties #cardpack-price.premium {
   background-color: #7c72ff;
@@ -254,7 +255,7 @@ body {
   color: #FFFFFF;
   font-size: 1em;
   font-family: satoshi-bold, arial, sans-serif;
-  text-wrap: nowrap;
+  white-space: nowrap;
 }
 #cardpack .card.genmath .card-content, #cardpack .nav-card.genmath {
   background-image: linear-gradient(#3fb950, #3fb979);

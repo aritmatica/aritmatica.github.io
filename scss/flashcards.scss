@@ -72,7 +72,7 @@ body {
             color: $text-color;
             font-size: 1em;
             font-family: $font-bold;
-            text-wrap: nowrap;
+            white-space: nowrap;
         }
 
         @mixin cardpack ($cardpack-accent) {
@@ -180,7 +180,7 @@ body {
                     .fancy-button {
                         font-family: $font-bold;
                         font-size: 1.25em;
-                        text-wrap: nowrap;
+                        white-space: nowrap;
                         
                         margin-top: auto;
                         border: solid $text-color;

@@ -58,6 +58,7 @@
   font-family: inherit;
   z-index: 0;
   transition: color 0.2s;
+  white-space: nowrap;
 }
 .fancy-button:hover {
   color: black;
@@ -134,7 +135,7 @@ body {
 #modules .courses #modules-genmath .fancy-button {
   font-size: 1em;
   font-family: satoshi-bold, arial, sans-serif;
-  text-wrap: nowrap;
+  white-space: nowrap;
   margin-top: auto;
   border: solid #FFFFFF;
   border-radius: 1em;
@@ -176,7 +177,7 @@ body {
 #modules .courses #modules-precalc .fancy-button {
   font-size: 1em;
   font-family: satoshi-bold, arial, sans-serif;
-  text-wrap: nowrap;
+  white-space: nowrap;
   margin-top: auto;
   border: solid #FFFFFF;
   border-radius: 1em;

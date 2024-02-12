@@ -85,7 +85,7 @@ body {
             .fancy-button {
                 font-size: 1em;
                 font-family: $font-bold;
-                text-wrap: nowrap;
+                white-space: nowrap;
                 
                 margin-top: auto;
                 border: solid $text-color;

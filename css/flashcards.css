@@ -58,6 +58,7 @@
   font-family: inherit;
   z-index: 0;
   transition: color 0.2s;
+  white-space: nowrap;
 }
 .fancy-button:hover {
   color: black;
@@ -164,7 +165,7 @@ body {
   color: #FFFFFF;
   font-size: 1em;
   font-family: satoshi-bold, arial, sans-serif;
-  text-wrap: nowrap;
+  white-space: nowrap;
 }
 #flashcards .flashcards-carousel .cardpack.genmath .cardpack-content .cardpack-properties .cardpack-cards {
   background-image: linear-gradient(90deg, #0277BD, #0258bd);
@@ -173,7 +174,7 @@ body {
   color: #FFFFFF;
   font-size: 1em;
   font-family: satoshi-bold, arial, sans-serif;
-  text-wrap: nowrap;
+  white-space: nowrap;
 }
 #flashcards .flashcards-carousel .cardpack.genmath .cardpack-content .cardpack-properties .cardpack-difficulty.easy {
   background-image: linear-gradient(90deg, #2E7D32, #2e7d3f);
@@ -182,7 +183,7 @@ body {
   color: #FFFFFF;
   font-size: 1em;
   font-family: satoshi-bold, arial, sans-serif;
-  text-wrap: nowrap;
+  white-space: nowrap;
 }
 #flashcards .flashcards-carousel .cardpack.genmath .cardpack-content .cardpack-properties .cardpack-difficulty.medium {
   background-image: linear-gradient(90deg, #F57F17, #f5a417);
@@ -191,7 +192,7 @@ body {
   color: #FFFFFF;
   font-size: 1em;
   font-family: satoshi-bold, arial, sans-serif;
-  text-wrap: nowrap;
+  white-space: nowrap;
 }
 #flashcards .flashcards-carousel .cardpack.genmath .cardpack-content .cardpack-properties .cardpack-difficulty.hard {
   background-image: linear-gradient(90deg, #d7342a, #d7512a);
@@ -200,7 +201,7 @@ body {
   color: #FFFFFF;
   font-size: 1em;
   font-family: satoshi-bold, arial, sans-serif;
-  text-wrap: nowrap;
+  white-space: nowrap;
 }
 #flashcards .flashcards-carousel .cardpack.genmath .cardpack-content .cardpack-properties .cardpack-price.free {
   background-image: linear-gradient(90deg, #474957, #474757);
@@ -209,7 +210,7 @@ body {
   color: #FFFFFF;
   font-size: 1em;
   font-family: satoshi-bold, arial, sans-serif;
-  text-wrap: nowrap;
+  white-space: nowrap;
 }
 #flashcards .flashcards-carousel .cardpack.genmath .cardpack-content .cardpack-properties .cardpack-price.standard {
   background-image: linear-gradient(90deg, #e36970, #e37669);
@@ -218,7 +219,7 @@ body {
   color: #FFFFFF;
   font-size: 1em;
   font-family: satoshi-bold, arial, sans-serif;
-  text-wrap: nowrap;
+  white-space: nowrap;
 }
 #flashcards .flashcards-carousel .cardpack.genmath .cardpack-content .cardpack-properties .cardpack-price.premium {
   background-image: linear-gradient(90deg, #7c72ff, #9472ff);
@@ -227,7 +228,7 @@ body {
   color: #FFFFFF;
   font-size: 1em;
   font-family: satoshi-bold, arial, sans-serif;
-  text-wrap: nowrap;
+  white-space: nowrap;
 }
 #flashcards .flashcards-carousel .cardpack.genmath .cardpack-content .cardpack-locked-text {
   margin-top: auto;
@@ -247,7 +248,7 @@ body {
 #flashcards .flashcards-carousel .cardpack.genmath .cardpack-content .buttons .fancy-button {
   font-family: satoshi-bold, arial, sans-serif;
   font-size: 1.25em;
-  text-wrap: nowrap;
+  white-space: nowrap;
   margin-top: auto;
   border: solid #FFFFFF;
   border-radius: 1em;
@@ -406,7 +407,7 @@ body {
   color: #FFFFFF;
   font-size: 1em;
   font-family: satoshi-bold, arial, sans-serif;
-  text-wrap: nowrap;
+  white-space: nowrap;
 }
 #flashcards .flashcards-carousel .cardpack.precalc .cardpack-content .cardpack-properties .cardpack-cards {
   background-image: linear-gradient(90deg, #0277BD, #0258bd);
@@ -415,7 +416,7 @@ body {
   color: #FFFFFF;
   font-size: 1em;
   font-family: satoshi-bold, arial, sans-serif;
-  text-wrap: nowrap;
+  white-space: nowrap;
 }
 #flashcards .flashcards-carousel .cardpack.precalc .cardpack-content .cardpack-properties .cardpack-difficulty.easy {
   background-image: linear-gradient(90deg, #2E7D32, #2e7d3f);
@@ -424,7 +425,7 @@ body {
   color: #FFFFFF;
   font-size: 1em;
   font-family: satoshi-bold, arial, sans-serif;
-  text-wrap: nowrap;
+  white-space: nowrap;
 }
 #flashcards .flashcards-carousel .cardpack.precalc .cardpack-content .cardpack-properties .cardpack-difficulty.medium {
   background-image: linear-gradient(90deg, #F57F17, #f5a417);
@@ -433,7 +434,7 @@ body {
   color: #FFFFFF;
   font-size: 1em;
   font-family: satoshi-bold, arial, sans-serif;
-  text-wrap: nowrap;
+  white-space: nowrap;
 }
 #flashcards .flashcards-carousel .cardpack.precalc .cardpack-content .cardpack-properties .cardpack-difficulty.hard {
   background-image: linear-gradient(90deg, #d7342a, #d7512a);
@@ -442,7 +443,7 @@ body {
   color: #FFFFFF;
   font-size: 1em;
   font-family: satoshi-bold, arial, sans-serif;
-  text-wrap: nowrap;
+  white-space: nowrap;
 }
 #flashcards .flashcards-carousel .cardpack.precalc .cardpack-content .cardpack-properties .cardpack-price.free {
   background-image: linear-gradient(90deg, #474957, #474757);
@@ -451,7 +452,7 @@ body {
   color: #FFFFFF;
   font-size: 1em;
   font-family: satoshi-bold, arial, sans-serif;
-  text-wrap: nowrap;
+  white-space: nowrap;
 }
 #flashcards .flashcards-carousel .cardpack.precalc .cardpack-content .cardpack-properties .cardpack-price.standard {
   background-image: linear-gradient(90deg, #e36970, #e37669);
@@ -460,7 +461,7 @@ body {
   color: #FFFFFF;
   font-size: 1em;
   font-family: satoshi-bold, arial, sans-serif;
-  text-wrap: nowrap;
+  white-space: nowrap;
 }
 #flashcards .flashcards-carousel .cardpack.precalc .cardpack-content .cardpack-properties .cardpack-price.premium {
   background-image: linear-gradient(90deg, #7c72ff, #9472ff);
@@ -469,7 +470,7 @@ body {
   color: #FFFFFF;
   font-size: 1em;
   font-family: satoshi-bold, arial, sans-serif;
-  text-wrap: nowrap;
+  white-space: nowrap;
 }
 #flashcards .flashcards-carousel .cardpack.precalc .cardpack-content .cardpack-locked-text {
   margin-top: auto;
@@ -489,7 +490,7 @@ body {
 #flashcards .flashcards-carousel .cardpack.precalc .cardpack-content .buttons .fancy-button {
   font-family: satoshi-bold, arial, sans-serif;
   font-size: 1.25em;
-  text-wrap: nowrap;
+  white-space: nowrap;
   margin-top: auto;
   border: solid #FFFFFF;
   border-radius: 1em;

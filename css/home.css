@@ -58,6 +58,7 @@
   font-family: inherit;
   z-index: 0;
   transition: color 0.2s;
+  white-space: nowrap;
 }
 .fancy-button:hover {
   color: black;
@@ -112,7 +113,7 @@ header main {
   padding-bottom: 2rem;
 }
 header main h1 {
-  text-wrap: nowrap;
+  white-space: nowrap;
   font-size: min(16vw, 12rem);
 }
 header main h1 sup {
@@ -163,7 +164,7 @@ header main span {
   margin-right: 0.75rem;
   font-family: satoshi-bold, arial, sans-serif;
   font-size: 1.5rem;
-  text-wrap: nowrap;
+  white-space: nowrap;
   text-align: center;
 }
 #intro main .buttons #intro-start {
@@ -269,7 +270,7 @@ header main span {
 #genmath main .card .button-container .fancy-button {
   font-size: 1em;
   font-family: satoshi-bold, arial, sans-serif;
-  text-wrap: nowrap;
+  white-space: nowrap;
   border: solid #FFFFFF;
   border-radius: 1em;
   padding: 0.5em 1em 0.5em 1em;
@@ -378,7 +379,7 @@ header main span {
 #precalc main .card .button-container .fancy-button {
   font-size: 1em;
   font-family: satoshi-bold, arial, sans-serif;
-  text-wrap: nowrap;
+  white-space: nowrap;
   border: solid #FFFFFF;
   border-radius: 1em;
   padding: 0.5em 1em 0.5em 1em;
@@ -487,7 +488,7 @@ header main span {
 #exercises main .card .button-container .fancy-button {
   font-size: 1em;
   font-family: satoshi-bold, arial, sans-serif;
-  text-wrap: nowrap;
+  white-space: nowrap;
   border: solid #FFFFFF;
   border-radius: 1em;
   padding: 0.5em 1em 0.5em 1em;
@@ -589,7 +590,7 @@ header main span {
   padding: 0.5rem 1rem 0.5rem 1rem;
   margin-right: 0.75rem;
   font-size: 1.5rem;
-  text-wrap: nowrap;
+  white-space: nowrap;
   text-align: center;
 }
 #join main .buttons #join-aritmatica {

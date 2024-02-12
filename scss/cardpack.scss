@@ -76,7 +76,7 @@ body {
                 background-color: transparent;
                 font-size: 1.25em;
                 font-family: $font-bold;
-                text-wrap: nowrap;
+                white-space: nowrap;
                 
                 margin-top: auto;
                 border: solid $text-color;
@@ -129,7 +129,7 @@ body {
                 color: $text-color;
                 font-size: 1em;
                 font-family: $font-bold;
-                text-wrap: nowrap;
+                white-space: nowrap;
             }
 
             #cardpack-cards {

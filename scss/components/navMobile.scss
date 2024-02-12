@@ -43,7 +43,7 @@ nav {
             padding: 0.5rem 1rem 0.5rem 1rem;
             border: solid $text-color;
             border-radius: 2rem;
-            text-wrap: nowrap;
+            white-space: nowrap;
 
             transition: border-color 250ms, color 250ms;
         }
@@ -55,7 +55,7 @@ nav {
         padding: 1rem 0 0 7.5%;
 
         font-size: 1.25rem;
-        text-wrap: nowrap;
+        white-space: nowrap;
 
         li {padding: 0.5rem 0 0.5rem 0;}
 
@@ -100,7 +100,7 @@ nav {
             border: solid $text-color;
             border-radius: 2rem;
             a {
-                text-wrap: nowrap;
+                white-space: nowrap;
             }
         }
     }

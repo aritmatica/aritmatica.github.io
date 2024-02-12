@@ -69,7 +69,7 @@ header {
     main {
         padding-bottom: 2rem;
         h1 {
-            text-wrap: nowrap;
+            white-space: nowrap;
             font-size: min(16vw, 12rem);
             sup {
                 font-size: 0.5em;
@@ -131,7 +131,7 @@ header {
             
                 font-family: $font-bold;
                 font-size: 1.5rem;
-                text-wrap: nowrap;
+                white-space: nowrap;
                 text-align: center;
             }
 
@@ -254,7 +254,7 @@ header {
                 .fancy-button {
                     font-size: 1em;
                     font-family: $font-bold;
-                    text-wrap: nowrap;
+                    white-space: nowrap;
                     
                     border: solid $text-color;
                     border-radius: 1em;
@@ -411,7 +411,7 @@ header {
                 margin-right: 0.75rem;
             
                 font-size: 1.5rem;
-                text-wrap: nowrap;
+                white-space: nowrap;
                 text-align: center;
             }
 

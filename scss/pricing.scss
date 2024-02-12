@@ -114,7 +114,7 @@ body[show-error] {
             .fancy-button {
                 font-size: 0.75em;
                 font-family: $font-bold;
-                text-wrap: nowrap;
+                white-space: nowrap;
                 
                 border: solid $text-color;
                 border-radius: 1em;
@@ -218,7 +218,7 @@ body[show-error] #error-prompt {
     
                 font-family: $font-bold;
                 font-size: 2em;
-                text-wrap: nowrap;
+                white-space: nowrap;
     
                 @include fancyButton($button-color, $text-color, $button-color)
             }
