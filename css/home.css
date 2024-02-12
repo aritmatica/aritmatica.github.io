@@ -155,6 +155,7 @@ header main span {
   flex-direction: row;
 }
 #intro main .buttons a {
+  width: -moz-min-content;
   width: min-content;
   border: solid #FFFFFF;
   border-radius: 1.5rem;
@@ -272,11 +273,14 @@ header main span {
   border: solid #FFFFFF;
   border-radius: 1em;
   padding: 0.5em 1em 0.5em 1em;
+  width: -moz-fit-content;
   width: fit-content;
+  height: -moz-fit-content;
   height: fit-content;
 }
 @media screen and (max-width: 1024px) {
   #genmath main .card {
+    height: -moz-fit-content;
     height: fit-content;
     grid-template-columns: 1fr;
   }
@@ -378,11 +382,14 @@ header main span {
   border: solid #FFFFFF;
   border-radius: 1em;
   padding: 0.5em 1em 0.5em 1em;
+  width: -moz-fit-content;
   width: fit-content;
+  height: -moz-fit-content;
   height: fit-content;
 }
 @media screen and (max-width: 1024px) {
   #precalc main .card {
+    height: -moz-fit-content;
     height: fit-content;
     grid-template-columns: 1fr;
   }
@@ -484,11 +491,14 @@ header main span {
   border: solid #FFFFFF;
   border-radius: 1em;
   padding: 0.5em 1em 0.5em 1em;
+  width: -moz-fit-content;
   width: fit-content;
+  height: -moz-fit-content;
   height: fit-content;
 }
 @media screen and (max-width: 1024px) {
   #exercises main .card {
+    height: -moz-fit-content;
     height: fit-content;
     grid-template-columns: 1fr;
   }
@@ -572,6 +582,7 @@ header main span {
   flex-direction: row;
 }
 #join main .buttons a {
+  width: -moz-min-content;
   width: min-content;
   border: solid #FFFFFF;
   border-radius: 1.5rem;
@@ -602,6 +613,4 @@ header main span {
     padding: 0.25rem 0.5rem 0.25rem 0.5rem;
     font-size: min(5vw, 1.5rem);
   }
-}
-
-/*# sourceMappingURL=home.css.map */
+}/*# sourceMappingURL=home.css.map */

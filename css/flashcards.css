@@ -86,7 +86,8 @@ body {
   font-family: satoshi-black, arial, sans-serif;
   color: transparent;
   background-image: linear-gradient(90deg, #7c72ff, #9a95dc, #c372ff);
-  background-clip: text;
+  -webkit-background-clip: text;
+          background-clip: text;
 }
 #flashcards > .title span {
   color: gray;
@@ -144,7 +145,8 @@ body {
 #flashcards .flashcards-carousel .cardpack.genmath .cardpack-content .cardpack-title {
   color: transparent;
   background-image: linear-gradient(90deg, #3fb950, #3fb96f);
-  background-clip: text;
+  -webkit-background-clip: text;
+          background-clip: text;
   font-family: satoshi-black, arial, sans-serif;
   font-size: min(2.5rem, 10vw);
 }
@@ -251,6 +253,7 @@ body {
   border-radius: 1em;
   padding: 0.5em 1em 0.5em 1em;
   width: 75%;
+  height: -moz-fit-content;
   height: fit-content;
   border-color: #3fb950;
   color: #3fb950;
@@ -384,7 +387,8 @@ body {
 #flashcards .flashcards-carousel .cardpack.precalc .cardpack-content .cardpack-title {
   color: transparent;
   background-image: linear-gradient(90deg, #ff6200, #ffa200);
-  background-clip: text;
+  -webkit-background-clip: text;
+          background-clip: text;
   font-family: satoshi-black, arial, sans-serif;
   font-size: min(2.5rem, 10vw);
 }
@@ -491,6 +495,7 @@ body {
   border-radius: 1em;
   padding: 0.5em 1em 0.5em 1em;
   width: 75%;
+  height: -moz-fit-content;
   height: fit-content;
   border-color: #ff6200;
   color: #ff6200;
@@ -597,6 +602,4 @@ body {
   #flashcards .flashcards-carousel {
     width: 100%;
   }
-}
-
-/*# sourceMappingURL=flashcards.css.map */
+}/*# sourceMappingURL=flashcards.css.map */

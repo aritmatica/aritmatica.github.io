@@ -173,6 +173,7 @@ body[show-error] {
   border-radius: 1em;
   padding: 0.5em 1em 0.5em 1em;
   width: 75%;
+  height: -moz-fit-content;
   height: fit-content;
   border-color: #FFFFFF;
   color: #FFFFFF;
@@ -228,6 +229,7 @@ body[show-error] {
   border-radius: 1em;
   padding: 0.5em 1em 0.5em 1em;
   width: 75%;
+  height: -moz-fit-content;
   height: fit-content;
   border-color: #e36970;
   color: #e36970;
@@ -283,6 +285,7 @@ body[show-error] {
   border-radius: 1em;
   padding: 0.5em 1em 0.5em 1em;
   width: 75%;
+  height: -moz-fit-content;
   height: fit-content;
   border-color: #7c72ff;
   color: #7c72ff;
@@ -311,10 +314,11 @@ body[show-error] #error-prompt {
   height: 100%;
   transition: opacity 500ms;
 }
-@supports (backdrop-filter: blur()) {
+@supports ((-webkit-backdrop-filter: blur()) or (backdrop-filter: blur())) {
   body[show-error] #error-prompt {
     background-color: rgba(29, 29, 33, 0.4);
-    backdrop-filter: blur(0.5rem);
+    -webkit-backdrop-filter: blur(0.5rem);
+            backdrop-filter: blur(0.5rem);
   }
 }
 body[show-error] #error-prompt .error-content {
@@ -396,6 +400,4 @@ body[show-error] #error-prompt .error-content .error-buttons #error-go-back:hove
   body[show-error] #error-prompt .error-content .error-buttons .fancy-button {
     width: auto !important;
   }
-}
-
-/*# sourceMappingURL=pricing.css.map */
+}/*# sourceMappingURL=pricing.css.map */

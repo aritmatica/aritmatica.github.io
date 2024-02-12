@@ -85,7 +85,8 @@ body {
   font-family: satoshi-black, arial, sans-serif;
   color: transparent;
   background-image: linear-gradient(90deg, #ff96f9, #e5b0e2, #00bae2);
-  background-clip: text;
+  -webkit-background-clip: text;
+          background-clip: text;
 }
 #modules > .title span {
   color: gray;
@@ -139,6 +140,7 @@ body {
   border-radius: 1em;
   padding: 0.5em 1em 0.5em 1em;
   width: 75%;
+  height: -moz-fit-content;
   height: fit-content;
   border-color: #3fb950;
   color: #3fb950;
@@ -180,6 +182,7 @@ body {
   border-radius: 1em;
   padding: 0.5em 1em 0.5em 1em;
   width: 75%;
+  height: -moz-fit-content;
   height: fit-content;
   border-color: #ff6200;
   color: #ff6200;
@@ -189,6 +192,4 @@ body {
 }
 #modules .courses #modules-precalc .fancy-button:hover {
   color: #FFFFFF;
-}
-
-/*# sourceMappingURL=modules.css.map */
+}/*# sourceMappingURL=modules.css.map */

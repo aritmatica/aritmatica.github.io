@@ -131,7 +131,9 @@ body {
   border: solid #FFFFFF;
   border-radius: 1em;
   padding: 0.5em 1em 0.5em 1em;
+  width: -moz-fit-content;
   width: fit-content;
+  height: -moz-fit-content;
   height: fit-content;
   border-color: #7c72ff;
   color: #7c72ff;
@@ -154,7 +156,9 @@ body {
   border: solid #FFFFFF;
   border-radius: 1em;
   padding: 0.5em 1em 0.5em 1em;
+  width: -moz-fit-content;
   width: fit-content;
+  height: -moz-fit-content;
   height: fit-content;
   border-color: #e36970;
   color: #e36970;
@@ -180,7 +184,8 @@ body {
 #cardpack header #cardpack-title.genmath {
   color: transparent;
   background-image: linear-gradient(90deg, #3fb950, #3fb979);
-  background-clip: text;
+  -webkit-background-clip: text;
+          background-clip: text;
 }
 #cardpack header #cardpack-properties {
   margin-top: 0.5em;
@@ -348,6 +353,4 @@ body {
 #cardpack .cards-carousel .is-selected .card-content {
   opacity: 1 !important;
   scale: 100% !important;
-}
-
-/*# sourceMappingURL=cardpack.css.map */
+}/*# sourceMappingURL=cardpack.css.map */
