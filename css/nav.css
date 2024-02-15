@@ -285,7 +285,7 @@ nav #nav-signup {
     padding: 0.5rem 1rem 0.5rem 1rem;
     border: solid #FFFFFF;
     border-radius: 2rem;
-    text-wrap: nowrap;
+    white-space: nowrap;
     transition: border-color 250ms, color 250ms;
   }
   nav .links {
@@ -293,7 +293,7 @@ nav #nav-signup {
     width: 100%;
     padding: 1rem 0 0 7.5%;
     font-size: 1.25rem;
-    text-wrap: nowrap;
+    white-space: nowrap;
   }
   nav .links li {
     padding: 0.5rem 0 0.5rem 0;
@@ -334,7 +334,7 @@ nav #nav-signup {
     border-radius: 2rem;
   }
   nav .join li a {
-    text-wrap: nowrap;
+    white-space: nowrap;
   }
   nav[class=menu-active] .menu label {
     color: #e36970;
